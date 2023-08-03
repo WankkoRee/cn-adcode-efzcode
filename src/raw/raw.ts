@@ -65,6 +65,47 @@ type Data = {
     },
 }
 
+type DataMini = {
+    [province: string]: {
+        name: string,
+        short: string,
+        deprecated: boolean,
+        children: {
+            [prefecture: string]: {
+                name: string,
+                short: string | null,
+                deprecated: boolean,
+                children: {
+                    [county: string]: {
+                        name: string,
+                        short: string | null,
+                        deprecated: boolean,
+                    },
+                },
+            },
+        },
+    },
+}
+
+type DataNow = {
+    [province: string]: {
+        name: string,
+        short: string,
+        children: {
+            [prefecture: string]: {
+                name: string,
+                short: string | null,
+                children: {
+                    [county: string]: {
+                        name: string,
+                        short: string | null,
+                    },
+                },
+            },
+        },
+    },
+}
+
 function deprecated(data: Data, flag: string) {
     Object.entries(data).forEach(([province, {name, short, children}]) => {
         if (!data[province].deprecated) {
@@ -174,6 +215,63 @@ function main() {
     update(data, GB_T_2260_2020(), "GB/T 2260-2020");
     update(data, GB_T_2260_2021(), "GB/T 2260-2021");
 
-    fs.writeFileSync('./src/data/GB_T_2260.json', JSON.stringify(data, null, 2), 'utf-8');
+    fs.writeFileSync('./src/data/GB_T_2260.dep.json', JSON.stringify(data, null, 2), 'utf-8');
+
+    const dataMini: DataMini = {};
+    const dataNow: DataNow = {};
+
+    Object.entries(data).forEach(([province, {name, short, deprecated, children}]) => {
+        dataMini[province] = {
+            name,
+            short,
+            deprecated: !!deprecated,
+            children: {},
+        }
+        Object.entries(children).forEach(([prefecture, {name, short, deprecated, children}]) => {
+            dataMini[province].children[prefecture] = {
+                name,
+                short,
+                deprecated: !!deprecated,
+                children: {},
+            }
+            Object.entries(children).forEach(([county, {name, short, deprecated}]) => {
+                dataMini[province].children[prefecture].children[county] = {
+                    name,
+                    short,
+                    deprecated: !!deprecated,
+                }
+            });
+        });
+    });
+
+    Object.entries(data).forEach(([province, {name, short, deprecated, children}]) => {
+        if (deprecated)
+            return true; // continue
+        dataNow[province] = {
+            name,
+            short,
+            children: {},
+        }
+        Object.entries(children).forEach(([prefecture, {name, short, deprecated, children}]) => {
+            if (deprecated)
+                return true; // continue
+            dataNow[province].children[prefecture] = {
+                name,
+                short,
+                children: {},
+            }
+            Object.entries(children).forEach(([county, {name, short, deprecated}]) => {
+                if (deprecated)
+                    return true; // continue
+                dataNow[province].children[prefecture].children[county] = {
+                    name,
+                    short,
+                }
+            });
+        });
+    });
+
+    fs.writeFileSync('./src/data/GB_T_2260.json', JSON.stringify(dataMini, null, 2), 'utf-8');
+    fs.writeFileSync('./src/data/GB_T_2260.now.json', JSON.stringify(dataNow, null, 2), 'utf-8');
 }
 main();
