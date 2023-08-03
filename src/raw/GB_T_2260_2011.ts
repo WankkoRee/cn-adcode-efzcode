@@ -3222,6 +3222,6 @@ export const main = () => {
 `;
 
     const result= handle(raw);
-    fs.writeFileSync('./src/raw/GB_T_2260-2011.json', JSON.stringify(result, null, 2), 'utf-8');
+    fs.writeFileSync('./src/raw/data/GB_T_2260-2011.json', JSON.stringify(result, null, 2), 'utf-8');
     return result;
 }
