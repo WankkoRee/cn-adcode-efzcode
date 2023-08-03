@@ -235,6 +235,11 @@
             "short": "宝坻",
             "deprecated": null
           },
+          "16": {
+            "name": "滨海新区",
+            "short": "滨海",
+            "deprecated": null
+          },
           "01": {
             "name": "和平区",
             "short": "和平",
@@ -268,17 +273,17 @@
           "07": {
             "name": "塘沽区",
             "short": "塘沽",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2009"
           },
           "08": {
             "name": "汉沽区",
             "short": "汉沽",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2009"
           },
           "09": {
             "name": "大港区",
             "short": "大港",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2009"
           }
         }
       },
@@ -8123,7 +8128,7 @@
           "19": {
             "name": "南汇区",
             "short": "南汇",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2009"
           },
           "20": {
             "name": "奉贤区",
@@ -9465,6 +9470,11 @@
             "short": "港闸",
             "deprecated": null
           },
+          "12": {
+            "name": "通州区",
+            "short": "通州",
+            "deprecated": null
+          },
           "21": {
             "name": "海安县",
             "short": "海安",
@@ -9508,7 +9518,7 @@
           "83": {
             "name": "通州市",
             "short": "通州",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2009"
           },
           "84": {
             "name": "海门市",
@@ -18436,6 +18446,11 @@
         "short": "随州",
         "deprecated": null,
         "children": {
+          "21": {
+            "name": "随县",
+            "short": "随县",
+            "deprecated": null
+          },
           "81": {
             "name": "广水市",
             "short": "广水",
@@ -32326,6 +32341,11 @@
           "02": {
             "name": "利通区",
             "short": "利通",
+            "deprecated": null
+          },
+          "03": {
+            "name": "红寺堡区",
+            "short": "红寺堡",
             "deprecated": null
           }
         }
