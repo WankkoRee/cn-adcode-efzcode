@@ -167,7 +167,10 @@ export const handle = (raw : string) => {
                             result[0] === "东城区"
                             || result[0] === "和平区"
                             || result[0] === "黄浦区"
-                            || (result[0] === "万县区" || result[0] === "万州区")
+                            || (
+                                result[0] === "万县区"
+                                || result[0] === "万州区"
+                            )
                             , `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '市辖区',
@@ -177,10 +180,24 @@ export const handle = (raw : string) => {
                         }
                     } else if (result[2] == '02') {
                         assert(
-                            (result[0] === "昌平县" || result[0] === "大兴县" || result[0] === "密云县")
-                            || (result[0] === "宁河县" || result[0] === "蓟县")
-                            || (result[0] === "上海县" || result[0] === "南汇县" || result[0] === "崇明县")
-                            || (result[0] === "长寿县" || result[0] === "綦江县" || result[0] === "潼南县" || result[0] === "梁平县")
+                            (
+                                result[0] === "昌平县"
+                                || result[0] === "大兴县"
+                                || result[0] === "密云县"
+                            ) || (
+                                result[0] === "宁河县"
+                                || result[0] === "蓟县"
+                            ) || (
+                                result[0] === "上海县"
+                                || result[0] === "南汇县"
+                                || result[0] === "崇明县"
+                            ) || (
+                                result[0] === "长寿县"
+                                || result[0] === "綦江县"
+                                || result[0] === "潼南县"
+                                || result[0] === "梁平县"
+                                || result[0] === "城口县"
+                            )
                             , `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '县',
