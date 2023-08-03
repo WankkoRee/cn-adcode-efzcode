@@ -56,7 +56,7 @@ function short_prefecture(value: string) {
 }
 
 function short_county(value: string, province: string, prefecture: string | null) {
-    const rule = /^(.{0,6}?)(?:(?:(?:各|壮|满|回|苗|彝|藏|侗|瑶|白|黎|傣|畲|水|佤|羌|土|怒)族|(?:维吾尔|土家|蒙古|布依|朝鲜|哈尼|哈萨克|傈僳|仡佬|东乡|高山|拉祜|纳西|仫佬|锡伯|柯尔克孜|达斡尔|景颇|毛南|撒拉|布朗|塔吉克|阿昌|普米|鄂温克|基诺|德昂|保安|俄罗斯|裕固|乌孜别克|门巴|鄂伦春|独龙|塔塔尔|赫哲|珞巴)族?)*自治)?(县|镇|市|(?:工农|矿|林|市|回族)?区|(?:前|中|后)*(?:联合)?旗)$/;
+    const rule = /^(.{0,6}?)(?:(?:(?:各|壮|满|回|苗|彝|藏|侗|瑶|白|黎|傣|畲|水|佤|羌|土|怒)族|(?:维吾尔|土家|蒙古|布依|朝鲜|哈尼|哈萨克|傈僳|仡佬|东乡|高山|拉祜|纳西|仫佬|锡伯|柯尔克孜|达斡尔|景颇|毛南|撒拉|布朗|塔吉克|阿昌|普米|鄂温克|基诺|德昂|保安|俄罗斯|裕固|乌孜别克|门巴|鄂伦春|独龙|塔塔尔|赫哲|珞巴)族?)*自治)?(县|镇|市|(?:工农|矿|林|市|回族|达斡尔族)?区|(?:前|中|后)*(?:联合)?旗)$/;
     const short_name = rule.exec(value);
     if (short_name) {
         if (value.endsWith('旗')) {
@@ -332,6 +332,17 @@ export const handle = (raw : string) => {
                             name: '潮州市',
                             short: short,
                             suffix: suffix,
+                            children: {},
+                        }
+                    } else {
+                        throw `${result} 无地级数据`
+                    }
+                } else if (result[1] === '46') {
+                    if (result[2] == '00') {
+                        data[result[1]].children[result[2]] = {
+                            name: '省辖县',
+                            short: null,
+                            suffix: null,
                             children: {},
                         }
                     } else {

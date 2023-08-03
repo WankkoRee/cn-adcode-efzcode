@@ -3184,6 +3184,7 @@ export const main = () => {
 654326	吉木乃县
 659001	石河子市
 `;
+
     const result= handle(raw);
     fs.writeFileSync('./src/raw/GB_T_2260-1985.json', JSON.stringify(result, null, 2), 'utf-8');
     return result;
