@@ -219,6 +219,14 @@ export const handle = (raw : string) => {
                             suffix: suffix,
                             children: {},
                         }
+                    } else if (result[2] == '90') {
+                        assert(result[0] === "泰州市", `${result}`)
+                        data[result[1]].children[result[2]] = {
+                            name: '省辖县',
+                            short: null,
+                            suffix: null,
+                            children: {},
+                        }
                     } else {
                         throw `${result} 无地级数据`
                     }
@@ -228,6 +236,19 @@ export const handle = (raw : string) => {
                         const [short, suffix] = short_prefecture('黄山市');
                         data[result[1]].children[result[2]] = {
                             name: '黄山市',
+                            short: short,
+                            suffix: suffix,
+                            children: {},
+                        }
+                    } else {
+                        throw `${result} 无地级数据`
+                    }
+                } else if (result[1] === '35') {
+                    if (result[2] == '05') {
+                        assert(result[0] === "永安市", `${result}`)
+                        const [short, suffix] = short_prefecture('永安市');
+                        data[result[1]].children[result[2]] = {
+                            name: '永安市',
                             short: short,
                             suffix: suffix,
                             children: {},
@@ -301,6 +322,14 @@ export const handle = (raw : string) => {
                             suffix: suffix,
                             children: {},
                         }
+                    } else if (result[2] == '90') {
+                        assert(result[0] === "随州市", `${result}`)
+                        data[result[1]].children[result[2]] = {
+                            name: '省辖县',
+                            short: null,
+                            suffix: null,
+                            children: {},
+                        }
                     } else {
                         throw `${result} 无地级数据`
                     }
@@ -312,6 +341,14 @@ export const handle = (raw : string) => {
                             name: '潮州市',
                             short: short,
                             suffix: suffix,
+                            children: {},
+                        }
+                    } else if (result[2] == '90') {
+                        assert(result[0] === "潮州市", `${result}`)
+                        data[result[1]].children[result[2]] = {
+                            name: '省辖县',
+                            short: null,
+                            suffix: null,
                             children: {},
                         }
                     } else {
