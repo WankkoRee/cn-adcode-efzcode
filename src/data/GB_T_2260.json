@@ -431,7 +431,7 @@
           "22": {
             "name": "沙河县",
             "short": "沙河",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "23": {
             "name": "临城县",
@@ -514,9 +514,9 @@
             "deprecated": null
           },
           "02": {
-            "name": "桥东区",
-            "short": "桥东",
-            "deprecated": "GB/T 2260-1983"
+            "name": "沙河市",
+            "short": "沙河",
+            "deprecated": null
           },
           "03": {
             "name": "桥西区",
@@ -1559,7 +1559,7 @@
           "05": {
             "name": "郊区",
             "short": "郊区",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           }
         }
       },
@@ -3576,6 +3576,11 @@
             "short": "旅顺口",
             "deprecated": null
           },
+          "13": {
+            "name": "金州区",
+            "short": "金州",
+            "deprecated": null
+          },
           "19": {
             "name": "瓦房店市",
             "short": "瓦房店",
@@ -3584,7 +3589,7 @@
           "21": {
             "name": "金县",
             "short": "金县",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "新金县",
@@ -4071,12 +4076,12 @@
           "21": {
             "name": "扶余县",
             "short": "扶余",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "洮安县",
             "short": "洮安",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "23": {
             "name": "长岭县",
@@ -4111,6 +4116,16 @@
           "01": {
             "name": "白城市",
             "short": "白城市",
+            "deprecated": null
+          },
+          "02": {
+            "name": "洮南市",
+            "short": "洮南",
+            "deprecated": null
+          },
+          "03": {
+            "name": "扶余市",
+            "short": "扶余",
             "deprecated": null
           }
         }
@@ -5099,8 +5114,13 @@
             "deprecated": null
           },
           "02": {
-            "name": "镜泊湖市",
-            "short": "镜泊湖",
+            "name": "阿城市",
+            "short": "阿城",
+            "deprecated": null
+          },
+          "03": {
+            "name": "同江市",
+            "short": "同江",
             "deprecated": null
           }
         }
@@ -5118,7 +5138,7 @@
           "22": {
             "name": "阿城县",
             "short": "阿城",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "02": {
             "name": "道里区",
@@ -5301,6 +5321,16 @@
         "short": "鹤岗",
         "deprecated": null,
         "children": {
+          "21": {
+            "name": "萝北县",
+            "short": "萝北",
+            "deprecated": null
+          },
+          "22": {
+            "name": "绥滨县",
+            "short": "绥滨",
+            "deprecated": null
+          },
           "02": {
             "name": "向阳区",
             "short": "向阳",
@@ -5338,6 +5368,11 @@
         "short": "双鸭山",
         "deprecated": null,
         "children": {
+          "21": {
+            "name": "集贤县",
+            "short": "集贤",
+            "deprecated": null
+          },
           "02": {
             "name": "尖山区",
             "short": "尖山",
@@ -5351,7 +5386,7 @@
           "04": {
             "name": "岭西区",
             "short": "岭西",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "05": {
             "name": "四方台区",
@@ -5527,7 +5562,7 @@
           "25": {
             "name": "集贤县",
             "short": "集贤",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "26": {
             "name": "桦川县",
@@ -5547,17 +5582,17 @@
           "29": {
             "name": "绥滨县",
             "short": "绥滨",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "30": {
             "name": "萝北县",
             "short": "萝北",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "31": {
             "name": "同江县",
             "short": "同江",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "32": {
             "name": "饶河县",
@@ -5819,7 +5854,7 @@
           "21": {
             "name": "兴化县",
             "short": "兴化",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "高邮县",
@@ -5886,7 +5921,7 @@
           "22": {
             "name": "丹阳县",
             "short": "丹阳",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "23": {
             "name": "句容县",
@@ -6308,6 +6343,11 @@
         "short": null,
         "deprecated": null,
         "children": {
+          "10": {
+            "name": "淮安市",
+            "short": "淮安",
+            "deprecated": null
+          },
           "01": {
             "name": "泰州市",
             "short": "泰州",
@@ -6326,6 +6366,31 @@
           "04": {
             "name": "张家港市",
             "short": "张家港",
+            "deprecated": null
+          },
+          "05": {
+            "name": "江阴市",
+            "short": "江阴",
+            "deprecated": null
+          },
+          "06": {
+            "name": "宿迁市",
+            "short": "宿迁",
+            "deprecated": null
+          },
+          "07": {
+            "name": "丹阳市",
+            "short": "丹阳",
+            "deprecated": null
+          },
+          "08": {
+            "name": "东台市",
+            "short": "东台",
+            "deprecated": null
+          },
+          "09": {
+            "name": "兴化市",
+            "short": "兴化",
             "deprecated": null
           }
         }
@@ -6425,7 +6490,7 @@
           "21": {
             "name": "江阴县",
             "short": "江阴",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "无锡县",
@@ -6450,6 +6515,11 @@
           "04": {
             "name": "北塘区",
             "short": "北塘",
+            "deprecated": null
+          },
+          "05": {
+            "name": "马山区",
+            "short": "马山",
             "deprecated": null
           }
         }
@@ -6747,7 +6817,7 @@
           "24": {
             "name": "宿迁县",
             "short": "宿迁",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "25": {
             "name": "泗阳县",
@@ -6767,7 +6837,7 @@
           "28": {
             "name": "淮安县",
             "short": "淮安",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "29": {
             "name": "洪泽县",
@@ -6834,7 +6904,7 @@
           "27": {
             "name": "东台县",
             "short": "东台",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "02": {
             "name": "城区",
@@ -7195,27 +7265,27 @@
       "27": {
         "name": "舟山地区",
         "short": "舟山",
-        "deprecated": null,
+        "deprecated": "GB/T 2260-1987",
         "children": {
           "21": {
             "name": "定海县",
             "short": "定海",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "普陀县",
             "short": "普陀",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "23": {
             "name": "岱山县",
             "short": "岱山",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "24": {
             "name": "嵊泗县",
             "short": "嵊泗",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "25": {
             "name": "天台县",
@@ -7285,6 +7355,21 @@
             "name": "兰溪市",
             "short": "兰溪",
             "deprecated": null
+          },
+          "04": {
+            "name": "瑞安市",
+            "short": "瑞安",
+            "deprecated": null
+          },
+          "05": {
+            "name": "萧山市",
+            "short": "萧山",
+            "deprecated": null
+          },
+          "06": {
+            "name": "江山市",
+            "short": "江山",
+            "deprecated": null
           }
         }
       },
@@ -7296,7 +7381,7 @@
           "21": {
             "name": "萧山县",
             "short": "萧山",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "桐庐县",
@@ -7431,8 +7516,8 @@
             "deprecated": null
           },
           "06": {
-            "name": "滨海区",
-            "short": "滨海",
+            "name": "北仑区",
+            "short": "北仑",
             "deprecated": null
           }
         }
@@ -7465,7 +7550,7 @@
           "25": {
             "name": "瑞安县",
             "short": "瑞安",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "26": {
             "name": "平阳县",
@@ -7685,7 +7770,7 @@
           "23": {
             "name": "江山县",
             "short": "江山",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "24": {
             "name": "开化县",
@@ -7703,6 +7788,33 @@
             "deprecated": null
           }
         }
+      },
+      "09": {
+        "name": "舟山市",
+        "short": "舟山",
+        "deprecated": null,
+        "children": {
+          "21": {
+            "name": "岱山县",
+            "short": "岱山",
+            "deprecated": null
+          },
+          "22": {
+            "name": "嵊泗县",
+            "short": "嵊泗",
+            "deprecated": null
+          },
+          "02": {
+            "name": "定海区",
+            "short": "定海",
+            "deprecated": null
+          },
+          "03": {
+            "name": "普陀区",
+            "short": "普陀",
+            "deprecated": null
+          }
+        }
       }
     }
   },
@@ -7711,6 +7823,48 @@
     "short": "安徽",
     "deprecated": null,
     "children": {
+      "10": {
+        "name": "黄山市",
+        "short": "黄山",
+        "deprecated": null,
+        "children": {
+          "21": {
+            "name": "歙县",
+            "short": "歙县",
+            "deprecated": null
+          },
+          "22": {
+            "name": "休宁县",
+            "short": "休宁",
+            "deprecated": null
+          },
+          "23": {
+            "name": "黟县",
+            "short": "黟县",
+            "deprecated": null
+          },
+          "24": {
+            "name": "祁门县",
+            "short": "祁门",
+            "deprecated": null
+          },
+          "02": {
+            "name": "屯溪区",
+            "short": "屯溪",
+            "deprecated": null
+          },
+          "03": {
+            "name": "黄山区",
+            "short": "黄山区",
+            "deprecated": null
+          },
+          "04": {
+            "name": "徽州区",
+            "short": "徽州",
+            "deprecated": null
+          }
+        }
+      },
       "21": {
         "name": "阜阳地区",
         "short": "阜阳",
@@ -7932,7 +8086,7 @@
           "21": {
             "name": "宣城县",
             "short": "宣城县",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "郎溪县",
@@ -7972,6 +8126,21 @@
           "29": {
             "name": "泾县",
             "short": "泾县",
+            "deprecated": null
+          },
+          "30": {
+            "name": "旌德县",
+            "short": "旌德",
+            "deprecated": null
+          },
+          "31": {
+            "name": "绩溪县",
+            "short": "绩溪",
+            "deprecated": null
+          },
+          "01": {
+            "name": "宣城市",
+            "short": "宣城市",
             "deprecated": null
           }
         }
@@ -8021,37 +8190,37 @@
       "27": {
         "name": "徽州地区",
         "short": "徽州",
-        "deprecated": null,
+        "deprecated": "GB/T 2260-1987",
         "children": {
           "21": {
             "name": "绩溪县",
             "short": "绩溪",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "旌德县",
             "short": "旌德",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "23": {
             "name": "歙县",
             "short": "歙县",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "24": {
             "name": "休宁县",
             "short": "休宁",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "25": {
             "name": "黟县",
             "short": "黟县",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "26": {
             "name": "祁门县",
             "short": "祁门",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "27": {
             "name": "太平县",
@@ -8061,12 +8230,12 @@
           "28": {
             "name": "石台县",
             "short": "石台",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "01": {
             "name": "屯溪市",
             "short": "屯溪",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           }
         }
       },
@@ -8123,6 +8292,11 @@
           "30": {
             "name": "贵池县",
             "short": "贵池",
+            "deprecated": null
+          },
+          "31": {
+            "name": "石台县",
+            "short": "石台",
             "deprecated": null
           }
         }
@@ -8402,7 +8576,7 @@
           "04": {
             "name": "铜山区",
             "short": "铜山",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           }
         }
       },
@@ -8431,12 +8605,12 @@
       "09": {
         "name": "黄山市",
         "short": "黄山",
-        "deprecated": null,
+        "deprecated": "GB/T 2260-1987",
         "children": {
           "01": {
             "name": "黄山市",
             "short": "黄山市",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           }
         }
       }
@@ -8932,6 +9106,11 @@
             "name": "永安市",
             "short": "永安",
             "deprecated": null
+          },
+          "02": {
+            "name": "石狮市",
+            "short": "石狮",
+            "deprecated": null
           }
         }
       },
@@ -9013,8 +9192,8 @@
         "deprecated": null,
         "children": {
           "11": {
-            "name": "郊区",
-            "short": "郊区",
+            "name": "集美区",
+            "short": "集美",
             "deprecated": null
           },
           "21": {
@@ -9040,6 +9219,11 @@
           "05": {
             "name": "杏林区",
             "short": "杏林",
+            "deprecated": null
+          },
+          "06": {
+            "name": "湖里区",
+            "short": "湖里",
             "deprecated": null
           }
         }
@@ -9625,7 +9809,7 @@
           "21": {
             "name": "临川县",
             "short": "临川",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "南城县",
@@ -9688,8 +9872,8 @@
             "deprecated": "GB/T 2260-1982"
           },
           "01": {
-            "name": "抚州市",
-            "short": "抚州市",
+            "name": "临川市",
+            "short": "临川",
             "deprecated": null
           }
         }
@@ -10025,6 +10209,33 @@
     "short": "山东",
     "deprecated": null,
     "children": {
+      "10": {
+        "name": "威海市",
+        "short": "威海",
+        "deprecated": null,
+        "children": {
+          "21": {
+            "name": "乳山县",
+            "short": "乳山",
+            "deprecated": null
+          },
+          "22": {
+            "name": "文登县",
+            "short": "文登",
+            "deprecated": null
+          },
+          "23": {
+            "name": "荣成县",
+            "short": "荣成",
+            "deprecated": null
+          },
+          "02": {
+            "name": "环翠区",
+            "short": "环翠",
+            "deprecated": null
+          }
+        }
+      },
       "21": {
         "name": "烟台地区",
         "short": "烟台",
@@ -10192,7 +10403,7 @@
           "22": {
             "name": "滨县",
             "short": "滨县",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "23": {
             "name": "阳信县",
@@ -10684,8 +10895,18 @@
             "deprecated": null
           },
           "06": {
-            "name": "威海市",
-            "short": "威海",
+            "name": "胶州市",
+            "short": "胶州",
+            "deprecated": null
+          },
+          "07": {
+            "name": "诸城市",
+            "short": "诸城",
+            "deprecated": null
+          },
+          "08": {
+            "name": "莱阳市",
+            "short": "莱阳",
             "deprecated": null
           }
         }
@@ -10698,12 +10919,17 @@
           "11": {
             "name": "郊区",
             "short": "郊区",
+            "deprecated": "GB/T 2260-1987"
+          },
+          "12": {
+            "name": "历城区",
+            "short": "历城",
             "deprecated": null
           },
           "21": {
             "name": "历城县",
             "short": "历城",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "章丘县",
@@ -10770,7 +10996,7 @@
           "24": {
             "name": "胶县",
             "short": "胶县",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "25": {
             "name": "莱西县",
@@ -10916,7 +11142,7 @@
           "04": {
             "name": "牛庄区",
             "short": "牛庄",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           }
         }
       },
@@ -10958,7 +11184,7 @@
           "27": {
             "name": "莱阳县",
             "short": "莱阳",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "28": {
             "name": "栖霞县",
@@ -10973,7 +11199,7 @@
           "30": {
             "name": "乳山县",
             "short": "乳山",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "31": {
             "name": "牟平县",
@@ -10983,12 +11209,12 @@
           "32": {
             "name": "文登县",
             "short": "文登",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "33": {
             "name": "荣成县",
             "short": "荣成",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "34": {
             "name": "长岛县",
@@ -11045,7 +11271,7 @@
           "28": {
             "name": "诸城县",
             "short": "诸城",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "29": {
             "name": "五莲县",
@@ -12011,12 +12237,12 @@
           "11": {
             "name": "金海区",
             "short": "金海",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "12": {
             "name": "郊区",
             "short": "郊区",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "21": {
             "name": "荥阳县",
@@ -12076,6 +12302,11 @@
           "07": {
             "name": "新密区",
             "short": "新密",
+            "deprecated": "GB/T 2260-1987"
+          },
+          "08": {
+            "name": "邙山区",
+            "short": "邙山",
             "deprecated": null
           }
         }
@@ -12512,7 +12743,7 @@
           "11": {
             "name": "郊区",
             "short": "郊区",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "21": {
             "name": "滑县",
@@ -12547,6 +12778,11 @@
           "27": {
             "name": "台前县",
             "short": "台前",
+            "deprecated": null
+          },
+          "28": {
+            "name": "濮阳县",
+            "short": "濮阳县",
             "deprecated": null
           },
           "02": {
@@ -12623,7 +12859,7 @@
           "29": {
             "name": "广济县",
             "short": "广济",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "30": {
             "name": "黄梅县",
@@ -12638,6 +12874,11 @@
           "01": {
             "name": "麻城市",
             "short": "麻城",
+            "deprecated": null
+          },
+          "02": {
+            "name": "武穴市",
+            "short": "武穴",
             "deprecated": null
           }
         }
@@ -12670,7 +12911,7 @@
           "25": {
             "name": "安陆县",
             "short": "安陆",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "26": {
             "name": "云梦县",
@@ -12695,6 +12936,11 @@
           "02": {
             "name": "应城市",
             "short": "应城",
+            "deprecated": null
+          },
+          "03": {
+            "name": "安陆市",
+            "short": "安陆",
             "deprecated": null
           }
         }
@@ -12784,7 +13030,7 @@
           "26": {
             "name": "洪湖县",
             "short": "洪湖",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "27": {
             "name": "沔阳县",
@@ -12794,7 +13040,7 @@
           "28": {
             "name": "天门县",
             "short": "天门",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "29": {
             "name": "潜江县",
@@ -12824,6 +13070,16 @@
           "02": {
             "name": "石首市",
             "short": "石首",
+            "deprecated": null
+          },
+          "03": {
+            "name": "洪湖市",
+            "short": "洪湖",
+            "deprecated": null
+          },
+          "04": {
+            "name": "天门市",
+            "short": "天门",
             "deprecated": null
           }
         }
@@ -12945,7 +13201,7 @@
           "22": {
             "name": "宜都县",
             "short": "宜都",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "23": {
             "name": "枝江县",
@@ -12980,6 +13236,11 @@
           "29": {
             "name": "五峰土家族自治县",
             "short": "五峰",
+            "deprecated": null
+          },
+          "01": {
+            "name": "枝城市",
+            "short": "枝城",
             "deprecated": null
           }
         }
@@ -13292,13 +13553,18 @@
         "deprecated": null,
         "children": {
           "03": {
-            "name": "黄州区",
-            "short": "黄州",
+            "name": "华容区",
+            "short": "华容",
             "deprecated": null
           },
           "04": {
             "name": "鄂城区",
             "short": "鄂城",
+            "deprecated": null
+          },
+          "02": {
+            "name": "梁子湖区",
+            "short": "梁子湖",
             "deprecated": null
           }
         }
@@ -13530,7 +13796,7 @@
           "21": {
             "name": "涟源县",
             "short": "涟源",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "双峰县",
@@ -13560,6 +13826,11 @@
           "02": {
             "name": "冷水江市",
             "short": "冷水江",
+            "deprecated": null
+          },
+          "03": {
+            "name": "涟源市",
+            "short": "涟源",
             "deprecated": null
           }
         }
@@ -13838,8 +14109,8 @@
             "deprecated": null
           },
           "30": {
-            "name": "靖县",
-            "short": "靖县",
+            "name": "靖州苗族侗族自治县",
+            "short": "靖州",
             "deprecated": null
           },
           "31": {
@@ -13944,6 +14215,11 @@
           "03": {
             "name": "耒阳市",
             "short": "耒阳",
+            "deprecated": null
+          },
+          "04": {
+            "name": "汨罗市",
+            "short": "汨罗",
             "deprecated": null
           }
         }
@@ -14234,7 +14510,7 @@
           "04": {
             "name": "桥头区",
             "short": "桥头",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           }
         }
       },
@@ -14276,7 +14552,7 @@
           "27": {
             "name": "汨罗县",
             "short": "汨罗",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "02": {
             "name": "南区",
@@ -14298,9 +14574,9 @@
     "deprecated": null,
     "children": {
       "10": {
-        "name": "潮州市",
-        "short": "潮州",
-        "deprecated": "GB/T 2260-1984",
+        "name": "海口市",
+        "short": "海口",
+        "deprecated": null,
         "children": {
           "02": {
             "name": "新华区",
@@ -14329,9 +14605,15 @@
           }
         }
       },
+      "11": {
+        "name": "三亚市",
+        "short": "三亚",
+        "deprecated": null,
+        "children": {}
+      },
       "21": {
         "name": "海南行政区",
-        "short": "海南行政区",
+        "short": "海南",
         "deprecated": null,
         "children": {
           "21": {
@@ -14379,17 +14661,57 @@
             "short": "儋县",
             "deprecated": null
           },
+          "30": {
+            "name": "东方黎族自治县",
+            "short": "东方",
+            "deprecated": null
+          },
+          "31": {
+            "name": "乐东黎族自治县",
+            "short": "乐东",
+            "deprecated": null
+          },
+          "32": {
+            "name": "琼中黎族苗族自治县",
+            "short": "琼中",
+            "deprecated": null
+          },
+          "33": {
+            "name": "保亭黎族苗族自治县",
+            "short": "保亭",
+            "deprecated": null
+          },
+          "34": {
+            "name": "陵水黎族自治县",
+            "short": "陵水",
+            "deprecated": null
+          },
+          "35": {
+            "name": "白沙黎族自治县",
+            "short": "白沙",
+            "deprecated": null
+          },
+          "36": {
+            "name": "昌江黎族自治县",
+            "short": "昌江",
+            "deprecated": null
+          },
           "01": {
             "name": "海口市",
             "short": "海口",
             "deprecated": "GB/T 2260-1986"
+          },
+          "02": {
+            "name": "通什市",
+            "short": "通什",
+            "deprecated": null
           }
         }
       },
       "22": {
         "name": "海南黎族苗族自治州",
         "short": "海南州",
-        "deprecated": null,
+        "deprecated": "GB/T 2260-1987",
         "children": {
           "21": {
             "name": "崖县",
@@ -14399,47 +14721,47 @@
           "22": {
             "name": "东方县",
             "short": "东方",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "23": {
             "name": "乐东县",
             "short": "乐东",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "24": {
             "name": "琼中县",
             "short": "琼中",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "25": {
             "name": "保亭县",
             "short": "保亭",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "26": {
             "name": "陵水县",
             "short": "陵水",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "27": {
             "name": "白沙县",
             "short": "白沙",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "28": {
             "name": "昌江县",
             "short": "昌江",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "01": {
             "name": "三亚市",
             "short": "三亚",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "02": {
             "name": "通什市",
             "short": "通什",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           }
         }
       },
@@ -14915,7 +15237,7 @@
           "03": {
             "name": "海口市",
             "short": "海口",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           }
         }
       },
@@ -14925,8 +15247,8 @@
         "deprecated": null,
         "children": {
           "11": {
-            "name": "郊区",
-            "short": "郊区",
+            "name": "白云区",
+            "short": "白云",
             "deprecated": null
           },
           "12": {
@@ -15225,8 +15547,8 @@
             "deprecated": null
           },
           "02": {
-            "name": "汾江区",
-            "short": "汾江",
+            "name": "城区",
+            "short": "城区",
             "deprecated": null
           },
           "03": {
@@ -15816,6 +16138,11 @@
             "short": "都安",
             "deprecated": null
           },
+          "31": {
+            "name": "大化瑶族自治县",
+            "short": "大化",
+            "deprecated": null
+          },
           "01": {
             "name": "河池市",
             "short": "河池市",
@@ -15851,7 +16178,7 @@
           "25": {
             "name": "合浦县",
             "short": "合浦",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "26": {
             "name": "浦北县",
@@ -16038,6 +16365,11 @@
         "short": "北海",
         "deprecated": null,
         "children": {
+          "21": {
+            "name": "合浦县",
+            "short": "合浦",
+            "deprecated": null
+          },
           "02": {
             "name": "海城区",
             "short": "海城",
@@ -17074,7 +17406,7 @@
         }
       },
       "32": {
-        "name": "阿坝藏族自治州",
+        "name": "阿坝藏族羌族自治州",
         "short": "阿坝",
         "deprecated": null,
         "children": {
@@ -17089,8 +17421,8 @@
             "deprecated": null
           },
           "23": {
-            "name": "茂汶羌族自治县",
-            "short": "茂汶",
+            "name": "茂县",
+            "short": "茂县",
             "deprecated": null
           },
           "24": {
@@ -17591,8 +17923,8 @@
         }
       },
       "04": {
-        "name": "渡口市",
-        "short": "渡口",
+        "name": "攀枝花市",
+        "short": "攀枝花",
         "deprecated": null,
         "children": {
           "11": {
@@ -17884,7 +18216,7 @@
           "21": {
             "name": "铜仁县",
             "short": "铜仁县",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "江口县",
@@ -17930,6 +18262,11 @@
             "name": "万山特区",
             "short": "万山特",
             "deprecated": null
+          },
+          "01": {
+            "name": "铜仁市",
+            "short": "铜仁市",
+            "deprecated": null
           }
         }
       },
@@ -17941,7 +18278,7 @@
           "21": {
             "name": "兴义县",
             "short": "兴义",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "22": {
             "name": "兴仁县",
@@ -17976,6 +18313,11 @@
           "28": {
             "name": "安龙县",
             "short": "安龙",
+            "deprecated": null
+          },
+          "01": {
+            "name": "兴义市",
+            "short": "兴义",
             "deprecated": null
           }
         }
@@ -18290,9 +18632,14 @@
         "short": "六盘水",
         "deprecated": null,
         "children": {
+          "21": {
+            "name": "水城县",
+            "short": "水城",
+            "deprecated": null
+          },
           "01": {
-            "name": "水城特区",
-            "short": "水城特",
+            "name": "钟山区",
+            "short": "钟山",
             "deprecated": null
           },
           "02": {
@@ -18989,7 +19336,7 @@
             "deprecated": null
           },
           "25": {
-            "name": "兰坪县",
+            "name": "兰坪白族普米族自治县",
             "short": "兰坪",
             "deprecated": null
           }
@@ -20414,7 +20761,7 @@
           "22": {
             "name": "敦煌县",
             "short": "敦煌",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "23": {
             "name": "金塔县",
@@ -20444,6 +20791,11 @@
           "02": {
             "name": "酒泉市",
             "short": "酒泉市",
+            "deprecated": null
+          },
+          "03": {
+            "name": "敦煌市",
+            "short": "敦煌",
             "deprecated": null
           }
         }
@@ -21459,14 +21811,14 @@
         }
       },
       "02": {
-        "name": "石咀山市",
-        "short": "石咀山",
+        "name": "石嘴山市",
+        "short": "石嘴山",
         "deprecated": null,
         "children": {
           "11": {
             "name": "郊区",
             "short": "郊区",
-            "deprecated": null
+            "deprecated": "GB/T 2260-1987"
           },
           "21": {
             "name": "平罗县",
@@ -21476,6 +21828,11 @@
           "22": {
             "name": "陶乐县",
             "short": "陶乐",
+            "deprecated": null
+          },
+          "23": {
+            "name": "惠农县",
+            "short": "惠农",
             "deprecated": null
           },
           "02": {
@@ -21489,8 +21846,8 @@
             "deprecated": null
           },
           "05": {
-            "name": "石咀山区",
-            "short": "石咀山区",
+            "name": "石嘴山区",
+            "short": "石嘴山区",
             "deprecated": null
           }
         }
@@ -22244,6 +22601,11 @@
           "07": {
             "name": "南山区",
             "short": "南山",
+            "deprecated": null
+          },
+          "08": {
+            "name": "东山区",
+            "short": "东山",
             "deprecated": null
           }
         }
