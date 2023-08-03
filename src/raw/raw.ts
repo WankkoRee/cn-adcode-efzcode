@@ -27,11 +27,14 @@ type Data = {
 
 function deprecated(data: Data, flag: string) {
     Object.entries(data).forEach(([province, {name, short, children}]) => {
-        data[province].deprecated = flag;
+        if (data[province].deprecated)
+            data[province].deprecated = flag;
         Object.entries(children).forEach(([prefecture, {name, short, children}]) => {
-            data[province].children[prefecture].deprecated = flag;
+            if (data[province].children[prefecture].deprecated)
+                data[province].children[prefecture].deprecated = flag;
             Object.entries(children).forEach(([county, {name, short}]) => {
-                data[province].children[prefecture].children[county].deprecated = flag;
+                if (data[province].children[prefecture].children[county].deprecated)
+                    data[province].children[prefecture].children[county].deprecated = flag;
             })
         })
     })
@@ -86,7 +89,7 @@ function main() {
     const data: Data = {};
 
     update(data, GB_T_2260_1980(), "GB/T 2260-1980");
-    // update(data, GB_T_2260_1981(), "GB/T 2260-1981");
+    update(data, GB_T_2260_1981(), "GB/T 2260-1981");
 
     fs.writeFileSync('./src/data/GB_T_2260.json', JSON.stringify(data, null, 2), 'utf-8');
 }
