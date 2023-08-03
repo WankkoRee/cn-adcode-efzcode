@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import {handle} from "./GB_T_2260";
+
 export const main = () => {
     const raw = `
 110000	北京市
