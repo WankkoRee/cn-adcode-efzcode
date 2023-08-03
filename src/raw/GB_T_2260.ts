@@ -379,6 +379,18 @@ export const handle = (raw : string) => {
                     } else {
                         throw `${result} 无地级数据`
                     }
+                } else if (result[1] === '65') {
+                    if (result[2] == '90') {
+                        assert(result[0] === "石河子市", `${result}`)
+                        data[result[1]].children[result[2]] = {
+                            name: '省辖县',
+                            short: null,
+                            suffix: null,
+                            children: {},
+                        }
+                    } else {
+                        throw `${result} 无地级数据`
+                    }
                 } else {
                     throw `${result} 无地级数据`
                 }
