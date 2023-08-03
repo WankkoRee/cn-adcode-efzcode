@@ -2053,7 +2053,7 @@
           "21": {
             "name": "邢台县",
             "short": "邢台县",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "22": {
             "name": "临城县",
@@ -2078,12 +2078,12 @@
           "26": {
             "name": "任县",
             "short": "任县",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "27": {
             "name": "南和县",
             "short": "南和",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "28": {
             "name": "宁晋县",
@@ -2136,19 +2136,29 @@
             "deprecated": null
           },
           "02": {
-            "name": "桥东区",
-            "short": "桥东",
+            "name": "襄都区",
+            "short": "襄都",
             "deprecated": null
           },
           "03": {
-            "name": "桥西区",
-            "short": "桥西",
+            "name": "信都区",
+            "short": "信都",
             "deprecated": null
           },
           "04": {
             "name": "郊区",
             "short": "郊区",
             "deprecated": "GB/T 2260-1988"
+          },
+          "05": {
+            "name": "任泽区",
+            "short": "任泽",
+            "deprecated": null
+          },
+          "06": {
+            "name": "南和区",
+            "short": "南和",
+            "deprecated": null
           }
         }
       },
@@ -6435,6 +6445,11 @@
             "short": "德惠",
             "deprecated": null
           },
+          "84": {
+            "name": "公主岭市",
+            "short": "公主岭",
+            "deprecated": null
+          },
           "02": {
             "name": "南关区",
             "short": "南关",
@@ -6567,7 +6582,7 @@
           "81": {
             "name": "公主岭市",
             "short": "公主岭",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "82": {
             "name": "双辽市",
@@ -9773,11 +9788,21 @@
           "11": {
             "name": "港闸区",
             "short": "港闸",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "12": {
             "name": "通州区",
             "short": "通州",
+            "deprecated": null
+          },
+          "13": {
+            "name": "崇川区",
+            "short": "崇川",
+            "deprecated": null
+          },
+          "14": {
+            "name": "海门区",
+            "short": "海门",
             "deprecated": null
           },
           "21": {
@@ -9828,7 +9853,7 @@
           "84": {
             "name": "海门市",
             "short": "海门",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "85": {
             "name": "海安市",
@@ -9838,7 +9863,7 @@
           "02": {
             "name": "崇川区",
             "short": "崇川",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "03": {
             "name": "港闸区",
@@ -12302,20 +12327,30 @@
         "short": "芜湖",
         "deprecated": null,
         "children": {
+          "10": {
+            "name": "湾沚区",
+            "short": "湾沚",
+            "deprecated": null
+          },
           "11": {
             "name": "郊区",
             "short": "郊区",
             "deprecated": "GB/T 2260-1990"
           },
+          "12": {
+            "name": "繁昌区",
+            "short": "繁昌",
+            "deprecated": null
+          },
           "21": {
             "name": "芜湖县",
             "short": "芜湖县",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "22": {
             "name": "繁昌县",
             "short": "繁昌",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "23": {
             "name": "南陵县",
@@ -12345,7 +12380,7 @@
           "03": {
             "name": "弋江区",
             "short": "弋江",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "04": {
             "name": "新芜区",
@@ -12370,6 +12405,11 @@
           "08": {
             "name": "三山区",
             "short": "三山",
+            "deprecated": "GB/T 2260-2020"
+          },
+          "09": {
+            "name": "弋江区",
+            "short": "弋江",
             "deprecated": null
           }
         }
@@ -14856,7 +14896,7 @@
           "27": {
             "name": "龙南县",
             "short": "龙南",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "28": {
             "name": "定南县",
@@ -14907,6 +14947,11 @@
             "name": "南康市",
             "short": "南康",
             "deprecated": "GB/T 2260-2013"
+          },
+          "83": {
+            "name": "龙南市",
+            "short": "龙南",
+            "deprecated": null
           },
           "02": {
             "name": "章贡区",
@@ -16597,6 +16642,11 @@
             "short": "莱山",
             "deprecated": null
           },
+          "14": {
+            "name": "蓬莱区",
+            "short": "蓬莱",
+            "deprecated": null
+          },
           "20": {
             "name": "威海市",
             "short": "威海",
@@ -16660,7 +16710,7 @@
           "34": {
             "name": "长岛县",
             "short": "长岛",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "81": {
             "name": "龙口市",
@@ -16680,7 +16730,7 @@
           "84": {
             "name": "蓬莱市",
             "short": "蓬莱",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "85": {
             "name": "招远市",
@@ -18893,7 +18943,7 @@
           "23": {
             "name": "监利县",
             "short": "监利",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "24": {
             "name": "江陵县",
@@ -18923,6 +18973,11 @@
           "87": {
             "name": "松滋市",
             "short": "松滋",
+            "deprecated": null
+          },
+          "88": {
+            "name": "监利市",
+            "short": "监利",
             "deprecated": null
           },
           "01": {
@@ -27574,6 +27629,11 @@
             "short": "郫都",
             "deprecated": null
           },
+          "18": {
+            "name": "新津区",
+            "short": "新津",
+            "deprecated": null
+          },
           "21": {
             "name": "金堂县",
             "short": "金堂",
@@ -27632,7 +27692,7 @@
           "32": {
             "name": "新津县",
             "short": "新津",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "81": {
             "name": "都江堰市",
@@ -28733,7 +28793,7 @@
           "21": {
             "name": "水城县",
             "short": "水城",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "22": {
             "name": "盘县",
@@ -28758,6 +28818,11 @@
           "03": {
             "name": "六枝特区",
             "short": "六枝特",
+            "deprecated": null
+          },
+          "04": {
+            "name": "水城区",
+            "short": "水城",
             "deprecated": null
           }
         }
@@ -33379,7 +33444,7 @@
           "21": {
             "name": "同仁县",
             "short": "同仁",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2020"
           },
           "22": {
             "name": "尖扎县",
@@ -33394,6 +33459,11 @@
           "24": {
             "name": "河南蒙古族自治县",
             "short": "河南",
+            "deprecated": null
+          },
+          "01": {
+            "name": "同仁市",
+            "short": "同仁",
             "deprecated": null
           }
         }
