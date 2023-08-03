@@ -1,3 +1,5 @@
+import assert from "assert";
+
 export type Data = {
     [key: string]: {
         name: string,
@@ -44,7 +46,7 @@ function short_province(value: string) {
 }
 
 function short_prefecture(value: string) {
-    const rule = /^(.{0,4}?)(?:(?:(?:各|壮|满|回|苗|彝|藏|侗|瑶|白|黎|傣|畲|水|佤|羌|土|怒)族|(?:维吾尔|土家|蒙古|布依|朝鲜|哈尼|哈萨克|傈僳|仡佬|东乡|高山|拉祜|纳西|仫佬|锡伯|柯尔克孜|达斡尔|景颇|毛南|撒拉|布朗|塔吉克|阿昌|普米|鄂温克|基诺|德昂|保安|俄罗斯|裕固|乌孜别克|门巴|鄂伦春|独龙|塔塔尔|赫哲|珞巴)族?)*自治)?(市|地区|行政区|盟|州)$/;
+    const rule = /^(.{0,4}?)(?:(?:(?:各|壮|满|回|苗|彝|藏|侗|瑶|白|黎|傣|畲|水|佤|羌|土|怒)族|(?:维吾尔|土家|蒙古|布依|朝鲜|哈尼|哈萨克|傈僳|仡佬|东乡|高山|拉祜|纳西|仫佬|锡伯|柯尔克孜|达斡尔|景颇|毛南|撒拉|布朗|塔吉克|阿昌|普米|鄂温克|基诺|德昂|保安|俄罗斯|裕固|乌孜别克|门巴|鄂伦春|独龙|塔塔尔|赫哲|珞巴)族?)*自治)?(市|地区|林区|行政区|盟|州)$/;
     const short_name = rule.exec(value);
     if (short_name) {
         return [short_name[1], short_name[2]];
@@ -54,13 +56,17 @@ function short_prefecture(value: string) {
 }
 
 function short_county(value: string, province: string, prefecture: string | null) {
-    const rule = /^(.{0,6}?)(?:(?:(?:各|壮|满|回|苗|彝|藏|侗|瑶|白|黎|傣|畲|水|佤|羌|土|怒)族|(?:维吾尔|土家|蒙古|布依|朝鲜|哈尼|哈萨克|傈僳|仡佬|东乡|高山|拉祜|纳西|仫佬|锡伯|柯尔克孜|达斡尔|景颇|毛南|撒拉|布朗|塔吉克|阿昌|普米|鄂温克|基诺|德昂|保安|俄罗斯|裕固|乌孜别克|门巴|鄂伦春|独龙|塔塔尔|赫哲|珞巴)族?)*自治)?(县|镇|市|(?:工农|矿|市|回族)?区|(?:前|中|后)*(?:联合)?旗)$/;
+    const rule = /^(.{0,6}?)(?:(?:(?:各|壮|满|回|苗|彝|藏|侗|瑶|白|黎|傣|畲|水|佤|羌|土|怒)族|(?:维吾尔|土家|蒙古|布依|朝鲜|哈尼|哈萨克|傈僳|仡佬|东乡|高山|拉祜|纳西|仫佬|锡伯|柯尔克孜|达斡尔|景颇|毛南|撒拉|布朗|塔吉克|阿昌|普米|鄂温克|基诺|德昂|保安|俄罗斯|裕固|乌孜别克|门巴|鄂伦春|独龙|塔塔尔|赫哲|珞巴)族?)*自治)?(县|镇|市|(?:工农|矿|林|市|回族)?区|(?:前|中|后)*(?:联合)?旗)$/;
     const short_name = rule.exec(value);
     if (short_name) {
         if (value.endsWith('旗')) {
             return [null, short_name[2]];
-        } else if (short_name[1].length <= 1){
-            return [short_name[1] + short_name[2], short_name[2]];
+        } else if (short_name[1].length <= 1){ // 单名
+            if (short_name[2] === '林区') {
+                return [short_name[1] + '林', '区'];
+            } else {
+                return [short_name[1] + short_name[2], short_name[2]];
+            }
         } else if (short_name[1] === province || short_name[1] === prefecture) { // 与上级重名
             return [short_name[1] + short_name[2], short_name[2]];
         } else {
@@ -123,6 +129,7 @@ export const handle = (raw : string) => {
             if (!Object.keys(data[result[1]].children).includes(result[2])) {
                 if (result[1] === '11') {
                     if (result[2] == '01') {
+                        assert(result[0] === "东城区", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '市辖区',
                             short: null,
@@ -130,6 +137,7 @@ export const handle = (raw : string) => {
                             children: {},
                         }
                     } else if (result[2] == '02') {
+                        assert(result[0] === "昌平县", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '县',
                             short: null,
@@ -141,6 +149,7 @@ export const handle = (raw : string) => {
                     }
                 } else if (result[1] === '12') {
                     if (result[2] == '01') {
+                        assert(result[0] === "和平区", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '市辖区',
                             short: null,
@@ -148,10 +157,24 @@ export const handle = (raw : string) => {
                             children: {},
                         }
                     } else if (result[2] == '02') {
+                        assert(result[0] === "宁河县", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '县',
                             short: null,
                             suffix: null,
+                            children: {},
+                        }
+                    } else {
+                        throw `${result} 无地级数据`
+                    }
+                } else if (result[1] === '23') {
+                    if (result[2] == '11') {
+                        assert(result[0] === "绥芬河市", `${result}`)
+                        const [short, suffix] = short_prefecture('绥芬河市');
+                        data[result[1]].children[result[2]] = {
+                            name: '绥芬河市',
+                            short: short,
+                            suffix: suffix,
                             children: {},
                         }
                     } else {
@@ -159,6 +182,7 @@ export const handle = (raw : string) => {
                     }
                 } else if (result[1] === '31') {
                     if (result[2] == '01') {
+                        assert(result[0] === "黄浦区", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '市辖区',
                             short: null,
@@ -166,6 +190,7 @@ export const handle = (raw : string) => {
                             children: {},
                         }
                     } else if (result[2] == '02') {
+                        assert(result[0] === "上海县", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '县',
                             short: null,
@@ -175,8 +200,44 @@ export const handle = (raw : string) => {
                     } else {
                         throw `${result} 无地级数据`
                     }
+                } else if (result[1] === '32') {
+                    if (result[2] == '12') {
+                        assert(result[0] === "泰州市", `${result}`)
+                        const [short, suffix] = short_prefecture('泰州市');
+                        data[result[1]].children[result[2]] = {
+                            name: '泰州市',
+                            short: short,
+                            suffix: suffix,
+                            children: {},
+                        }
+                    } else if (result[2] == '13') {
+                        assert(result[0] === "常熟市", `${result}`)
+                        const [short, suffix] = short_prefecture('常熟市');
+                        data[result[1]].children[result[2]] = {
+                            name: '常熟市',
+                            short: short,
+                            suffix: suffix,
+                            children: {},
+                        }
+                    } else {
+                        throw `${result} 无地级数据`
+                    }
+                } else if (result[1] === '34') {
+                    if (result[2] == '09') {
+                        assert(result[0] === "黄山市", `${result}`)
+                        const [short, suffix] = short_prefecture('黄山市');
+                        data[result[1]].children[result[2]] = {
+                            name: '黄山市',
+                            short: short,
+                            suffix: suffix,
+                            children: {},
+                        }
+                    } else {
+                        throw `${result} 无地级数据`
+                    }
                 } else if (result[1] === '36') {
                     if (result[2] == '05') {
+                        assert(result[0] === "井冈山", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '管理局',
                             short: null,
@@ -186,8 +247,92 @@ export const handle = (raw : string) => {
                     } else {
                         throw `${result} 无地级数据`
                     }
+                } else if (result[1] === '37') {
+                    if (result[2] == '09') {
+                        assert(result[0] === "威海市", `${result}`)
+                        const [short, suffix] = short_prefecture('威海市');
+                        data[result[1]].children[result[2]] = {
+                            name: '威海市',
+                            short: short,
+                            suffix: suffix,
+                            children: {},
+                        }
+                    } else {
+                        throw `${result} 无地级数据`
+                    }
+                } else if (result[1] === '41') {
+                    if (result[2] == '21') {
+                        assert(result[0] === "安阳市", `${result}`)
+                        const [short, suffix] = short_prefecture('安阳市');
+                        data[result[1]].children[result[2]] = {
+                            name: '安阳市',
+                            short: short,
+                            suffix: suffix,
+                            children: {},
+                        }
+                    } else {
+                        throw `${result} 无地级数据`
+                    }
+                } else if (result[1] === '42') {
+                    if (result[2] == '09') {
+                        assert(result[0] === "随州市", `${result}`)
+                        const [short, suffix] = short_prefecture('随州市');
+                        data[result[1]].children[result[2]] = {
+                            name: '随州市',
+                            short: short,
+                            suffix: suffix,
+                            children: {},
+                        }
+                    } else if (result[2] == '10') {
+                        assert(result[0] === "老河口市", `${result}`)
+                        const [short, suffix] = short_prefecture('老河口市');
+                        data[result[1]].children[result[2]] = {
+                            name: '老河口市',
+                            short: short,
+                            suffix: suffix,
+                            children: {},
+                        }
+                    } else if (result[2] == '29') {
+                        assert(result[0] === "神农架林区", `${result}`)
+                        const [short, suffix] = short_prefecture('神农架林区');
+                        data[result[1]].children[result[2]] = {
+                            name: '神农架林区',
+                            short: short,
+                            suffix: suffix,
+                            children: {},
+                        }
+                    } else {
+                        throw `${result} 无地级数据`
+                    }
+                } else if (result[1] === '44') {
+                    if (result[2] == '10') {
+                        assert(result[0] === "潮州市", `${result}`)
+                        const [short, suffix] = short_prefecture('潮州市');
+                        data[result[1]].children[result[2]] = {
+                            name: '潮州市',
+                            short: short,
+                            suffix: suffix,
+                            children: {},
+                        }
+                    } else {
+                        throw `${result} 无地级数据`
+                    }
+                } else if (result[1] === '61') {
+                    if (result[2] == '04') {
+                        assert(result[0] === "咸阳市", `${result}`)
+                        const [short, suffix] = short_prefecture('咸阳市');
+                        data[result[1]].children[result[2]] = {
+                            name: '咸阳市',
+                            short: short,
+                            suffix: suffix,
+                            children: {},
+                        }
+                    } else {
+                        throw `${result} 无地级数据`
+                    }
                 } else if (result[1] === '63') {
                     if (result[2] == '24') {
+                        assert(result[0] === "河南蒙古族自治县", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '省辖县',
                             short: null,
