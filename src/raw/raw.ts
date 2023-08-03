@@ -15,6 +15,7 @@ import { main as GB_T_2260_1991 } from './GB_T_2260_1991';
 import { main as GB_T_2260_1992 } from './GB_T_2260_1992';
 import { main as GB_T_2260_1993 } from './GB_T_2260_1993';
 import { main as GB_T_2260_1994 } from './GB_T_2260_1994';
+import { main as GB_T_2260_1995 } from './GB_T_2260_1995';
 
 type Data = {
     [province: string]: {
@@ -119,6 +120,7 @@ function main() {
     update(data, GB_T_2260_1992(), "GB/T 2260-1992");
     update(data, GB_T_2260_1993(), "GB/T 2260-1993");
     update(data, GB_T_2260_1994(), "GB/T 2260-1994");
+    update(data, GB_T_2260_1995(), "GB/T 2260-1995");
 
     fs.writeFileSync('./src/data/GB_T_2260.json', JSON.stringify(data, null, 2), 'utf-8');
 }
