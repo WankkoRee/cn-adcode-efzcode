@@ -10734,8 +10734,8 @@
             "deprecated": null
           },
           "02": {
-            "name": "秀城区",
-            "short": "秀城",
+            "name": "南湖区",
+            "short": "南湖",
             "deprecated": null
           }
         }
@@ -11923,24 +11923,34 @@
             "deprecated": null
           },
           "03": {
-            "name": "马塘区",
-            "short": "马塘",
+            "name": "弋江区",
+            "short": "弋江",
             "deprecated": null
           },
           "04": {
             "name": "新芜区",
             "short": "新芜",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2005"
           },
           "05": {
             "name": "鸠江区",
             "short": "鸠江",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2005"
           },
           "06": {
             "name": "四褐山区",
             "short": "四褐山",
             "deprecated": "GB/T 2260-1990"
+          },
+          "07": {
+            "name": "鸠江区",
+            "short": "鸠江",
+            "deprecated": null
+          },
+          "08": {
+            "name": "三山区",
+            "short": "三山",
+            "deprecated": null
           }
         }
       },
@@ -12130,8 +12140,8 @@
         "deprecated": null,
         "children": {
           "11": {
-            "name": "郊区",
-            "short": "郊区",
+            "name": "宜秀区",
+            "short": "宜秀",
             "deprecated": null
           },
           "21": {
@@ -17708,8 +17718,8 @@
         "deprecated": null,
         "children": {
           "11": {
-            "name": "郊区",
-            "short": "郊区",
+            "name": "金明区",
+            "short": "金明",
             "deprecated": null
           },
           "21": {
@@ -17753,8 +17763,8 @@
             "deprecated": null
           },
           "05": {
-            "name": "南关区",
-            "short": "南关",
+            "name": "禹王台区",
+            "short": "禹王台",
             "deprecated": null
           }
         }
@@ -19645,8 +19655,8 @@
             "deprecated": null
           },
           "02": {
-            "name": "芝山区",
-            "short": "芝山",
+            "name": "零陵区",
+            "short": "零陵",
             "deprecated": null
           },
           "03": {
@@ -22229,6 +22239,16 @@
             "short": "花都",
             "deprecated": null
           },
+          "15": {
+            "name": "南沙区",
+            "short": "南沙",
+            "deprecated": null
+          },
+          "16": {
+            "name": "萝岗区",
+            "short": "萝岗",
+            "deprecated": null
+          },
           "21": {
             "name": "花县",
             "short": "花县",
@@ -22292,7 +22312,7 @@
           "02": {
             "name": "东山区",
             "short": "东山",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2005"
           },
           "03": {
             "name": "荔湾区",
@@ -22317,7 +22337,7 @@
           "07": {
             "name": "芳村区",
             "short": "芳村",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2005"
           }
         }
       },
@@ -30566,8 +30586,8 @@
             "deprecated": null
           },
           "26": {
-            "name": "吴旗县",
-            "short": "吴旗",
+            "name": "吴起县",
+            "short": "吴起",
             "deprecated": null
           },
           "27": {
