@@ -5302,8 +5302,8 @@
             "deprecated": null
           },
           "13": {
-            "name": "新城子区",
-            "short": "新城子",
+            "name": "沈北新区",
+            "short": "沈北",
             "deprecated": null
           },
           "14": {
@@ -5689,8 +5689,8 @@
             "deprecated": null
           },
           "82": {
-            "name": "北宁市",
-            "short": "北宁",
+            "name": "北镇市",
+            "short": "北镇",
             "deprecated": null
           },
           "02": {
@@ -6518,7 +6518,7 @@
           "25": {
             "name": "江源县",
             "short": "江源",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2006"
           },
           "81": {
             "name": "临江市",
@@ -6539,6 +6539,11 @@
             "name": "临江区",
             "short": "临江",
             "deprecated": "GB/T 2260-1992"
+          },
+          "05": {
+            "name": "江源区",
+            "short": "江源",
+            "deprecated": null
           }
         }
       },
@@ -7400,6 +7405,11 @@
             "short": "呼兰",
             "deprecated": null
           },
+          "12": {
+            "name": "阿城区",
+            "short": "阿城",
+            "deprecated": null
+          },
           "21": {
             "name": "呼兰县",
             "short": "呼兰",
@@ -7448,7 +7458,7 @@
           "81": {
             "name": "阿城市",
             "short": "阿城",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2006"
           },
           "82": {
             "name": "双城市",
@@ -7493,7 +7503,7 @@
           "07": {
             "name": "动力区",
             "short": "动力",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2006"
           },
           "08": {
             "name": "平房区",
@@ -8007,7 +8017,7 @@
           "02": {
             "name": "永红区",
             "short": "永红",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2006"
           },
           "03": {
             "name": "向阳区",
@@ -24449,6 +24459,26 @@
             "short": "长寿",
             "deprecated": null
           },
+          "16": {
+            "name": "江津区",
+            "short": "江津",
+            "deprecated": null
+          },
+          "17": {
+            "name": "合川区",
+            "short": "合川",
+            "deprecated": null
+          },
+          "18": {
+            "name": "永川区",
+            "short": "永川",
+            "deprecated": null
+          },
+          "19": {
+            "name": "南川区",
+            "short": "南川",
+            "deprecated": null
+          },
           "01": {
             "name": "万州区",
             "short": "万州",
@@ -24621,27 +24651,27 @@
       "03": {
         "name": "县级市",
         "short": null,
-        "deprecated": null,
+        "deprecated": "GB/T 2260-2006",
         "children": {
           "81": {
             "name": "江津市",
             "short": "江津",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2006"
           },
           "82": {
             "name": "合川市",
             "short": "合川",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2006"
           },
           "83": {
             "name": "永川市",
             "short": "永川",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2006"
           },
           "84": {
             "name": "南川市",
             "short": "南川",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2006"
           }
         }
       }
@@ -31726,6 +31756,11 @@
             "short": "金塔",
             "deprecated": null
           },
+          "22": {
+            "name": "瓜州县",
+            "short": "瓜州",
+            "deprecated": null
+          },
           "23": {
             "name": "肃北蒙古族自治县",
             "short": "肃北",
@@ -31739,7 +31774,7 @@
           "25": {
             "name": "安西县",
             "short": "安西",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2006"
           },
           "81": {
             "name": "玉门市",
