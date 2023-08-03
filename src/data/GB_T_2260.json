@@ -62,12 +62,12 @@
           "03": {
             "name": "崇文区",
             "short": "崇文",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2010"
           },
           "04": {
             "name": "宣武区",
             "short": "宣武",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2010"
           },
           "05": {
             "name": "朝阳区",
@@ -6531,8 +6531,8 @@
             "deprecated": null
           },
           "02": {
-            "name": "八道江区",
-            "short": "八道江",
+            "name": "浑江区",
+            "short": "浑江",
             "deprecated": null
           },
           "03": {
@@ -9234,6 +9234,11 @@
             "short": "泉山",
             "deprecated": null
           },
+          "12": {
+            "name": "铜山区",
+            "short": "铜山",
+            "deprecated": null
+          },
           "21": {
             "name": "丰县",
             "short": "丰县",
@@ -9247,7 +9252,7 @@
           "23": {
             "name": "铜山县",
             "short": "铜山",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2010"
           },
           "24": {
             "name": "睢宁县",
@@ -9287,7 +9292,7 @@
           "04": {
             "name": "九里区",
             "short": "九里",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2010"
           },
           "05": {
             "name": "贾汪区",
@@ -14260,6 +14265,11 @@
           "81": {
             "name": "瑞昌市",
             "short": "瑞昌",
+            "deprecated": null
+          },
+          "82": {
+            "name": "共青城市",
+            "short": "共青城",
             "deprecated": null
           },
           "02": {
@@ -19363,8 +19373,8 @@
         }
       },
       "06": {
-        "name": "襄樊市",
-        "short": "襄樊",
+        "name": "襄阳市",
+        "short": "襄阳",
         "deprecated": null,
         "children": {
           "11": {
@@ -19438,8 +19448,8 @@
             "deprecated": null
           },
           "07": {
-            "name": "襄阳区",
-            "short": "襄阳",
+            "name": "襄州区",
+            "short": "襄州",
             "deprecated": null
           }
         }
@@ -28261,7 +28271,7 @@
           "22": {
             "name": "蒙自县",
             "short": "蒙自",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2010"
           },
           "23": {
             "name": "屏边苗族自治县",
@@ -28322,6 +28332,11 @@
             "name": "开远市",
             "short": "开远",
             "deprecated": null
+          },
+          "03": {
+            "name": "蒙自市",
+            "short": "蒙自",
+            "deprecated": null
           }
         }
       },
@@ -28333,7 +28348,7 @@
           "21": {
             "name": "文山县",
             "short": "文山县",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2010"
           },
           "22": {
             "name": "砚山县",
@@ -28368,6 +28383,11 @@
           "28": {
             "name": "富宁县",
             "short": "富宁",
+            "deprecated": null
+          },
+          "01": {
+            "name": "文山市",
+            "short": "文山市",
             "deprecated": null
           }
         }
@@ -28616,8 +28636,8 @@
             "deprecated": null
           },
           "03": {
-            "name": "潞西市",
-            "short": "潞西",
+            "name": "芒市",
+            "short": "芒市",
             "deprecated": null
           }
         }

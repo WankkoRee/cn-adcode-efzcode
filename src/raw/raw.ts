@@ -30,6 +30,7 @@ import { main as GB_T_2260_2006 } from './GB_T_2260_2006';
 import { main as GB_T_2260_2007 } from './GB_T_2260_2007';
 import { main as GB_T_2260_2008 } from './GB_T_2260_2008';
 import { main as GB_T_2260_2009 } from './GB_T_2260_2009';
+import { main as GB_T_2260_2010 } from './GB_T_2260_2010';
 
 type Data = {
     [province: string]: {
@@ -149,6 +150,7 @@ function main() {
     update(data, GB_T_2260_2007(), "GB/T 2260-2007");
     update(data, GB_T_2260_2008(), "GB/T 2260-2008");
     update(data, GB_T_2260_2009(), "GB/T 2260-2009");
+    update(data, GB_T_2260_2010(), "GB/T 2260-2010");
 
     fs.writeFileSync('./src/data/GB_T_2260.json', JSON.stringify(data, null, 2), 'utf-8');
 }
