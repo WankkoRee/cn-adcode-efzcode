@@ -149,7 +149,7 @@ export const handle = (raw : string) => {
                     }
                 } else if (result[1] === '11' || result[1] === '12' || result[1] === '31' || result[1] === '50') {
                     if (result[2] == '01') {
-                        assert(result[0] === "东城区" || result[0] === "和平区" || result[0] === "黄浦区" || result[0] === "万县区", `${result}`)
+                        assert(result[0] === "东城区" || result[0] === "和平区" || result[0] === "黄浦区" || (result[0] === "万县区" || result[0] === "万州区"), `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '市辖区',
                             short: null,
