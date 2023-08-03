@@ -157,7 +157,7 @@ export const handle = (raw : string) => {
                             children: {},
                         }
                     } else if (result[2] == '02') {
-                        assert(result[0] === "昌平县" || result[0] === "宁河县" || (result[0] === "上海县" || result[0] === "南汇县") || result[0] === "长寿县", `${result}`)
+                        assert((result[0] === "昌平县" || result[0] === "大兴县") || result[0] === "宁河县" || (result[0] === "上海县" || result[0] === "南汇县") || result[0] === "长寿县", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '县',
                             short: null,
