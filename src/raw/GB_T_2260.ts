@@ -127,7 +127,14 @@ export const handle = (raw : string) => {
             }
         } else { // 县级行政区
             if (!Object.keys(data[result[1]].children).includes(result[2])) {
-                if (result[1] === '11') {
+                if (result[2] === '90') {
+                    data[result[1]].children[result[2]] = {
+                        name: '省辖县',
+                        short: null,
+                        suffix: null,
+                        children: {},
+                    }
+                } else if (result[1] === '11') {
                     if (result[2] == '01') {
                         assert(result[0] === "东城区", `${result}`)
                         data[result[1]].children[result[2]] = {
@@ -217,14 +224,6 @@ export const handle = (raw : string) => {
                             name: '常熟市',
                             short: short,
                             suffix: suffix,
-                            children: {},
-                        }
-                    } else if (result[2] == '90') {
-                        assert(result[0] === "泰州市", `${result}`)
-                        data[result[1]].children[result[2]] = {
-                            name: '省辖县',
-                            short: null,
-                            suffix: null,
                             children: {},
                         }
                     } else {
@@ -322,14 +321,6 @@ export const handle = (raw : string) => {
                             suffix: suffix,
                             children: {},
                         }
-                    } else if (result[2] == '90') {
-                        assert(result[0] === "随州市", `${result}`)
-                        data[result[1]].children[result[2]] = {
-                            name: '省辖县',
-                            short: null,
-                            suffix: null,
-                            children: {},
-                        }
                     } else {
                         throw `${result} 无地级数据`
                     }
@@ -341,14 +332,6 @@ export const handle = (raw : string) => {
                             name: '潮州市',
                             short: short,
                             suffix: suffix,
-                            children: {},
-                        }
-                    } else if (result[2] == '90') {
-                        assert(result[0] === "潮州市", `${result}`)
-                        data[result[1]].children[result[2]] = {
-                            name: '省辖县',
-                            short: null,
-                            suffix: null,
                             children: {},
                         }
                     } else {
@@ -370,18 +353,6 @@ export const handle = (raw : string) => {
                 } else if (result[1] === '63') {
                     if (result[2] == '24') {
                         assert(result[0] === "河南蒙古族自治县", `${result}`)
-                        data[result[1]].children[result[2]] = {
-                            name: '省辖县',
-                            short: null,
-                            suffix: null,
-                            children: {},
-                        }
-                    } else {
-                        throw `${result} 无地级数据`
-                    }
-                } else if (result[1] === '65') {
-                    if (result[2] == '90') {
-                        assert(result[0] === "石河子市", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '省辖县',
                             short: null,
