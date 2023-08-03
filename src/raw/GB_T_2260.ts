@@ -1,4 +1,23 @@
-import * as fs from "fs";
+export type Data = {
+    [key: string]: {
+        name: string,
+        short: string,
+        children: {
+            [key: string]: {
+                name: string,
+                short: string | null,
+                suffix?: string | null,
+                children: {
+                    [key: string]: {
+                        name: string,
+                        short: string | null,
+                        suffix?: string | null,
+                    },
+                },
+            },
+        },
+    },
+}
 
 function check_unique(array: [string, string | null][]) {
     const t = array.map(v => v[1]);
@@ -57,26 +76,7 @@ function short_county(value: string, province: string, prefecture: string | null
 export const handle = (raw : string) => {
     const rule = /^([0-9]{2})([0-9]{2})([0-9]{2})\t(.+?)$/;
 
-    const data: {
-        [key: string]: {
-            name: string,
-            short: string,
-            children: {
-                [key: string]: {
-                    name: string,
-                    short: string | null,
-                    suffix?: string | null,
-                    children: {
-                        [key: string]: {
-                            name: string,
-                            short: string | null,
-                            suffix?: string | null,
-                        },
-                    },
-                },
-            },
-        },
-    } = {};
+    const data: Data = {};
 
     raw.split('\n').filter(v => {
         return v.length;
