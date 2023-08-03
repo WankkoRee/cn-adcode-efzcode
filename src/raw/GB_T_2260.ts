@@ -134,46 +134,6 @@ export const handle = (raw : string) => {
                         suffix: null,
                         children: {},
                     }
-                } else if (result[1] === '11') {
-                    if (result[2] == '01') {
-                        assert(result[0] === "东城区", `${result}`)
-                        data[result[1]].children[result[2]] = {
-                            name: '市辖区',
-                            short: null,
-                            suffix: null,
-                            children: {},
-                        }
-                    } else if (result[2] == '02') {
-                        assert(result[0] === "昌平县", `${result}`)
-                        data[result[1]].children[result[2]] = {
-                            name: '县',
-                            short: null,
-                            suffix: null,
-                            children: {},
-                        }
-                    } else {
-                        throw `${result} 无地级数据`
-                    }
-                } else if (result[1] === '12') {
-                    if (result[2] == '01') {
-                        assert(result[0] === "和平区", `${result}`)
-                        data[result[1]].children[result[2]] = {
-                            name: '市辖区',
-                            short: null,
-                            suffix: null,
-                            children: {},
-                        }
-                    } else if (result[2] == '02') {
-                        assert(result[0] === "宁河县", `${result}`)
-                        data[result[1]].children[result[2]] = {
-                            name: '县',
-                            short: null,
-                            suffix: null,
-                            children: {},
-                        }
-                    } else {
-                        throw `${result} 无地级数据`
-                    }
                 } else if (result[1] === '23') {
                     if (result[2] == '11') {
                         assert(result[0] === "绥芬河市", `${result}`)
@@ -187,9 +147,9 @@ export const handle = (raw : string) => {
                     } else {
                         throw `${result} 无地级数据`
                     }
-                } else if (result[1] === '31') {
+                } else if (result[1] === '11' || result[1] === '12' || result[1] === '31' || result[1] === '50') {
                     if (result[2] == '01') {
-                        assert(result[0] === "黄浦区", `${result}`)
+                        assert(result[0] === "东城区" || result[0] === "和平区" || result[0] === "黄浦区" || result[0] === "万县区", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '市辖区',
                             short: null,
@@ -197,9 +157,17 @@ export const handle = (raw : string) => {
                             children: {},
                         }
                     } else if (result[2] == '02') {
-                        assert(result[0] === "上海县" || result[0] === "南汇县", `${result}`)
+                        assert(result[0] === "昌平县" || result[0] === "宁河县" || (result[0] === "上海县" || result[0] === "南汇县") || result[0] === "长寿县", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '县',
+                            short: null,
+                            suffix: null,
+                            children: {},
+                        }
+                    } else if (result[2] == '03') {
+                        assert(result[0] === "江津市", `${result}`)
+                        data[result[1]].children[result[2]] = {
+                            name: '县级市',
                             short: null,
                             suffix: null,
                             children: {},
