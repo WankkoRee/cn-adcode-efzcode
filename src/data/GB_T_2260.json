@@ -4488,8 +4488,8 @@
             "deprecated": null
           },
           "06": {
-            "name": "白云矿区",
-            "short": "白云",
+            "name": "白云鄂博矿区",
+            "short": "白云鄂博",
             "deprecated": null
           },
           "07": {
@@ -27216,8 +27216,8 @@
             "deprecated": null
           },
           "02": {
-            "name": "市中区",
-            "short": "市中",
+            "name": "利州区",
+            "short": "利州",
             "deprecated": null
           }
         }
@@ -29059,13 +29059,13 @@
         }
       },
       "08": {
-        "name": "思茅市",
-        "short": "思茅",
+        "name": "普洱市",
+        "short": "普洱",
         "deprecated": null,
         "children": {
           "21": {
-            "name": "普洱哈尼族彝族自治县",
-            "short": "普洱",
+            "name": "宁洱哈尼族彝族自治县",
+            "short": "宁洱",
             "deprecated": null
           },
           "22": {
@@ -29109,8 +29109,8 @@
             "deprecated": null
           },
           "02": {
-            "name": "翠云区",
-            "short": "翠云",
+            "name": "思茅区",
+            "short": "思茅",
             "deprecated": null
           }
         }
@@ -32508,7 +32508,7 @@
           "03": {
             "name": "米泉市",
             "short": "米泉",
-            "deprecated": null
+            "deprecated": "GB/T 2260-2007"
           }
         }
       },
@@ -33223,6 +33223,11 @@
           "08": {
             "name": "东山区",
             "short": "东山",
+            "deprecated": "GB/T 2260-2007"
+          },
+          "09": {
+            "name": "米东区",
+            "short": "米东",
             "deprecated": null
           }
         }
