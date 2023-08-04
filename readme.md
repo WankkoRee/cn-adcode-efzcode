@@ -12,7 +12,7 @@
 
 ### 经济功能区代码
 
-- 数据来源未找到, 纯手打
+- 数据来源未找到, 纯手打, 还没打完
 - 不知道啥时候更新
 - 基于[GB/T 37028-2018](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=241A4BB1E525D9491A72E5BF3DF15D5A)
 
