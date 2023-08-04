@@ -65,26 +65,31 @@ type Data = {
     },
 }
 
-type DataMini = {
-    [province: string]: {
-        name: string,
-        short: string,
-        deprecated: boolean,
-        children: {
-            [prefecture: string]: {
-                name: string,
-                short: string | null,
-                deprecated: boolean,
-                children: {
-                    [county: string]: {
-                        name: string,
-                        short: string | null,
-                        deprecated: boolean,
-                    },
-                },
-            },
-        },
-    },
+export type DataMiniCounty = {
+    name: string,
+    short: string | null,
+    deprecated: boolean,
+}
+export type DataMiniCounties = {
+    [county: string]: DataMiniCounty,
+}
+export type DataMiniPrefecture = {
+    name: string,
+    short: string | null,
+    deprecated: boolean,
+    children: DataMiniCounties,
+}
+export type DataMiniPrefectures = {
+    [prefecture: string]: DataMiniPrefecture,
+}
+export type DataMiniProvince = {
+    name: string,
+    short: string,
+    deprecated: boolean,
+    children: DataMiniPrefectures,
+}
+export type DataMini = {
+    [province: string]: DataMiniProvince,
 }
 
 type DataNow = {
