@@ -1,12 +1,12 @@
 import untypedData from './data/GB_T_2260.json'
-import {DataMini, DataMiniPrefecture,  DataMiniProvince, DataMiniCounty} from './raw/raw'
+import {Data, DataCounty, DataPrefecture, DataProvince} from "./raw/utils";
 
-const data: DataMini = untypedData;
+const data: Data<boolean> = untypedData;
 
 export const get = (code: string, deprecated: boolean = true): [
-    DataMiniProvince | null,
-    DataMiniPrefecture | null,
-    DataMiniCounty | null,
+    DataProvince<boolean> | null,
+    DataPrefecture<boolean> | null,
+    DataCounty<boolean> | null,
 ] => {
     if (code.length >= 2) {
         const province = data[code.substring(0, 2)];

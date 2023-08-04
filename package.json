@@ -15,7 +15,6 @@
   "scripts": {
     "raw": "ts-node src/raw/raw.ts",
     "test": "jest --config jestconfig.json",
-    "prebuild": "pnpm run raw",
     "build": "tsup src/index.ts --format cjs,esm --dts --clean"
   },
   "files": [
