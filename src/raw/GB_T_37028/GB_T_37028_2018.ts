@@ -120,10 +120,10 @@ function EncodeUnicode(unicode: number) {
     return '\\u' + '0'.repeat(4 - charCode.length) + charCode;
 }
 
-function mapString(s: string, map: CharMap, color: string) {
+function mapString(s: string, map: CharMap, color: string = "") {
     return s.replace(/[\u0000-\uFFFF]/g, (m => {
         const unicode = m.charCodeAt(0);
-        return chalk.bgHex(color)(map[unicode] ?? EncodeUnicode(unicode));
+        return color ? chalk.bgHex(color)(map[unicode] ?? EncodeUnicode(unicode)) : map[unicode];
     }));
 }
 
@@ -197,10 +197,11 @@ export const main = async () => {
                     const line = text[++i].line;
                     let name: string[] = [];
                     do {
-                        name.push(chalk.bgHex("#a4b0be")(text[i].font) + mapString(text[i].str, charMap[text[i].font], colors[text[i].font]));
+                        name.push(chalk.bgHex("#a4b0be")(text[i].font));
+                        name.push(mapString(text[i].str, charMap[text[i].font], colors[text[i].font]));
                     } while (++i < text.length && text[i].line === line);
 
-                    console.log(province_code + classification_code + zone_code, name.join(" "));
+                    console.log(province_code + classification_code + zone_code, name.join(""));
                 } else {
                     i++;
                 }
