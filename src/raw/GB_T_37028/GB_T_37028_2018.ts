@@ -174,12 +174,13 @@ async function *parsePDF(data: Uint8Array) {
 export const main = async () => {
     const colors = [
         "#a4b0be",
-        "#7bed9f",
-        "#fab1a0",
-        "#81ecec",
-        "#eccc68",
-        "#a29bfe",
-        "#4bcffa",
+        "#ffc9c9",
+        "#ffd8a8",
+        "#ffec99",
+        "#b2f2bb",
+        "#a5d8ff",
+        "#99e9f2",
+        "#d0bfff",
     ]
 
     for await (const {pageNumber: page, result: text} of parsePDF(new Uint8Array(fs.readFileSync("./src/raw/GB_T 37028-2018《全国主要经济功能区分类与代码》.pdf")))) {
@@ -189,9 +190,9 @@ export const main = async () => {
             if (text[i].font === 0) {
                 const code = /^([０１２３４５６７８９]{2})([０１２３４５６７８９]{3})([０１２３４５６７８９]{3}) $/.exec(text[i].str);
                 if (code) {
-                    const province_code = mapString(code[1], charMap[text[i].font], "#eccc68");
-                    const classification_code = mapString(code[2], charMap[text[i].font], "#ff7f50");
-                    const zone_code = mapString(code[3], charMap[text[i].font], "#ff6b81");
+                    const province_code = mapString(code[1], charMap[text[i].font], "#bcd4e7");
+                    const classification_code = mapString(code[2], charMap[text[i].font], "#a3bbdb");
+                    const zone_code = mapString(code[3], charMap[text[i].font], "#8aabcc");
 
                     const line = text[++i].line;
                     let name: string[] = [];
