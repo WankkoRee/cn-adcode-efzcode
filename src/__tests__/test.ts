@@ -1,4 +1,4 @@
-import cncode from '../index';
+import cncode from '../index.js';
 
 test('省级现有区划', () => {
     expect(cncode.get('11', false)[0]?.name).toBe('北京市'); // false, undefined, undefined

@@ -1,5 +1,6 @@
-import { main as GB_T_37028_2018 } from './GB_T_37028/GB_T_37028_2018';
-import {Data, update} from "./utils";
+import { main as GB_T_37028_2018 } from './GB_T_37028/GB_T_37028_2018.js';
+import {update} from "./utils.js";
+import type {Data} from "../types";
 
 export async function main() {
     const data: Data<string | null> = {};

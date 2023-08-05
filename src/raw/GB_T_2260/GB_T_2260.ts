@@ -1,5 +1,5 @@
 import assert from "assert";
-import {DataRaw} from "../utils";
+import type {DataRaw} from "../types";
 
 function check_unique(array: [string, string | null][]) {
     const t = array.map(v => v[1]);

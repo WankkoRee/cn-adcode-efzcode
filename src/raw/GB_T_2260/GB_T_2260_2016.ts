@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import {handle} from "./GB_T_2260";
+import {handle} from "./GB_T_2260.js";
 
 export const main = () => {
     const raw = `

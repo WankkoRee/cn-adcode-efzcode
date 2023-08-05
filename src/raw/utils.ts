@@ -1,70 +1,5 @@
-
-export type DataRaw = {
-    [key: string]: {
-        name: string,
-        short: string,
-        children: {
-            [key: string]: {
-                name: string,
-                short: string | null,
-                suffix?: string | null,
-                children: {
-                    [key: string]: {
-                        name: string,
-                        short: string | null,
-                        suffix?: string | null,
-                    },
-                },
-            },
-        },
-    },
-}
-
-export type DataCounty<T> = {
-    name: string,
-    short: string | null,
-    deprecated: T,
-}
-export type DataCounties<T> = {
-    [county: string]: DataCounty<T>,
-}
-export type DataPrefecture<T> = {
-    name: string,
-    short: string | null,
-    deprecated: T,
-    children: DataCounties<T>,
-}
-export type DataPrefectures<T> = {
-    [prefecture: string]: DataPrefecture<T>,
-}
-export type DataProvince<T> = {
-    name: string,
-    short: string,
-    deprecated: T,
-    children: DataPrefectures<T>,
-}
-export type Data<T> = {
-    [province: string]: DataProvince<T>,
-}
-
-export type DataNow = {
-    [province: string]: {
-        name: string,
-        short: string,
-        children: {
-            [prefecture: string]: {
-                name: string,
-                short: string | null,
-                children: {
-                    [county: string]: {
-                        name: string,
-                        short: string | null,
-                    },
-                },
-            },
-        },
-    },
-}
+import type {Data} from "../types";
+import type {DataNow, DataRaw} from "./types";
 
 export function deprecated(data: Data<string | null>, flag: string) {
     Object.entries(data).forEach(([province, {name, short, children}]) => {
@@ -182,8 +117,11 @@ export function getNow(data:Data<string | null>) {
                     name,
                     short,
                 }
+                return undefined;
             });
+            return undefined;
         });
+        return undefined;
     });
     return dataNow;
 }

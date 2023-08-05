@@ -1,7 +1,7 @@
-import {main as GB_T_2260} from './GB_T_2260'
-import {main as GB_T_37028} from './GB_T_37028'
+// import {main as GB_T_2260} from './GB_T_2260.js'
+import {main as GB_T_37028} from './GB_T_37028.js'
 import * as fs from "fs";
-import {getExported, getNow} from "./utils";
+import {getExported, getNow} from "./utils.js";
 
 async function main() {
     // const gb_t_2260 = GB_T_2260()

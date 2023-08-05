@@ -1,5 +1,5 @@
 import untypedData from './data/GB_T_2260.json'
-import {Data, DataCounty, DataPrefecture, DataProvince} from "./raw/utils";
+import type {Data, DataCounty, DataPrefecture, DataProvince} from "./types";
 
 const data: Data<boolean> = untypedData;
 
