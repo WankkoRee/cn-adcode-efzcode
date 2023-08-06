@@ -167,7 +167,7 @@ function mapString(s: Str, color: string = "") {
         const char = charMap[s.font][unicode];
         if (!char) {
             flag = true;
-            return EncodeUnicode(unicode);
+            return '〇'; // EncodeUnicode(unicode);
         }
         return char;
     }).join("");
@@ -253,14 +253,6 @@ async function *parsePDF(data: Uint8Array) {
                     const yd = Math.abs(text[q].y1 - text[p].y1);
                 if ((0 <= xd && xd <= fontHeight / 4) && yd <= fontHeight / 2) {
                         text[p].texts.push(...text[q].texts);
-                        for (let i = 0; i < text[p].texts.length - 1;) { // 拼接相同字体
-                            if (text[p].texts[i].font === text[p].texts[i + 1].font) {
-                                text[p].texts[i].str += text[p].texts[i + 1].str;
-                                text[p].texts.splice(i + 1, 1);
-                            } else {
-                                i++;
-                            }
-                        }
                         text[p].x2 = text[q].x2;
                         text[p].width += text[p].x2 - text[p].x1;
                         if (text[p].y1 > text[q].y1) {
@@ -312,14 +304,6 @@ async function *parsePDF(data: Uint8Array) {
                         || text[q].x1 < text[p].x1 && text[q].x2 > text[p].x1
                     )) {
                         text[p].texts.push(...text[q].texts);
-                        for (let i = 0; i < text[p].texts.length - 1;) { // 拼接相同字体
-                            if (text[p].texts[i].font === text[p].texts[i + 1].font) {
-                                text[p].texts[i].str += text[p].texts[i + 1].str;
-                                text[p].texts.splice(i + 1, 1);
-                            } else {
-                                i++;
-                            }
-                        }
                         text[p].y2 = text[q].y2;
                         text[p].height += text[p].y1 - text[p].y2;
                         if (text[p].x1 > text[q].x1) {
@@ -352,6 +336,19 @@ async function *parsePDF(data: Uint8Array) {
                 p++;
             }
         } while (flag);
+
+        // 拼接相同字体
+        for (let i = 0; i < text.length - 1;i++) {
+            let j = 0;
+            while (j+1 < text[i].texts.length) {
+                if (text[i].texts[j].font === text[i].texts[j + 1].font) {
+                    text[i].texts[j].str += text[i].texts[j + 1].str;
+                    text[i].texts.splice(j + 1, 1);
+                    continue;
+                }
+                j++;
+            }
+        }
 
         yield {pageNumber, text};
     }
