@@ -7,7 +7,7 @@
     "resolveJsonModule": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "strictNullChecks": false
+    "strictNullChecks": false,
   },
   "include": ["src"],
   "exclude": [

@@ -4,18 +4,34 @@ const { getDocument } = pdfjs;
 import type {TextItem} from "pdfjs-dist/types/src/display/api";
 import chalk from "chalk";
 
-type CharMap = {[key: number]: string}
+type CharMap = { [key: number]: string }
 
 const udef: undefined = undefined;
 
-const charMap: CharMap[] = [
-    {
-        0xff10: '０', 0xff11: '１', 0xff12: '２', 0xff13: '３', 0xff14: '４', // debug
-        0xff15: '５', 0xff16: '６', 0xff17: '７', 0xff18: '８', 0xff19: '９', // debug
-        // 0xff10: '0', 0xff11: '1', 0xff12: '2', 0xff13: '3', 0xff14: '4', // fact
-        // 0xff15: '5', 0xff16: '6', 0xff17: '7', 0xff18: '8', 0xff19: '9', // fact
+const fontHeight = 8.25;
+
+type Font = number | string;
+type Str = {
+    str: string,
+    font: Font,
+}
+type TextBlock = {
+    texts: Str[],
+    x: number, y: number,
+    width: number, height: number,
+};
+
+const charMap: {[key: Font]: CharMap } = {
+    'E-BZ9': {
+        // 0xff10: '０', 0xff11: '１', 0xff12: '２', 0xff13: '３', 0xff14: '４', // debug
+        // 0xff15: '５', 0xff16: '６', 0xff17: '７', 0xff18: '８', 0xff19: '９', // debug
+        0xff10: '0', 0xff11: '1', 0xff12: '2', 0xff13: '3', 0xff14: '4', // fact
+        0xff15: '5', 0xff16: '6', 0xff17: '7', 0xff18: '8', 0xff19: '9', // fact
     },
-    {
+    'H-SS9': {
+        0x2014: '—',
+    },
+    1: {
         0x20:  ' ', 0x21: '前', 0x22: udef, 0x23: '范', 0x24: '围', 0x25: udef, 0x26: udef, 0x27: udef, 0x28: '用', 0x29: '文', 0x2a: udef, 0x2b: '术', 0x2c: udef, 0x2d: '和', 0x2e: '定', 0x2f: '义',
         0x30: '编', 0x31: udef, 0x32: '原', 0x33: udef, 0x34: '方', 0x35: '法', 0x36: '经', 0x37: '济', 0x38: '功', 0x39: '能', 0x3a: '区', 0x3b: '代', 0x3c: udef, 0x3d: udef, 0x3e: '考', 0x3f: '县',
         0x40: '全', 0x41: '国', 0x42: '主', 0x43: '要', 0x44: udef, 0x45: '型', 0x46: '技', 0x47: '开', 0x48: '发', 0x49: '共', 0x4a: '家', 0x4b: '级', 0x4c: '新', 0x4d: '高', 0x4e: '产', 0x4f: '业',
@@ -32,7 +48,8 @@ const charMap: CharMap[] = [
         0xf0: udef, 0xf1: '成', 0xf2: '立', 0xf3: udef, 0xf4: '及', 0xf5: '民', 0xf6: '政', 0xf7: '府', 0xf8: udef, 0xf9: '于', 0xfa: '库', 0xfb: udef, 0xfc: udef, 0xfd: udef, 0xfe: '交', 0xff: udef,
         0x0301: '提', 0x0304: '分',
         0x0327: '单',
-    }, {
+    },
+    2: {
         0x20:  ' ', 0x21: udef, 0x22: udef, 0x23: udef, 0x24: udef, 0x25: udef, 0x26: udef, 0x27: udef, 0x28: udef, 0x29: udef, 0x2a: udef, 0x2b: udef, 0x2c: udef, 0x2d: udef, 0x2e: udef, 0x2f: udef,
         0x30: udef, 0x31: udef, 0x32: udef, 0x33: udef, 0x34: udef, 0x35: udef, 0x36: udef, 0x37: udef, 0x38: udef, 0x39: udef, 0x3a: udef, 0x3b: udef, 0x3c: udef, 0x3d: udef, 0x3e: udef, 0x3f: udef,
         0x40: udef, 0x41: udef, 0x42: udef, 0x43: udef, 0x44: udef, 0x45: udef, 0x46: udef, 0x47: udef, 0x48: udef, 0x49: udef, 0x4a: '顺', 0x4b: udef, 0x4c: udef, 0x4d: udef, 0x4e: udef, 0x4f: udef,
@@ -48,7 +65,8 @@ const charMap: CharMap[] = [
         0xe0: udef, 0xe1: udef, 0xe2: udef, 0xe3: udef, 0xe4: udef, 0xe5: udef, 0xe6: udef, 0xe7: udef, 0xe8: udef, 0xe9: udef, 0xea: udef, 0xeb: udef, 0xec: udef, 0xed: '武', 0xee: '清', 0xef: '子',
         0xf0: '牙', 0xf1: '辰', 0xf2: '丽', 0xf3: '秦', 0xf4: '皇', 0xf5: '岛', 0xf6: '廊', 0xf7: '坊', 0xf8: '沧', 0xf9: '石', 0xfa: '庄', 0xfb: '唐', 0xfc: '曹', 0xfd: '妃', 0xfe: '甸', 0xff: '邯',
         0x03bc: '布',
-    }, {
+    },
+    3: {
         0x20:  ' ', 0x21: '郸', 0x22: '太', 0x23: '晋', 0x24: '呼', 0x25: '浩', 0x26: '巴', 0x27: '彦', 0x28: '卓', 0x29: '伦', 0x2a: '贝', 0x2b: '连', 0x2c: '沈', 0x2d: '阳', 0x2e: '兴', 0x2f: '锦',
         0x30: '辉', 0x31: '盘', 0x32: '滨', 0x33: '铁', 0x34: '岭', 0x35: '春', 0x36: '红', 0x37: '嘴', 0x38: '汽', 0x39: '车', 0x3a: '松', 0x3b: '哈', 0x3c: '宾', 0x3d: udef, 0x3e: udef, 0x3f: udef,
         0x40: udef, 0x41: udef, 0x42: udef, 0x43: udef, 0x44: udef, 0x45: udef, 0x46: udef, 0x47: udef, 0x48: udef, 0x49: udef, 0x4a: udef, 0x4b: udef, 0x4c: udef, 0x4d: udef, 0x4e: udef, 0x4f: udef,
@@ -64,7 +82,8 @@ const charMap: CharMap[] = [
         0xe0: udef, 0xe1: udef, 0xe2: udef, 0xe3: udef, 0xe4: udef, 0xe5: udef, 0xe6: udef, 0xe7: udef, 0xe8: udef, 0xe9: udef, 0xea: udef, 0xeb: udef, 0xec: udef, 0xed: udef, 0xee: udef, 0xef: udef,
         0xf0: udef, 0xf1: udef, 0xf2: udef, 0xf3: udef, 0xf4: udef, 0xf5: udef, 0xf6: udef, 0xf7: udef, 0xf8: udef, 0xf9: udef, 0xfa: udef, 0xfb: udef, 0xfc: udef, 0xfd: udef, 0xfe: udef, 0xff: udef,
         0x03bc: '都',
-    }, {
+    },
+    4: {
         0x20:  ' ', 0x21: udef, 0x22: udef, 0x23: udef, 0x24: udef, 0x25: udef, 0x26: udef, 0x27: udef, 0x28: udef, 0x29: udef, 0x2a: udef, 0x2b: udef, 0x2c: udef, 0x2d: udef, 0x2e: udef, 0x2f: udef,
         0x30: udef, 0x31: udef, 0x32: udef, 0x33: udef, 0x34: udef, 0x35: udef, 0x36: udef, 0x37: udef, 0x38: udef, 0x39: udef, 0x3a: udef, 0x3b: udef, 0x3c: udef, 0x3d: udef, 0x3e: udef, 0x3f: udef,
         0x40: udef, 0x41: udef, 0x42: udef, 0x43: udef, 0x44: udef, 0x45: udef, 0x46: udef, 0x47: udef, 0x48: udef, 0x49: udef, 0x4a: udef, 0x4b: udef, 0x4c: udef, 0x4d: udef, 0x4e: udef, 0x4f: udef,
@@ -80,7 +99,8 @@ const charMap: CharMap[] = [
         0xe0: udef, 0xe1: udef, 0xe2: udef, 0xe3: udef, 0xe4: udef, 0xe5: udef, 0xe6: udef, 0xe7: udef, 0xe8: udef, 0xe9: udef, 0xea: udef, 0xeb: udef, 0xec: udef, 0xed: udef, 0xee: udef, 0xef: udef,
         0xf0: udef, 0xf1: udef, 0xf2: udef, 0xf3: udef, 0xf4: udef, 0xf5: udef, 0xf6: udef, 0xf7: udef, 0xf8: udef, 0xf9: udef, 0xfa: udef, 0xfb: udef, 0xfc: udef, 0xfd: udef, 0xfe: udef, 0xff: udef,
         0x03bc: '坡',
-    }, {
+    },
+    5: {
         0x20:  ' ', 0x21: udef, 0x22: udef, 0x23: udef, 0x24: udef, 0x25: udef, 0x26: udef, 0x27: udef, 0x28: udef, 0x29: udef, 0x2a: udef, 0x2b: udef, 0x2c: udef, 0x2d: udef, 0x2e: udef, 0x2f: udef,
         0x30: udef, 0x31: udef, 0x32: udef, 0x33: udef, 0x34: udef, 0x35: udef, 0x36: udef, 0x37: udef, 0x38: udef, 0x39: udef, 0x3a: udef, 0x3b: udef, 0x3c: udef, 0x3d: udef, 0x3e: udef, 0x3f: udef,
         0x40: udef, 0x41: udef, 0x42: udef, 0x43: udef, 0x44: udef, 0x45: udef, 0x46: udef, 0x47: udef, 0x48: udef, 0x49: udef, 0x4a: udef, 0x4b: udef, 0x4c: udef, 0x4d: udef, 0x4e: udef, 0x4f: udef,
@@ -92,11 +112,12 @@ const charMap: CharMap[] = [
         0xa0: udef, 0xa1: udef, 0xa2: udef, 0xa3: udef, 0xa4: udef, 0xa5: udef, 0xa6: udef, 0xa7: udef, 0xa8: udef, 0xa9: udef, 0xaa: udef, 0xab: udef, 0xac: udef, 0xad: udef, 0xae: udef, 0xaf: udef,
         0xb0: udef, 0xb1: udef, 0xb2: udef, 0xb3: udef, 0xb4: udef, 0xb5: udef, 0xb6: udef, 0xb7: udef, 0xb8: udef, 0xb9: udef, 0xba: udef, 0xbb: udef, 0xbc: udef, 0xbd: udef, 0xbe: udef, 0xbf: udef,
         0xc0: udef, 0xc1: udef, 0xc2: udef, 0xc3: udef, 0xc4: udef, 0xc5: udef, 0xc6: udef, 0xc7: udef, 0xc8: udef, 0xc9: udef, 0xca: udef, 0xcb: udef, 0xcc: udef, 0xcd: udef, 0xce: udef, 0xcf: udef,
-        0xd0: udef, 0xd1: udef, 0xd2: udef, 0xd3: udef, 0xd4: udef, 0xd5: udef, 0xd6: udef, 0xd7: udef, 0xd8: udef, 0xd9: udef, 0xda: udef, 0xdb: udef, 0xdc: udef, 0xdd: udef, 0xde: udef, 0xdf: udef,
+        0xd0:  ' ', 0xd1: udef, 0xd2: udef, 0xd3: udef, 0xd4: udef, 0xd5: udef, 0xd6: udef, 0xd7: udef, 0xd8: udef, 0xd9: udef, 0xda: udef, 0xdb: udef, 0xdc: udef, 0xdd: udef, 0xde: udef, 0xdf: udef,
         0xe0: udef, 0xe1: udef, 0xe2: udef, 0xe3: udef, 0xe4: udef, 0xe5: udef, 0xe6: udef, 0xe7: udef, 0xe8: udef, 0xe9: udef, 0xea: udef, 0xeb: udef, 0xec: udef, 0xed: udef, 0xee: udef, 0xef: udef,
         0xf0: udef, 0xf1: udef, 0xf2: udef, 0xf3: udef, 0xf4: udef, 0xf5: udef, 0xf6: udef, 0xf7: udef, 0xf8: udef, 0xf9: udef, 0xfa: udef, 0xfb: udef, 0xfc: udef, 0xfd: udef, 0xfe: udef, 0xff: udef,
         0x03bc: '翔',
-    }, {
+    },
+    6: {
         0x20:  ' ', 0x21: udef, 0x22: udef, 0x23: udef, 0x24: udef, 0x25: udef, 0x26: udef, 0x27: udef, 0x28: udef, 0x29: udef, 0x2a: udef, 0x2b: udef, 0x2c: udef, 0x2d: udef, 0x2e: udef, 0x2f: udef,
         0x30: udef, 0x31: udef, 0x32: udef, 0x33: udef, 0x34: udef, 0x35: udef, 0x36: udef, 0x37: udef, 0x38: udef, 0x39: udef, 0x3a: udef, 0x3b: udef, 0x3c: udef, 0x3d: udef, 0x3e: udef, 0x3f: udef,
         0x40: udef, 0x41: udef, 0x42: udef, 0x43: udef, 0x44: udef, 0x45: udef, 0x46: udef, 0x47: udef, 0x48: udef, 0x49: udef, 0x4a: udef, 0x4b: udef, 0x4c: udef, 0x4d: udef, 0x4e: udef, 0x4f: udef,
@@ -113,18 +134,25 @@ const charMap: CharMap[] = [
         0xf0: udef, 0xf1: udef, 0xf2: udef, 0xf3: udef, 0xf4: udef, 0xf5: udef, 0xf6: udef, 0xf7: udef, 0xf8: udef, 0xf9: udef, 0xfa: udef, 0xfb: udef, 0xfc: udef, 0xfd: udef, 0xfe: udef, 0xff: udef,
         0x03bc: '砚',
     },
-];
+};
 
 function EncodeUnicode(unicode: number) {
     const charCode = unicode.toString(16);
     return '\\u' + '0'.repeat(4 - charCode.length) + charCode;
 }
 
-function mapString(s: string, map: CharMap, color: string = "") {
-    return s.replace(/[\u0000-\uFFFF]/g, (m => {
-        const unicode = m.charCodeAt(0);
-        return color ? chalk.bgHex(color)(map[unicode] ?? EncodeUnicode(unicode)) : map[unicode];
-    }));
+function mapString(s: Str, color: string = "") {
+    let flag = false;
+    const mapResult = s.str.split("").map((c, i) => {
+        const unicode = c.charCodeAt(0);
+        const char = charMap[s.font][unicode];
+        if (!char) {
+            flag = true;
+            return EncodeUnicode(unicode);
+        }
+        return char;
+    }).join("");
+    return color ? (flag ? chalk.bgHex("#a4b0be")(s.font) : "") + chalk.bgHex(color)(mapResult) : mapResult;
 }
 
 async function *parsePDF(data: Uint8Array) {
@@ -133,78 +161,121 @@ async function *parsePDF(data: Uint8Array) {
         isEvalSupported: false,
     });
     const pdf = await task.promise;
-    type Result = {str: string, font: number, line: number};
     for (const pageNumber of Array.from({length: pdf.numPages}, (_, i) => 1 + i)) {
         const page = await pdf.getPage(pageNumber);
         await page.getOperatorList(); // 加载字体
-        const text: Result[] = (await page.getTextContent({
+        const text: TextBlock[] = (await page.getTextContent({
+            normalizeWhitespace: false,
+            disableCombineTextItems: false,
             includeMarkedContent: false,
-            disableNormalization: false,
         })).items.map((text) => {
             const isTextItem = (value: any): value is TextItem => value && value.str != undefined;
             if (isTextItem(text)) {
-                const font = page.commonObjs.get(text.fontName);
-                if (font.type === "CIDFontType0" && font.subtype === "CIDFontType0C" && font.name === "E-BZ9-PK748344")
-                    return {str: text.str, font: 0, line: text.transform[5] as number};
-                else if (font.type === "Type1" && font.subtype === "Type1C")
-                    return {str: text.str, font: Number(/^([A-Z]{6})\+FzBookMaker(?<type>[0-9])DlFont\k<type>([0-9]{10})$/.exec(font.name)[2]), line: text.transform[5] as number};
-                else
+                if (text.transform[0] !== text.height || text.transform[3] !== text.height) {
                     return undefined;
+                }
+                if (text.transform[1] !== 0 || text.transform[2] !== 0) {
+                    return undefined;
+                }
+                const font = page.commonObjs.get(text.fontName);
+                const x = text.transform[4] as number;
+                const w = text.width;
+                const y = text.transform[5] as number;
+                const h = text.height;
+
+                if (font.type === "CIDFontType0" && font.subtype === "CIDFontType0C") {
+                    return {
+                        texts: [{
+                            str: text.str,
+                            font: /^([A-Z0-9\-]+)-PK748(.+?)$/.exec(font.name)[1],
+                        }],
+                        x: x,
+                        y: y,
+                        width: w,
+                        height: h,
+                    };
+                } else if (font.type === "Type1" && font.subtype === "Type1C") {
+                    return {
+                        texts: [{
+                            str: text.str,
+                            font: Number(/^([A-Z]{6})\+FzBookMaker(?<type>[0-9])DlFont\k<type>([0-9]{10})$/.exec(font.name)[2]),
+                        }],
+                        x: x,
+                        y: y,
+                        width: w,
+                        height: h,
+                    };
+                }
+                else {
+                    return undefined;
+                }
             } else {
                 return undefined;
             }
-        }).filter((text) =>  text != undefined && text.str.length != 0) as Result[];
-        const result: Result[] = [];
-        let currentStr = text[0];
-        for (let i = 1; i < text.length; i++) {
-            const {str, font, line} = text[i];
+        }).filter((text) =>  text != undefined && text.texts[0].str.length != 0) as TextBlock[];
 
-            if (font === text[i - 1].font && line === text[i - 1].line) {
-                currentStr.str += str;
-            } else {
-                result.push(currentStr);
-                currentStr = {str, font, line};
+        let flag = false;
+        do {
+            flag = false;
+            let p = 0;
+            while (p < text.length) {
+                let q = p+1;
+                while (q < text.length) {
+                    if (Math.abs(text[p].y - text[q].y) <= fontHeight / 2 && text[q].x - (text[p].x + text[p].width) < fontHeight / 4) {
+                        text[p].texts.push(...text[q].texts);
+                        for (let i = 0; i < text[p].texts.length-1;) { // 拼接相同字体
+                            if (text[p].texts[i].font === text[p].texts[i+1].font) {
+                                text[p].texts[i].str += text[p].texts[i+1].str;
+                                text[p].texts.splice(i+1, 1);
+                            } else {
+                                i++;
+                            }
+                        }
+                        text[p].width = text[q].x - text[p].x + text[q].width;
+                        // text[p].width = text[p].width + text[q].width;
+                        text.splice(q, 1);
+                        flag = true;
+                    } else {
+                        q++;
+                    }
+                }
+                p++;
             }
-        }
-        yield {pageNumber, result};
+        } while (flag);
+
+        yield {pageNumber, text};
     }
     await pdf.destroy();
 }
 
 export const main = async () => {
-    const colors = [
-        "#a4b0be",
-        "#ffc9c9",
-        "#ffd8a8",
-        "#ffec99",
-        "#b2f2bb",
-        "#a5d8ff",
-        "#99e9f2",
-        "#d0bfff",
-    ]
+    const colors: {[key: Font]: string} = {
+        1: "#ffc9c9",
+        2: "#ffd8a8",
+        3: "#ffec99",
+        4: "#b2f2bb",
+        5: "#a5d8ff",
+        6: "#99e9f2",
+        7: "#d0bfff",
+    }
 
-    for await (const {pageNumber: page, result: text} of parsePDF(new Uint8Array(fs.readFileSync("./src/raw/GB_T 37028-2018《全国主要经济功能区分类与代码》.pdf")))) {
+    for await (const {pageNumber: page, text: text} of parsePDF(new Uint8Array(fs.readFileSync("./src/raw/GB_T 37028-2018《全国主要经济功能区分类与代码》.pdf")))) {
         console.log(`====${page}====`)
         let i = 0;
         while (i < text.length) {
-            if (text[i].font === 0) {
-                const code = /^([０１２３４５６７８９]{2})([０１２３４５６７８９]{3})([０１２３４５６７８９]{3}) $/.exec(text[i].str);
-                if (code) {
-                    const province_code = mapString(code[1], charMap[text[i].font], "#bcd4e7");
-                    const classification_code = mapString(code[2], charMap[text[i].font], "#a3bbdb");
-                    const zone_code = mapString(code[3], charMap[text[i].font], "#8aabcc");
+            if (text[i].texts.length === 1 && /^[０１２３４５６７８９]{8}$/.test(text[i].texts[0].str)) {
+                const code = mapString(text[i].texts[0], "#bcd4e7");
 
-                    const line = text[++i].line;
-                    let name: string[] = [];
-                    do {
-                        name.push(chalk.bgHex("#a4b0be")(text[i].font));
-                        name.push(mapString(text[i].str, charMap[text[i].font], colors[text[i].font]));
-                    } while (++i < text.length && text[i].line === line);
+                const province_name = text[++i].texts.map((c) =>  mapString(c, colors[c.font]));
+                const classification_name = text[++i].texts.map((c) =>  mapString(c, colors[c.font]));
+                const zone_name = text[++i].texts.map((c) =>  mapString(c, colors[c.font]));
 
-                    console.log(province_code + classification_code + zone_code, name.join(""));
-                } else {
-                    i++;
-                }
+                console.log(
+                    code,
+                    province_name.join(""),
+                    classification_name.join(""),
+                    zone_name.join(""),
+                );
             } else {
                 i++;
             }
