@@ -17,16 +17,16 @@ type Str = {
 }
 type TextBlock = {
     texts: Str[],
-    x: number, y: number,
+    x1: number, y1: number, x2: number, y2: number,
     width: number, height: number,
 };
 
 const charMap: {[key: Font]: CharMap } = {
     'E-BZ9': {
-        // 0xff10: '０', 0xff11: '１', 0xff12: '２', 0xff13: '３', 0xff14: '４', // debug
-        // 0xff15: '５', 0xff16: '６', 0xff17: '７', 0xff18: '８', 0xff19: '９', // debug
-        0xff10: '0', 0xff11: '1', 0xff12: '2', 0xff13: '3', 0xff14: '4', // fact
-        0xff15: '5', 0xff16: '6', 0xff17: '7', 0xff18: '8', 0xff19: '9', // fact
+        0xff10: '０', 0xff11: '１', 0xff12: '２', 0xff13: '３', 0xff14: '４', // debug
+        0xff15: '５', 0xff16: '６', 0xff17: '７', 0xff18: '８', 0xff19: '９', // debug
+        // 0xff10: '0', 0xff11: '1', 0xff12: '2', 0xff13: '3', 0xff14: '4', // fact
+        // 0xff15: '5', 0xff16: '6', 0xff17: '7', 0xff18: '8', 0xff19: '9', // fact
     },
     'H-SS9': {
         0x2014: '—',
@@ -42,7 +42,7 @@ const charMap: {[key: Font]: CharMap } = {
         0x90: '壮', 0x91: '族', 0x92: '庆', 0x93: '四', 0x94: '川', 0x95: '贵', 0x96: '州', 0x97: '云', 0x98: '藏', 0x99: '陕', 0x9a: '甘', 0x9b: '肃', 0x9c: '青', 0x9d: '夏', 0x9e: '回', 0x9f: '疆',
         0xa0: '维', 0xa1: '吾', 0xa2: '尔', 0xa3: '本', 0xa4: udef, 0xa5: '准', 0xa6: udef, 0xa7: '照', 0xa8: udef, 0xa9: '出', 0xaa: udef, 0xab: udef, 0xac: '草', 0xad: '现', 0xae: '息', 0xaf: udef,
         0xb0: '化', 0xb1: udef, 0xb2: udef, 0xb3: '会', 0xb4: udef, 0xb5: udef, 0xb6: '归', 0xb7: '口', 0xb8: udef, 0xb9: udef, 0xba: '中', 0xbb: '研', 0xbc: udef, 0xbd: '院', 0xbe: udef, 0xbf: '革',
-        0xc0: '利', 0xc1: '外', 0xc2: '资', 0xc3: '投', 0xc4: udef, 0xc5: '科', 0xc6: '学', 0xc7: '部', 0xc8: '空', 0xc9: udef, 0xca: '商', 0xcb: '务', 0xcc: '理', 0xcd: udef, 0xce: udef, 0xcf: udef,
+        0xc0: '利', 0xc1: '外', 0xc2: '资', 0xc3: '投', 0xc4: udef, 0xc5: '科', 0xc6: '学', 0xc7: '部', 0xc8: '基', 0xc9: udef, 0xca: '商', 0xcb: '务', 0xcc: '理', 0xcd: udef, 0xce: udef, 0xcf: udef,
         0xd0: '计', 0xd1: '局', 0xd2: '设', 0xd3: '人', 0xd4: '朱', 0xd5: '虹', 0xd6: '咸', 0xd7: '奎', 0xd8: '桐', 0xd9: udef, 0xda: udef, 0xdb: '金', 0xdc: '胜', 0xdd: '陈', 0xde: '凯', 0xdf: udef,
         0xe0: '盛', 0xe1: udef, 0xe2: udef, 0xe3: '孙', 0xe4: '洪', 0xe5: udef, 0xe6: '张', 0xe7: '扬', 0xe8: '李', 0xe9: '莎', 0xea: '华', 0xeb: '王', 0xec: udef, 0xed: udef, 0xee: udef, 0xef: udef,
         0xf0: udef, 0xf1: '成', 0xf2: '立', 0xf3: udef, 0xf4: '及', 0xf5: '民', 0xf6: '政', 0xf7: '府', 0xf8: udef, 0xf9: '于', 0xfa: '库', 0xfb: udef, 0xfc: udef, 0xfd: udef, 0xfe: '交', 0xff: udef,
@@ -179,9 +179,9 @@ async function *parsePDF(data: Uint8Array) {
                 }
                 const font = page.commonObjs.get(text.fontName);
                 const x = text.transform[4] as number;
-                const w = text.width;
+                const w = text.width / text.height * fontHeight;
                 const y = text.transform[5] as number;
-                const h = text.height;
+                const h = fontHeight;
 
                 if (font.type === "CIDFontType0" && font.subtype === "CIDFontType0C") {
                     return {
@@ -189,8 +189,10 @@ async function *parsePDF(data: Uint8Array) {
                             str: text.str,
                             font: /^([A-Z0-9\-]+)-PK748(.+?)$/.exec(font.name)[1],
                         }],
-                        x: x,
-                        y: y,
+                        x1: x,
+                        x2: x+w,
+                        y1: y+h,
+                        y2: y,
                         width: w,
                         height: h,
                     };
@@ -200,8 +202,10 @@ async function *parsePDF(data: Uint8Array) {
                             str: text.str,
                             font: Number(/^([A-Z]{6})\+FzBookMaker(?<type>[0-9])DlFont\k<type>([0-9]{10})$/.exec(font.name)[2]),
                         }],
-                        x: x,
-                        y: y,
+                        x1: x,
+                        x2: x+w,
+                        y1: y+h,
+                        y2: y,
                         width: w,
                         height: h,
                     };
@@ -214,30 +218,117 @@ async function *parsePDF(data: Uint8Array) {
             }
         }).filter((text) =>  text != undefined && text.texts[0].str.length != 0) as TextBlock[];
 
+        // 横向拼接多字
         let flag = false;
         do {
             flag = false;
             let p = 0;
             while (p < text.length) {
-                let q = p+1;
+                let q = 0;
                 while (q < text.length) {
-                    if (Math.abs(text[p].y - text[q].y) <= fontHeight / 2 && text[q].x - (text[p].x + text[p].width) < fontHeight / 4) {
+                    if (p === q) {
+                        q++;
+                        continue;
+                    }
+                    const xd = text[q].x1 - text[p].x2;
+                    const yd = Math.abs(text[q].y1 - text[p].y1);
+                if ((0 <= xd && xd <= fontHeight / 4) && yd <= fontHeight / 2) {
                         text[p].texts.push(...text[q].texts);
-                        for (let i = 0; i < text[p].texts.length-1;) { // 拼接相同字体
-                            if (text[p].texts[i].font === text[p].texts[i+1].font) {
-                                text[p].texts[i].str += text[p].texts[i+1].str;
-                                text[p].texts.splice(i+1, 1);
+                        for (let i = 0; i < text[p].texts.length - 1;) { // 拼接相同字体
+                            if (text[p].texts[i].font === text[p].texts[i + 1].font) {
+                                text[p].texts[i].str += text[p].texts[i + 1].str;
+                                text[p].texts.splice(i + 1, 1);
                             } else {
                                 i++;
                             }
                         }
-                        text[p].width = text[q].x - text[p].x + text[q].width;
-                        // text[p].width = text[p].width + text[q].width;
+                        text[p].x2 = text[q].x2;
+                        text[p].width += text[p].x2 - text[p].x1;
+                        if (text[p].y1 > text[q].y1) {
+                            if (text[p].y2 > text[q].y2) {
+                                text[p].y1 = text[p].y1;
+                                text[p].y2 = text[q].y2;
+                            } else if (text[p].y2 < text[q].y2) {
+                                text[p].y1 = text[p].y1;
+                                text[p].y2 = text[p].y2;
+                            }
+                        } else if (text[p].y1 < text[q].y1) {
+                            if (text[p].y2 > text[q].y2) {
+                                text[p].y1 = text[q].y1;
+                                text[p].y2 = text[q].y2;
+                            } else if (text[p].y2 < text[q].y2) {
+                                text[p].y1 = text[q].y1;
+                                text[p].y2 = text[p].y2;
+                            }
+                        }
+                        text[p].height = text[p].y2 - text[p].y1;
                         text.splice(q, 1);
+                        if (q < p) {
+                            p--;
+                        }
                         flag = true;
-                    } else {
-                        q++;
+                        continue;
                     }
+                    q++;
+                }
+                p++;
+            }
+        } while (flag);
+
+        // 纵向拼接多行
+        flag = false;
+        do {
+            flag = false;
+            let p = 0;
+            while (p < text.length) {
+                let q = 0;
+                while (q < text.length) {
+                    if (p === q) {
+                        q++;
+                        continue;
+                    }
+                    const yd = text[p].y1 - text[q].y1;
+                    if ((0 <= yd && yd <= fontHeight * 1.75) && (
+                        text[p].x1 < text[q].x1 && text[p].x2 > text[q].x1
+                        || text[q].x1 < text[p].x1 && text[q].x2 > text[p].x1
+                    )) {
+                        text[p].texts.push(...text[q].texts);
+                        for (let i = 0; i < text[p].texts.length - 1;) { // 拼接相同字体
+                            if (text[p].texts[i].font === text[p].texts[i + 1].font) {
+                                text[p].texts[i].str += text[p].texts[i + 1].str;
+                                text[p].texts.splice(i + 1, 1);
+                            } else {
+                                i++;
+                            }
+                        }
+                        text[p].y2 = text[q].y2;
+                        text[p].height += text[p].y1 - text[p].y2;
+                        if (text[p].x1 > text[q].x1) {
+                            if (text[p].x2 > text[q].x2) {
+                                text[p].x1 = text[q].x1;
+                                text[p].x2 = text[p].x2;
+                            } else if (text[p].x2 < text[q].x2) {
+                                text[p].x1 = text[q].x1;
+                                text[p].x2 = text[q].x2;
+                            }
+                        } else if (text[p].x1 < text[q].x1) {
+                            if (text[p].x2 > text[q].x2) {
+                                text[p].x1 = text[p].x1;
+                                text[p].x2 = text[p].x2;
+                            } else if (text[p].x2 < text[q].x2) {
+                                text[p].x1 = text[p].x1;
+                                text[p].x2 = text[q].x2;
+                            }
+                        }
+                        text[p].width = text[p].x2 - text[p].x1;
+                        text.splice(q, 1);
+                        if (q < p) {
+                            p--;
+                        }
+                        flag = true;
+                        continue;
+                    }
+                    q++;
                 }
                 p++;
             }
@@ -276,9 +367,8 @@ export const main = async () => {
                     classification_name.join(""),
                     zone_name.join(""),
                 );
-            } else {
-                i++;
             }
+            i++;
         }
     }
 
