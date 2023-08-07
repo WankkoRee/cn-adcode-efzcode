@@ -1,4 +1,4 @@
-import untypedData from './data/GB_T_2260.json'
+import untypedData from './data/data.json'
 import type {Data, DataCounty, DataPrefecture, DataProvince} from "./types";
 
 const data: Data<boolean> = untypedData;
@@ -8,42 +8,43 @@ export const get = (code: string, deprecated: boolean = true): [
     DataPrefecture<boolean> | null,
     DataCounty<boolean> | null,
 ] => {
-    if (code.length >= 2) {
-        const province = data[code.substring(0, 2)];
-        if (province && (!deprecated && !province.deprecated || deprecated)) {
-            if (code.length == 4 || code.length == 6) { // adcode
-                const prefecture = province.children[code.substring(2, 4)];
-                if (prefecture && (!deprecated && !prefecture.deprecated || deprecated)) {
-                    if (code.length == 6) {
-                        const county = prefecture.children[code.substring(4, 6)];
-                        if (county && (!deprecated && !county.deprecated || deprecated)) {
-                            return [
-                                province,
-                                prefecture,
-                                county,
-                            ]
-                        }
-                    }
-                    return [
-                        province,
-                        prefecture,
-                        null,
-                    ]
-                }
-            } else if (code.length == 5 || code.length == 8) { // efzcode
-                // todo
+    const result = /^(\d{2})(?:(\d{2})?(\d{2})?|(\d{3})?(\d{3})?)$/.exec(code);
+    let province: DataProvince<boolean> = null;
+    let prefecture: DataPrefecture<boolean> = null;
+    let county: DataCounty<boolean> = null;
+    if (result) {
+        if (result[1]) {
+            province = data[result[1]];
+            if (!province || (!deprecated && province.deprecated)) {
+                province = null;
             }
-            return [
-                province,
-                null,
-                null,
-            ]
+            if (province) {
+                if (result[2]) {
+                    prefecture = province.children[result[2]];
+                } else if (result[4]) {
+                    prefecture = province.children[result[4]];
+                }
+                if (!prefecture || (!deprecated && prefecture.deprecated)) {
+                    prefecture = null;
+                }
+                if (prefecture) {
+                    if (result[3]) {
+                        county = prefecture.children[result[3]];
+                    }
+                    if (result[5]) {
+                        county = prefecture.children[result[5]];
+                    }
+                    if (!county || (!deprecated && county.deprecated)) {
+                        county = null;
+                    }
+                }
+            }
         }
     }
     return [
-        null,
-        null,
-        null,
+        province,
+        prefecture,
+        county,
     ];
 }
 
