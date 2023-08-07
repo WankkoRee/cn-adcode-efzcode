@@ -40,7 +40,7 @@ export type DataProvince = {
     name: string,
     short: string | null,
     deprecated: string | null,
-    children: DataPrefectures | DataClassification,
+    children: DataPrefectures | DataClassifications,
 }
 
 export type Data = {

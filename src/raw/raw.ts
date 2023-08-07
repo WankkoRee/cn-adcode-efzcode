@@ -17,14 +17,14 @@ async function main() {
             name: gb_t_2260[province].name,
             short: gb_t_2260[province].short,
             deprecated: gb_t_2260[province].deprecated,
-            children: {}
+            children: {},
         }
         Object.keys(gb_t_2260[province].children).forEach(prefecture => {
             data[province].children[prefecture] = {
                 name: gb_t_2260[province].children[prefecture].name,
                 short: gb_t_2260[province].children[prefecture].short,
                 deprecated: gb_t_2260[province].children[prefecture].deprecated,
-                children: {}
+                children: {},
             }
             Object.keys(gb_t_2260[province].children[prefecture].children).forEach(county => {
                 data[province].children[prefecture].children[county] = {
@@ -41,7 +41,7 @@ async function main() {
                 name: gb_t_37028[province].name,
                 short: gb_t_37028[province].short,
                 deprecated: gb_t_37028[province].deprecated,
-                children: {}
+                children: {},
             }
         } else {
             assert(data[province].name === gb_t_37028[province].name)
@@ -51,7 +51,7 @@ async function main() {
                 name: gb_t_37028[province].children[gb_t_classification].name,
                 short: gb_t_37028[province].children[gb_t_classification].short,
                 deprecated: gb_t_37028[province].children[gb_t_classification].deprecated,
-                children: {}
+                children: {},
             }
             Object.keys(gb_t_37028[province].children[gb_t_classification].children).forEach(zone => {
                 data[province].children[gb_t_classification].children[zone] = {
