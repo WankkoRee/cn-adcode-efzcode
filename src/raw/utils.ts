@@ -94,7 +94,7 @@ export function getExported(data: Data<string | null>) {
 
 export function getNow(data:Data<string | null>) {
     const dataNow: DataNow = {};
-    Object.entries(data).forEach(([province, {name, short, deprecated, children}]) => {
+    Object.entries(data).every(([province, {name, short, deprecated, children}]) => {
         if (deprecated)
             return true; // continue
         dataNow[province] = {
@@ -102,7 +102,7 @@ export function getNow(data:Data<string | null>) {
             short,
             children: {},
         }
-        Object.entries(children).forEach(([prefecture, {name, short, deprecated, children}]) => {
+        Object.entries(children).every(([prefecture, {name, short, deprecated, children}]) => {
             if (deprecated)
                 return true; // continue
             dataNow[province].children[prefecture] = {
@@ -110,18 +110,18 @@ export function getNow(data:Data<string | null>) {
                 short,
                 children: {},
             }
-            Object.entries(children).forEach(([county, {name, short, deprecated}]) => {
+            Object.entries(children).every(([county, {name, short, deprecated}]) => {
                 if (deprecated)
                     return true; // continue
                 dataNow[province].children[prefecture].children[county] = {
                     name,
                     short,
                 }
-                return undefined;
+                return true; // continue
             });
-            return undefined;
+            return true; // continue
         });
-        return undefined;
+        return true; // continue
     });
     return dataNow;
 }
