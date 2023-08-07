@@ -1,5 +1,5 @@
 import type {Data} from "../types";
-import type {DataNow, DataRaw} from "./types";
+import type {DataRaw} from "./types";
 
 export function deprecated(data: Data<string | null>, flag: string) {
     Object.entries(data).forEach(([province, {name, short, children}]) => {
@@ -64,7 +64,7 @@ export function update(data: Data<string | null>, newData: DataRaw, flag: string
     })
 }
 
-export function getExported(data: Data<string | null>) {
+export function getDeprecated(data: Data<string | null>) {
     const dataExported: Data<boolean> = {};
     Object.entries(data).forEach(([province, {name, short, deprecated, children}]) => {
         dataExported[province] = {
@@ -93,7 +93,7 @@ export function getExported(data: Data<string | null>) {
 }
 
 export function getNow(data:Data<string | null>) {
-    const dataNow: DataNow = {};
+    const dataNow: Data<undefined> = {};
     Object.entries(data).every(([province, {name, short, deprecated, children}]) => {
         if (deprecated)
             return true; // continue

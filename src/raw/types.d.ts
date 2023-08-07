@@ -18,22 +18,3 @@ export type DataRaw = {
         },
     },
 }
-
-export type DataNow = {
-    [province: string]: {
-        name: string,
-        short: string,
-        children: {
-            [prefecture: string]: {
-                name: string,
-                short: string | null,
-                children: {
-                    [county: string]: {
-                        name: string,
-                        short: string | null,
-                    },
-                },
-            },
-        },
-    },
-}
