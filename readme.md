@@ -24,3 +24,69 @@
 ## 关于港澳台
 
 港澳台自古以来就是中国领土的一部分，但因民政部未给出完整数据，且没有其他政府官方数据来源，故未完全收录。
+
+
+## 安装
+
+```shell
+npm i cn-adcode-efzcode
+
+yarn add cn-adcode-efzcode
+
+pnpm add cn-adcode-efzcode
+```
+
+## 使用
+
+### 导入/引用
+
+```typescript
+import China from 'cn-adcode-efzcode'
+```
+
+### 获取所有子级区域
+
+```typescript
+/*
+ 参数 includeDeprecated: 是否包含已废除的区划, 仅筛选当前子级, 可选, 默认为 false, 因为通常不需要列出已废除的区划
+ */
+China.listChildren() // === China.listChildren(false)
+China.listChildren(true)?.listChildren(true)?.listChildren(true) // 如果需要三级结果都包含已废除的区划, 则应当每级都传入includeDeprecated = true
+```
+
+### 逐级获取
+
+#### 省-市-县
+
+```typescript
+China.getChild('11')?.getChild('01')?.getChild('01')?.getName() === '东城区'
+// 也可以👇
+China.getProvince('11')?.getPrefecture('01')?.getCounty('01')?.getName() === '东城区'
+```
+
+#### 省-类-区
+
+```typescript
+China.getChild('11')?.getChild('101')?.getChild('001')?.getName() === '北京经济技术开发区'
+// 也可以👇
+China.getProvince('11')?.getClassification('101')?.getZone('001')?.getName() === '北京经济技术开发区'
+```
+
+### 获取具体信息
+
+```typescript
+const province = China.getProvince('11')!
+county.getLevel() === 1
+province.getCode() === '11'
+
+const prefecture = province.getProvince('01')!
+county.getLevel() === 2
+prefecture.getCode() === '1101'
+
+const county = prefecture.getProvince('01')!
+county.getLevel() === 3
+county.getCode() === '110101'
+county.getName() === '东城区'
+county.getShortName() === '东城'
+county.isDeprecated() === false
+```
