@@ -1,7 +1,7 @@
 import type {Data} from "../types";
 import type {DataRaw} from "./types";
 
-export function deprecated(data: Data<string | null>, flag: string) {
+export function deprecated(data: Data, flag: string) {
     Object.entries(data).forEach(([province, {name, short, children}]) => {
         if (!data[province].deprecated) {
             data[province].deprecated = flag;
@@ -19,7 +19,7 @@ export function deprecated(data: Data<string | null>, flag: string) {
     })
 }
 
-export function update(data: Data<string | null>, newData: DataRaw, flag: string) {
+export function update(data: Data, newData: DataRaw, flag: string) {
     deprecated(data, flag);
     Object.entries(newData).forEach(([province, {name, short, children}]) => {
         if (!data[province]) {
@@ -62,68 +62,6 @@ export function update(data: Data<string | null>, newData: DataRaw, flag: string
             })
         })
     })
-}
-
-export function getDeprecated(data: Data<string | null>) {
-    const dataExported: Data<boolean> = {};
-    Object.entries(data).forEach(([province, {name, short, deprecated, children}]) => {
-        dataExported[province] = {
-            name,
-            short,
-            deprecated: !!deprecated,
-            children: {},
-        }
-        Object.entries(children).forEach(([prefecture, {name, short, deprecated, children}]) => {
-            dataExported[province].children[prefecture] = {
-                name,
-                short,
-                deprecated: !!deprecated,
-                children: {},
-            }
-            Object.entries(children).forEach(([county, {name, short, deprecated}]) => {
-                dataExported[province].children[prefecture].children[county] = {
-                    name,
-                    short,
-                    deprecated: !!deprecated,
-                }
-            });
-        });
-    });
-    return dataExported;
-}
-
-export function getNow(data:Data<string | null>) {
-    const dataNow: Data<undefined> = {};
-    Object.entries(data).every(([province, {name, short, deprecated, children}]) => {
-        if (deprecated)
-            return true; // continue
-        dataNow[province] = {
-            name,
-            short,
-            children: {},
-        }
-        Object.entries(children).every(([prefecture, {name, short, deprecated, children}]) => {
-            if (deprecated)
-                return true; // continue
-            dataNow[province].children[prefecture] = {
-                name,
-                short,
-                children: {},
-            }
-            Object.entries(children).every(([county, {name, short, deprecated}]) => {
-                if (deprecated)
-                    return true; // continue
-                dataNow[province].children[prefecture].children[county] = {
-                    name,
-                    short,
-                }
-                return true; // continue
-            });
-            return true; // continue
-        });
-        return true; // continue
-    });
-    return dataNow;
 }
 
 export function short_province(value: string) {

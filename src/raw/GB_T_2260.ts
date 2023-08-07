@@ -44,7 +44,7 @@ import {update} from "./utils.js";
 import type {Data} from "../types";
 
 export function main() {
-    const data: Data<string | null> = {};
+    const data: Data = {};
 
     update(data, GB_T_2260_1980(), "GB/T 2260-1980");
     update(data, GB_T_2260_1981(), "GB/T 2260-1981");

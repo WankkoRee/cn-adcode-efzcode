@@ -28,6 +28,8 @@ test('省级现有区划', () => {
     expect(cncode.getNotDeprecated('99999')[0]?.name).toBe(undefined); // null, null, undefined
     expect(cncode.getNotDeprecated('999999')[0]?.name).toBe(undefined); // null, null, null
     expect(cncode.getNotDeprecated('99999999')[0]?.name).toBe(undefined); // null, null, null
+
+    expect(cncode.getNotDeprecated('1101101001')[0]?.name).toBe('北京市'); // false, false, false
 });
 
 test('地级现有区划', () => {
@@ -70,6 +72,8 @@ test('经济功能区现有分类', () => {
     expect(cncode.getNotDeprecated('99')[1]?.name).toBe(undefined); // null, undefined, undefined
     expect(cncode.getNotDeprecated('99999')[1]?.name).toBe(undefined); // null, null, undefined
     expect(cncode.getNotDeprecated('99999999')[1]?.name).toBe(undefined); // null, null, null
+
+    expect(cncode.getNotDeprecated('1101101001')[1]?.name).toBe('市辖区'); // false, false, false
 })
 
 test('县级现有区划', () => {
@@ -112,6 +116,8 @@ test('经济功能区现有分区', () => {
     expect(cncode.getNotDeprecated('99')[2]?.name).toBe(undefined); // null, undefined, undefined
     expect(cncode.getNotDeprecated('99999')[2]?.name).toBe(undefined); // null, null, undefined
     expect(cncode.getNotDeprecated('99999999')[2]?.name).toBe(undefined); // null, null, null
+
+    expect(cncode.getNotDeprecated('1101101001')[2]?.name).toBe('北京经济技术开发区'); // false, false, false
 });
 
 
@@ -143,6 +149,8 @@ test('省级所有区划', () => {
     expect(cncode.getWithDeprecated('99999')[0]?.name).toBe(undefined); // null, null, undefined
     expect(cncode.getWithDeprecated('999999')[0]?.name).toBe(undefined); // null, null, null
     expect(cncode.getWithDeprecated('99999999')[0]?.name).toBe(undefined); // null, null, null
+
+    expect(cncode.getWithDeprecated('1101101001')[0]?.name).toBe('北京市'); // false, false, false
 });
 
 test('地级所有区划', () => {
@@ -185,6 +193,8 @@ test('经济功能区所有分类', () => {
     expect(cncode.getWithDeprecated('99')[1]?.name).toBe(undefined); // null, undefined, undefined
     expect(cncode.getWithDeprecated('99999')[1]?.name).toBe(undefined); // null, null, undefined
     expect(cncode.getWithDeprecated('99999999')[1]?.name).toBe(undefined); // null, null, null
+
+    expect(cncode.getWithDeprecated('1101101001')[1]?.name).toBe('市辖区'); // false, false, false
 });
 
 test('县级所有区划', () => {
@@ -227,4 +237,6 @@ test('经济功能区所有分区', () => {
     expect(cncode.getWithDeprecated('99')[2]?.name).toBe(undefined); // null, undefined, undefined
     expect(cncode.getWithDeprecated('99999')[2]?.name).toBe(undefined); // null, null, undefined
     expect(cncode.getWithDeprecated('99999999')[2]?.name).toBe(undefined); // null, null, null
+
+    expect(cncode.getWithDeprecated('1101101001')[2]?.name).toBe('北京经济技术开发区'); // false, false, false
 });

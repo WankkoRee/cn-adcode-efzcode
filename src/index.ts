@@ -1,16 +1,102 @@
-import untypedDataDeprecated from './data/data.deprecated.json'
-import untypedDataNow from './data/data.now.json'
+import { Map as ImmutableMap } from 'immutable'
+
+import untypedData from './data/data.json'
 import type {Data, DataCounty, DataPrefecture, DataProvince} from "./types";
 
-const dataDeprecated: Data<boolean> = untypedDataDeprecated;
-const dataNow: Data<undefined> = untypedDataNow;
+const data = ImmutableMap(Object.fromEntries(Object.entries(untypedData as Data).map(
+    ([code, data]) =>
+        [code, new Prefecture(code, data, this)]
+)));
+
+const codeRule = /^(\d{2})(?:(\d{2})?(\d{2})?|(\d{3})?(\d{3})?|(\d{2})(\d{3})(\d{3}))$/;
+
+class Region {
+    private readonly level: 1 | 2 | 3;
+    private readonly code: string;
+    private readonly name: string;
+    private readonly short: string | null;
+    private readonly deprecated: string | null;
+
+    constructor(level: 1 | 2 | 3, code: string, name: string, short: string | null, deprecated: string | null) {
+        this.level = level;
+        this.code = code;
+        this.name = name;
+        this.short = short;
+        this.deprecated = deprecated;
+    }
+
+    getCode() {
+        return this.code;
+    }
+    getName() {
+        return this.name;
+    }
+    getShortName() {
+        return this.short;
+    }
+    isDeprecated() {
+        return !!this.deprecated;
+    }
+}
+
+class County extends Region {
+    private readonly parent: Prefecture;
+
+    constructor(code: string, data: DataCounty, parent: Prefecture) {
+        super(3, code, data.name, data.short, data.deprecated);
+        this.parent = parent;
+    }
+
+    getParent() {
+        return this.parent;
+    }
+}
+
+class Prefecture extends Region {
+    private readonly children: ImmutableMap<string, County>;
+    private readonly parent: Province;
+
+    constructor(code: string, data: DataPrefecture, parent: Province) {
+        super(2, code, data.name, data.short, data.deprecated);
+        this.parent = parent;
+        this.children = ImmutableMap(Object.fromEntries(Object.entries(data.children).map(
+            ([code, data]) =>
+                [code, new County(code, data, this)]
+        )));
+    }
+
+    getChildren() {
+        return this.children;
+    }
+    getParent() {
+        return this.parent;
+    }
+}
+
+class Province extends Region {
+    private readonly children: ImmutableMap<string, Prefecture>;
+
+    constructor(code: string, data: DataProvince) {
+        super(1, code, data.name, data.short, data.deprecated);
+        this.children = ImmutableMap(Object.fromEntries(Object.entries(data.children).map(
+            ([code, data]) =>
+                [code, new Prefecture(code, data, this)]
+        )));
+    }
+
+    getChildren() {
+        return this.children;
+    }
+}
+
+
 
 export const getWithDeprecated = (code: string): [
-    DataProvince<boolean> | null,
-    DataPrefecture<boolean> | null,
-    DataCounty<boolean> | null,
+        DataProvince<boolean> | null,
+        DataPrefecture<boolean> | null,
+        DataCounty<boolean> | null,
 ] => {
-    const result = /^(\d{2})(?:(\d{2})?(\d{2})?|(\d{3})?(\d{3})?)$/.exec(code);
+    const result = codeRule.exec(code);
     let province: DataProvince<boolean> | null = null;
     let prefecture: DataPrefecture<boolean> | null = null;
     let county: DataCounty<boolean> | null = null;
@@ -22,14 +108,20 @@ export const getWithDeprecated = (code: string): [
                     prefecture = province.children[result[2]] ?? null;
                 } else if (result[4]) {
                     prefecture = province.children[result[4]] ?? null;
+                } else if (result[7]) {
+                    prefecture = province.children[result[7]] ?? null;
                 }
                 if (prefecture) {
                     if (result[3]) {
                         county = prefecture.children[result[3]] ?? null;
-                    }
-                    if (result[5]) {
+                    } else if (result[5]) {
                         county = prefecture.children[result[5]] ?? null;
+                    } else if (result[8]) {
+                        county = prefecture.children[result[8]] ?? null;
                     }
+                }
+                if (result[6]) {
+                    prefecture = province.children[result[6]] ?? null;
                 }
             }
         }
@@ -42,11 +134,11 @@ export const getWithDeprecated = (code: string): [
 }
 
 export const getNotDeprecated = (code: string): [
-    DataProvince<undefined> | null,
-    DataPrefecture<undefined> | null,
-    DataCounty<undefined> | null,
+        DataProvince<undefined> | null,
+        DataPrefecture<undefined> | null,
+        DataCounty<undefined> | null,
 ] => {
-    const result = /^(\d{2})(?:(\d{2})?(\d{2})?|(\d{3})?(\d{3})?)$/.exec(code);
+    const result = codeRule.exec(code);
     let province: DataProvince<undefined> | null = null;
     let prefecture: DataPrefecture<undefined> | null = null;
     let county: DataCounty<undefined> | null = null;
@@ -58,14 +150,20 @@ export const getNotDeprecated = (code: string): [
                     prefecture = province.children[result[2]] ?? null;
                 } else if (result[4]) {
                     prefecture = province.children[result[4]] ?? null;
+                } else if (result[7]) {
+                    prefecture = province.children[result[7]] ?? null;
                 }
                 if (prefecture) {
                     if (result[3]) {
                         county = prefecture.children[result[3]] ?? null;
-                    }
-                    if (result[5]) {
+                    } else if (result[5]) {
                         county = prefecture.children[result[5]] ?? null;
+                    } else if (result[8]) {
+                        county = prefecture.children[result[8]] ?? null;
                     }
+                }
+                if (result[6]) {
+                    prefecture = province.children[result[6]] ?? null;
                 }
             }
         }
@@ -77,18 +175,11 @@ export const getNotDeprecated = (code: string): [
     ];
 }
 
-export const listWithDeprecated = (): Data<boolean> => {
-    return dataDeprecated;
-}
-
-export const listNotDeprecated = (): Data<undefined> => {
-    return dataNow;
-
+export function list () {
+    return data;
 }
 
 export default {
-    getWithDeprecated,
-    getNotDeprecated,
-    listWithDeprecated,
-    listNotDeprecated,
+    get,
+    list,
 }
