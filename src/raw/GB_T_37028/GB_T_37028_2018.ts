@@ -3,6 +3,8 @@ import pdfjs from "pdfjs-dist";
 const { getDocument } = pdfjs;
 import type {TextItem} from "pdfjs-dist/types/src/display/api";
 import chalk from "chalk";
+import type {DataRaw} from "../types";
+import {short_province} from "../utils.js";
 
 type CharMap = { [key: number]: string }
 
@@ -24,10 +26,10 @@ type TextBlock = {
 const charMap: {[key: Font]: CharMap } = {
     'E-BZ9': {
         0xff0d: '－',
-        0xff10: '０', 0xff11: '１', 0xff12: '２', 0xff13: '３', 0xff14: '４', 0xff15: '５', 0xff16: '６', 0xff17: '７', // debug
-        0xff18: '８', 0xff19: '９', // debug
-        // 0xff10:  '0', 0xff11:  '1', 0xff12:  '2', 0xff13:  '3', 0xff14:  '4', 0xff15:  '5', 0xff16:  '6', 0xff17:  '7', // fact
-        // 0xff18:  '8', 0xff19:  '9', // fact
+        // 0xff10: '０', 0xff11: '１', 0xff12: '２', 0xff13: '３', 0xff14: '４', 0xff15: '５', 0xff16: '６', 0xff17: '７', // debug
+        // 0xff18: '８', 0xff19: '９', // debug
+        0xff10:  '0', 0xff11:  '1', 0xff12:  '2', 0xff13:  '3', 0xff14:  '4', 0xff15:  '5', 0xff16:  '6', 0xff17:  '7', // fact
+        0xff18:  '8', 0xff19:  '9', // fact
         // 0xff20: udef, 0xff21: 'Ａ', 0xff22: 'Ｂ', 0xff23: 'Ｃ', 0xff24: 'Ｄ', 0xff25: 'Ｅ', 0xff26: 'Ｆ', 0xff27: 'Ｇ', // debug
         // 0xff28: 'Ｈ', 0xff29: 'Ｉ', 0xff2a: 'Ｊ', 0xff2b: 'Ｋ', 0xff2c: 'Ｌ', 0xff2d: 'Ｍ', 0xff2e: 'Ｎ', 0xff2f: 'Ｏ', // debug
         // 0xff30: 'Ｐ', 0xff31: 'Ｑ', 0xff32: 'Ｒ', 0xff33: 'Ｓ', 0xff34: 'Ｔ', 0xff35: 'Ｕ', 0xff36: 'Ｖ', 0xff37: 'Ｗ', // debug
@@ -366,27 +368,53 @@ export const main = async () => {
         7: "#d0bfff",
     }
 
+    const result: DataRaw = {};
+
     for await (const {pageNumber: page, text: text} of parsePDF(new Uint8Array(fs.readFileSync("./src/raw/GB_T 37028-2018《全国主要经济功能区分类与代码》.pdf")))) {
         console.log(`====${page}====`)
         let i = 0;
         while (i < text.length) {
             if (text[i].texts.length === 1 && /^[０１２３４５６７８９]{8}$/.test(text[i].texts[0].str)) {
-                const code = mapString(text[i].texts[0], "#bcd4e7");
+                const code = mapString(text[i].texts[0]); //, "#bcd4e7");
 
-                const province_name = text[++i].texts.map((c) =>  mapString(c, colors[c.font]));
-                const classification_name = text[++i].texts.map((c) =>  mapString(c, colors[c.font]));
-                const zone_name = text[++i].texts.map((c) =>  mapString(c, colors[c.font]));
+                const province_name = text[++i].texts.map((c) =>  mapString(c)).join(""); //, colors[c.font])).join("");
+                const classification_name = text[++i].texts.map((c) =>  mapString(c)).join(""); //, colors[c.font])).join("");
+                const zone_name = text[++i].texts.map((c) =>  mapString(c)).join(""); //, colors[c.font])).join("");
 
                 console.log(
                     code,
-                    province_name.join(""),
-                    classification_name.join(""),
-                    zone_name.join(""),
+                    province_name,
+                    classification_name,
+                    zone_name,
                 );
+
+                const province_code = code.substring(0, 2);
+                const classification_code = code.substring(2, 5);
+                const zone_code = code.substring(5, 8);
+
+                if (!result[province_code]) {
+                    result[province_code] = {
+                        name: province_name,
+                        short: short_province(province_name),
+                        children: {},
+                    }
+                }
+                if (!result[province_code].children[classification_code]) {
+                    result[province_code].children[classification_code] = {
+                        name: classification_name,
+                        short: null,
+                        children: {},
+                    }
+                }
+                result[province_code].children[classification_code].children[zone_code] = {
+                    name: zone_name,
+                    short: null,
+                }
             }
             i++;
         }
     }
+    fs.writeFileSync('./src/raw/GB_T_37028/data/GB_T 37028-2018.json', JSON.stringify(result, null, 2), 'utf-8');
 
-    return {}
+    return result;
 }
