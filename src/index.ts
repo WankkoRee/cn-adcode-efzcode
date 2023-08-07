@@ -11,9 +11,9 @@ export const getWithDeprecated = (code: string): [
     DataCounty<boolean> | null,
 ] => {
     const result = /^(\d{2})(?:(\d{2})?(\d{2})?|(\d{3})?(\d{3})?)$/.exec(code);
-    let province: DataProvince<boolean> = null;
-    let prefecture: DataPrefecture<boolean> = null;
-    let county: DataCounty<boolean> = null;
+    let province: DataProvince<boolean> | null = null;
+    let prefecture: DataPrefecture<boolean> | null = null;
+    let county: DataCounty<boolean> | null = null;
     if (result) {
         if (result[1]) {
             province = dataDeprecated[result[1]] ?? null;
@@ -47,9 +47,9 @@ export const getNotDeprecated = (code: string): [
     DataCounty<undefined> | null,
 ] => {
     const result = /^(\d{2})(?:(\d{2})?(\d{2})?|(\d{3})?(\d{3})?)$/.exec(code);
-    let province: DataProvince<undefined> = null;
-    let prefecture: DataPrefecture<undefined> = null;
-    let county: DataCounty<undefined> = null;
+    let province: DataProvince<undefined> | null = null;
+    let prefecture: DataPrefecture<undefined> | null = null;
+    let county: DataCounty<undefined> | null = null;
     if (result) {
         if (result[1]) {
             province = dataNow[result[1]] ?? null;

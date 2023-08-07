@@ -1,6 +1,6 @@
 {
   "name": "cn-adcode-efzcode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "中国行政区划代码和经济功能区代码集合",
   "type": "module",
   "main": "./dist/index.js",
@@ -16,7 +16,7 @@
   "scripts": {
     "raw": "ts-node src/raw/raw.ts",
     "test": "jest",
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+    "build": "tsup src/index.ts --tsconfig tsconfig.build.json --format cjs,esm --dts --clean"
   },
   "files": [
     "dist/**/*"
@@ -48,7 +48,9 @@
   },
   "homepage": "https://github.com/WankkoRee/cn-adcode-efzcode#readme",
   "devDependencies": {
-    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
+    "@tsconfig/esm": "^1.0.4",
+    "@tsconfig/node-lts": "^18.12.3",
+    "@tsconfig/strictest": "^2.0.1",
     "@types/jest": "^29.5.3",
     "@types/node": "^20.4.5",
     "chalk": "^5.3.0",
