@@ -113,15 +113,28 @@ China.getProvince(32)?.getClassification(5)?.getZone(101004)?.getName() === '苏
 const province = China.getProvince('11')!
 county.getLevel() === 1
 province.getCode() === '11'
+county.getName() === '北京市'
+county.getShortName() === '北京'
+county.getFullName('-') === '北京市'
+county.getFullShortName('') === '北京'
+county.isDeprecated() === false
+
 
 const prefecture = province.getPrefecture('01')!
 county.getLevel() === 2
 prefecture.getCode() === '1101'
+county.getName() === '市辖区'
+county.getShortName() === ''
+county.getFullName('-') === '北京市'
+county.getFullShortName('') === '北京'
+county.isDeprecated() === false
 
 const county = prefecture.getCounty('01')!
 county.getLevel() === 3
 county.getCode() === '110101'
 county.getName() === '东城区'
 county.getShortName() === '东城'
+county.getFullName('-') === '北京市-东城区'
+county.getFullShortName('') === '北京东城'
 county.isDeprecated() === false
 ```
