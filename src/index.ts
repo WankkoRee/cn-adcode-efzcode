@@ -53,15 +53,15 @@ export class County extends Region {
 
     getFullName(separator: string = ' '): string {
         if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
-            return this.getParent().getFullName() + separator + this.getName();
+            return this.getParent().getFullName(separator) + separator + this.getName();
         else
-            return this.getParent().getFullName();
+            return this.getParent().getFullName(separator);
     }
     getFullShortName(separator: string = ' '): string {
         if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
-            return this.getParent().getFullShortName() + separator + this.getShortName();
+            return this.getParent().getFullShortName(separator) + separator + this.getShortName();
         else
-            return this.getParent().getFullShortName();
+            return this.getParent().getFullShortName(separator);
     }
 
     getParent() {
@@ -83,15 +83,15 @@ export class Zone extends Region {
 
     getFullName(separator: string = ' '): string {
         if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
-            return this.getParent().getFullName() + separator + this.getName();
+            return this.getParent().getFullName(separator) + separator + this.getName();
         else
-            return this.getParent().getFullName();
+            return this.getParent().getFullName(separator);
     }
     getFullShortName(separator: string = ' '): string {
         if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
-            return this.getParent().getFullShortName() + separator + this.getShortName();
+            return this.getParent().getFullShortName(separator) + separator + this.getShortName();
         else
-            return this.getParent().getFullShortName();
+            return this.getParent().getFullShortName(separator);
     }
 
     getParent() {
@@ -120,15 +120,15 @@ export class Prefecture extends Region {
 
     getFullName(separator: string = ' '): string {
         if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
-            return this.getParent().getFullName() + separator + this.getName();
+            return this.getParent().getFullName(separator) + separator + this.getName();
         else
-            return this.getParent().getFullName();
+            return this.getParent().getFullName(separator);
     }
     getFullShortName(separator: string = ' '): string {
         if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
-            return this.getParent().getFullShortName() + separator + this.getShortName();
+            return this.getParent().getFullShortName(separator) + separator + this.getShortName();
         else
-            return this.getParent().getFullShortName();
+            return this.getParent().getFullShortName(separator);
     }
 
     listChildren(includeDeprecated: boolean = false) {
@@ -215,15 +215,15 @@ export class Classification extends Region {
 
     getFullName(separator: string = ' '): string {
         if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
-            return this.getParent().getFullName() + separator + this.getName();
+            return this.getParent().getFullName(separator) + separator + this.getName();
         else
-            return this.getParent().getFullName();
+            return this.getParent().getFullName(separator);
     }
     getFullShortName(separator: string = ' '): string {
         if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
-            return this.getParent().getFullShortName() + separator + this.getShortName();
+            return this.getParent().getFullShortName(separator) + separator + this.getShortName();
         else
-            return this.getParent().getFullShortName();
+            return this.getParent().getFullShortName(separator);
     }
 
     listChildren(includeDeprecated: boolean = false) {
