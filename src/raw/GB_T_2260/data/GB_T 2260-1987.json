@@ -5,7 +5,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "11": {
             "name": "房山区",
@@ -51,7 +51,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "昌平县",
@@ -95,7 +95,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "东郊区",
@@ -153,7 +153,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "宁河县",
@@ -2153,7 +2153,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "瓦房店市",
@@ -3007,7 +3007,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "绥芬河市",
@@ -3429,7 +3429,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "杨浦区",
@@ -3483,7 +3483,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "上海县",
@@ -3603,7 +3603,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "淮安市",
@@ -4117,7 +4117,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "余姚市",
@@ -5123,7 +5123,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "永安市",
@@ -6123,7 +6123,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "青州市",
@@ -6813,7 +6813,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "义马市",
@@ -7513,7 +7513,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "神农架林区",
@@ -8038,7 +8038,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "醴陵市",
@@ -8536,7 +8536,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "潮州市",
@@ -13460,7 +13460,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "石河子市",

@@ -5,7 +5,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "燕山区",
@@ -51,7 +51,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "昌平县",
@@ -99,7 +99,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "东郊区",
@@ -157,7 +157,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "宁河县",
@@ -3343,7 +3343,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "杨浦区",
@@ -3397,7 +3397,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "崇明县",

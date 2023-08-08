@@ -5,7 +5,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "11": {
             "name": "房山区",
@@ -75,7 +75,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "28": {
             "name": "密云县",
@@ -95,7 +95,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "东丽区",
@@ -161,7 +161,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "宁河县",
@@ -3373,7 +3373,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "杨浦区",
@@ -3451,7 +3451,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "30": {
             "name": "崇明县",
@@ -6787,7 +6787,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "济源市",
@@ -7379,7 +7379,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "神农架林区",
@@ -9441,7 +9441,7 @@
     "children": {
       "00": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "25": {
             "name": "定安县",
@@ -9544,7 +9544,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "万盛区",
@@ -9610,7 +9610,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "22": {
             "name": "綦江县",
@@ -9700,7 +9700,7 @@
       },
       "03": {
         "name": "县级市",
-        "short": null,
+        "short": "",
         "children": {
           "81": {
             "name": "江津市",
@@ -13625,7 +13625,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "石河子市",

@@ -216,4 +216,9 @@ test('功能性测试', () => {
     expect(China.getChild('11')?.getCode()).toBe('11');
     expect(China.getChild('11')?.getChild('01')?.getCode()).toBe('1101');
     expect(China.getChild('11')?.getChild('01')?.getChild('01')?.getCode()).toBe('110101');
+
+    expect(China.getProvince(11)?.getPrefecture(1)?.getZone(101001)?.getFullName()).toBe('北京市 北京经济技术开发区');
+    expect(China.getProvince(11)?.getClassification(101)?.getZone(1)?.getFullName()).toBe('北京市 北京经济技术开发区');
+    expect(China.getProvince(32)?.getPrefecture(5)?.getZone(101004)?.getFullName()).toBe('江苏省 苏州工业园区');
+    expect(China.getProvince(32)?.getClassification(101)?.getZone(4)?.getFullName()).toBe('江苏省 苏州工业园区');
 });

@@ -6,7 +6,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -18,7 +18,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -30,7 +30,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -42,7 +42,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -54,7 +54,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -116,7 +116,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -155,7 +155,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -192,7 +192,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -204,7 +204,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -216,7 +216,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -248,7 +248,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -260,7 +260,7 @@
       },
       "110": {
         "name": "自由贸易试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -272,7 +272,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -314,7 +314,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -398,7 +398,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -435,7 +435,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -447,7 +447,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -479,7 +479,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -506,7 +506,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "100": {
@@ -1078,7 +1078,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1175,7 +1175,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1224,7 +1224,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1251,7 +1251,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1268,7 +1268,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1280,7 +1280,7 @@
       },
       "111": {
         "name": "国家〇〇〇发展〇〇创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1292,7 +1292,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1379,7 +1379,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1413,7 +1413,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1435,7 +1435,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1457,7 +1457,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1479,7 +1479,7 @@
       },
       "105": {
         "name": "边境经济合作区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1496,7 +1496,7 @@
       },
       "108": {
         "name": "重点开发开放试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1513,7 +1513,7 @@
       },
       "199": {
         "name": "其他国家级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1525,7 +1525,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1642,7 +1642,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1664,7 +1664,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1898,7 +1898,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1950,7 +1950,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -1962,7 +1962,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2009,7 +2009,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2036,7 +2036,7 @@
       },
       "105": {
         "name": "边境经济合作区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2048,7 +2048,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2060,7 +2060,7 @@
       },
       "110": {
         "name": "自由贸易试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2072,7 +2072,7 @@
       },
       "199": {
         "name": "其他国家级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2094,7 +2094,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2306,7 +2306,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2343,7 +2343,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2432,7 +2432,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2464,7 +2464,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2476,7 +2476,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2508,7 +2508,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2525,7 +2525,7 @@
       },
       "105": {
         "name": "边境经济合作区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2542,7 +2542,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2749,7 +2749,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2803,7 +2803,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2850,7 +2850,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2862,7 +2862,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2884,7 +2884,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2901,7 +2901,7 @@
       },
       "105": {
         "name": "边境经济合作区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2918,7 +2918,7 @@
       },
       "108": {
         "name": "重点开发开放试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2930,7 +2930,7 @@
       },
       "199": {
         "name": "其他国家级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -2942,7 +2942,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3179,7 +3179,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3196,7 +3196,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3340,7 +3340,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3377,7 +3377,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3389,7 +3389,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3406,7 +3406,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3463,7 +3463,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3475,7 +3475,7 @@
       },
       "110": {
         "name": "自由贸易试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3487,7 +3487,7 @@
       },
       "199": {
         "name": "其他国家级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3504,7 +3504,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3521,7 +3521,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3613,7 +3613,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3727,7 +3727,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3864,7 +3864,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3876,7 +3876,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -3968,7 +3968,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4080,7 +4080,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4092,7 +4092,7 @@
       },
       "199": {
         "name": "其他国家级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4114,7 +4114,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4476,7 +4476,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4588,7 +4588,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4657,7 +4657,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4769,7 +4769,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4781,7 +4781,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4828,7 +4828,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4875,7 +4875,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4892,7 +4892,7 @@
       },
       "110": {
         "name": "自由贸易试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4904,7 +4904,7 @@
       },
       "199": {
         "name": "其他国家级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -4916,7 +4916,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -5163,7 +5163,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -5180,7 +5180,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -5354,7 +5354,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -5421,7 +5421,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -5458,7 +5458,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -5485,7 +5485,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -5497,7 +5497,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -5899,7 +5899,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -5931,7 +5931,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6000,7 +6000,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6057,7 +6057,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6069,7 +6069,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6111,7 +6111,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6153,7 +6153,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6165,7 +6165,7 @@
       },
       "110": {
         "name": "自由贸易试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6177,7 +6177,7 @@
       },
       "199": {
         "name": "其他国家级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6214,7 +6214,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6416,7 +6416,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6428,7 +6428,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6577,7 +6577,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6634,7 +6634,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6646,7 +6646,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6698,7 +6698,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6725,7 +6725,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6787,7 +6787,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -6819,7 +6819,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -7133,7 +7133,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -7215,7 +7215,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -7227,7 +7227,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -7299,7 +7299,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -7361,7 +7361,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -7373,7 +7373,7 @@
       },
       "199": {
         "name": "其他国家级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -7385,7 +7385,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "100": {
@@ -7922,7 +7922,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -7974,7 +7974,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -8093,7 +8093,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -8145,7 +8145,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -8187,7 +8187,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -8209,7 +8209,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -8221,7 +8221,7 @@
       },
       "110": {
         "name": "自由贸易试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -8233,7 +8233,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -8320,7 +8320,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -8372,7 +8372,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "100": {
@@ -8916,7 +8916,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -8958,7 +8958,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9025,7 +9025,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9047,7 +9047,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9059,7 +9059,7 @@
       },
       "110": {
         "name": "自由贸易试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9071,7 +9071,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9398,7 +9398,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9415,7 +9415,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9504,7 +9504,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9551,7 +9551,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9563,7 +9563,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9610,7 +9610,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9642,7 +9642,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9654,7 +9654,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9901,7 +9901,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -9973,7 +9973,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -10222,7 +10222,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -10259,7 +10259,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -10271,7 +10271,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -10348,7 +10348,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -10420,7 +10420,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -10437,7 +10437,7 @@
       },
       "110": {
         "name": "自由贸易试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -10449,7 +10449,7 @@
       },
       "111": {
         "name": "国家〇〇〇发展〇〇创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -10461,7 +10461,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -10623,7 +10623,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -10665,7 +10665,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -10989,7 +10989,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11016,7 +11016,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11043,7 +11043,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11070,7 +11070,7 @@
       },
       "105": {
         "name": "边境经济合作区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11087,7 +11087,7 @@
       },
       "108": {
         "name": "重点开发开放试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11104,7 +11104,7 @@
       },
       "111": {
         "name": "国家〇〇〇发展〇〇创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11116,7 +11116,7 @@
       },
       "199": {
         "name": "其他国家级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11128,7 +11128,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11180,7 +11180,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11202,7 +11202,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11406,7 +11406,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11418,7 +11418,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11430,7 +11430,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11447,7 +11447,7 @@
       },
       "199": {
         "name": "其他国家级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11459,7 +11459,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11471,7 +11471,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11490,7 +11490,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11512,7 +11512,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11524,7 +11524,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11551,7 +11551,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11573,7 +11573,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11585,7 +11585,7 @@
       },
       "110": {
         "name": "自由贸易试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11597,7 +11597,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11609,7 +11609,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11631,7 +11631,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11820,7 +11820,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11867,7 +11867,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11879,7 +11879,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11926,7 +11926,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11943,7 +11943,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11955,7 +11955,7 @@
       },
       "110": {
         "name": "自由贸易试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -11967,7 +11967,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -12369,7 +12369,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -12411,7 +12411,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -12575,7 +12575,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -12592,7 +12592,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -12604,7 +12604,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -12621,7 +12621,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -12643,7 +12643,7 @@
       },
       "109": {
         "name": "内陆开放型经济试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -12655,7 +12655,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -12937,7 +12937,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -12949,7 +12949,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -12968,7 +12968,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13000,7 +13000,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13012,7 +13012,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13034,7 +13034,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13051,7 +13051,7 @@
       },
       "105": {
         "name": "边境经济合作区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13078,7 +13078,7 @@
       },
       "106": {
         "name": "跨境经济合作区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13090,7 +13090,7 @@
       },
       "108": {
         "name": "重点开发开放试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13107,7 +13107,7 @@
       },
       "199": {
         "name": "其他国家级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13119,7 +13119,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13156,7 +13156,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13168,7 +13168,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13457,7 +13457,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13469,7 +13469,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13486,7 +13486,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13510,7 +13510,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13542,7 +13542,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13554,7 +13554,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13596,7 +13596,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13623,7 +13623,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13635,7 +13635,7 @@
       },
       "110": {
         "name": "自由贸易试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13647,7 +13647,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13679,7 +13679,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13711,7 +13711,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13875,7 +13875,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13907,7 +13907,7 @@
       },
       "102": {
         "name": "国家级新区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13919,7 +13919,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13936,7 +13936,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13948,7 +13948,7 @@
       },
       "107": {
         "name": "国家自主创新示范区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -13960,7 +13960,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14032,7 +14032,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14271,7 +14271,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14288,7 +14288,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14300,7 +14300,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14374,7 +14374,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14391,7 +14391,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14408,7 +14408,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14420,7 +14420,7 @@
       },
       "109": {
         "name": "内陆开放型经济试验区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14432,7 +14432,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14449,7 +14449,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14513,7 +14513,7 @@
     "children": {
       "101": {
         "name": "经济技术开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14565,7 +14565,7 @@
       },
       "103": {
         "name": "高新技术产业开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14587,7 +14587,7 @@
       },
       "104": {
         "name": "海关特殊监管区域",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14614,7 +14614,7 @@
       },
       "105": {
         "name": "边境经济合作区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14641,7 +14641,7 @@
       },
       "106": {
         "name": "跨境经济合作区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14653,7 +14653,7 @@
       },
       "199": {
         "name": "其他国家级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14670,7 +14670,7 @@
       },
       "201": {
         "name": "省级经济开发区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14702,7 +14702,7 @@
       },
       "202": {
         "name": "省级高新技术产业〇区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {
@@ -14729,7 +14729,7 @@
       },
       "299": {
         "name": "其他省级经济功能区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "001": {

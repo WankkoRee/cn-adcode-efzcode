@@ -5,7 +5,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "11": {
             "name": "房山区",
@@ -81,7 +81,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "东丽区",
@@ -3325,7 +3325,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "杨浦区",
@@ -6671,7 +6671,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "济源市",
@@ -7263,7 +7263,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "神农架林区",
@@ -9321,7 +9321,7 @@
     "children": {
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "定安县",
@@ -9447,7 +9447,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "綦江区",
@@ -9557,7 +9557,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "29": {
             "name": "城口县",
@@ -13504,7 +13504,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "石河子市",

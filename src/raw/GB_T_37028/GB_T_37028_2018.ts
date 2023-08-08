@@ -402,7 +402,7 @@ export const main = async () => {
                 if (!result[province_code].children[classification_code]) {
                     result[province_code].children[classification_code] = {
                         name: classification_name,
-                        short: null,
+                        short: '',
                         children: {},
                     }
                 }

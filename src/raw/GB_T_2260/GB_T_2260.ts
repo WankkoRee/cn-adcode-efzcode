@@ -5,7 +5,7 @@ import {short_county, short_prefecture, short_province} from "../utils.js";
 function check_unique(array: [string, string | null][]) {
     const t = array.map(v => v[1]);
     for (let i = 0; i < t.length; i++) {
-        if (t[i] !== null) {
+        if (t[i] !== null && t[i] !== '') {
             const p1 = t.indexOf(t[i])
             const p2 = t.lastIndexOf(t[i])
             if (p1 !== p2) {
@@ -67,7 +67,7 @@ export const handle = (raw : string) => {
                 if (result[2] === '90') {
                     data[result[1]].children[result[2]] = {
                         name: '省辖县',
-                        short: null,
+                        short: '',
                         suffix: null,
                         children: {},
                     }
@@ -97,7 +97,7 @@ export const handle = (raw : string) => {
                             , `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '市辖区',
-                            short: null,
+                            short: '',
                             suffix: null,
                             children: {},
                         }
@@ -124,7 +124,7 @@ export const handle = (raw : string) => {
                             , `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '县',
-                            short: null,
+                            short: '',
                             suffix: null,
                             children: {},
                         }
@@ -132,7 +132,7 @@ export const handle = (raw : string) => {
                         assert(result[0] === "江津市", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '县级市',
-                            short: null,
+                            short: '',
                             suffix: null,
                             children: {},
                         }
@@ -192,7 +192,7 @@ export const handle = (raw : string) => {
                         assert(result[0] === "井冈山", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '管理局',
-                            short: null,
+                            short: '',
                             suffix: null,
                             children: {},
                         }
@@ -273,7 +273,7 @@ export const handle = (raw : string) => {
                     if (result[2] == '00') {
                         data[result[1]].children[result[2]] = {
                             name: '省辖县',
-                            short: null,
+                            short: '',
                             suffix: null,
                             children: {},
                         }
@@ -298,7 +298,7 @@ export const handle = (raw : string) => {
                         assert(result[0] === "河南蒙古族自治县", `${result}`)
                         data[result[1]].children[result[2]] = {
                             name: '省辖县',
-                            short: null,
+                            short: '',
                             suffix: null,
                             children: {},
                         }

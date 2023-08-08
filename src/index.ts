@@ -32,7 +32,7 @@ class Region {
         return this.name;
     }
     getShortName() {
-        return this.short;
+        return this.short ?? this.name;
     }
     isDeprecated() {
         return !!this.deprecated;
@@ -51,6 +51,19 @@ export class County extends Region {
         return this.getParent().getCode()+super.getCode();
     }
 
+    getFullName(separator: string = ' '): string {
+        if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
+            return this.getParent().getFullName() + separator + this.getName();
+        else
+            return this.getParent().getFullName();
+    }
+    getFullShortName(separator: string = ' '): string {
+        if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
+            return this.getParent().getFullShortName() + separator + this.getShortName();
+        else
+            return this.getParent().getFullShortName();
+    }
+
     getParent() {
         return this.parent;
     }
@@ -66,6 +79,19 @@ export class Zone extends Region {
 
     override getCode(): string {
         return this.getParent().getCode()+super.getCode();
+    }
+
+    getFullName(separator: string = ' '): string {
+        if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
+            return this.getParent().getFullName() + separator + this.getName();
+        else
+            return this.getParent().getFullName();
+    }
+    getFullShortName(separator: string = ' '): string {
+        if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
+            return this.getParent().getFullShortName() + separator + this.getShortName();
+        else
+            return this.getParent().getFullShortName();
     }
 
     getParent() {
@@ -90,6 +116,19 @@ export class Prefecture extends Region {
 
     override getCode(): string {
         return this.getParent().getCode()+super.getCode();
+    }
+
+    getFullName(separator: string = ' '): string {
+        if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
+            return this.getParent().getFullName() + separator + this.getName();
+        else
+            return this.getParent().getFullName();
+    }
+    getFullShortName(separator: string = ' '): string {
+        if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
+            return this.getParent().getFullShortName() + separator + this.getShortName();
+        else
+            return this.getParent().getFullShortName();
     }
 
     listChildren(includeDeprecated: boolean = false) {
@@ -174,6 +213,19 @@ export class Classification extends Region {
         return this.getParent().getCode()+super.getCode();
     }
 
+    getFullName(separator: string = ' '): string {
+        if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
+            return this.getParent().getFullName() + separator + this.getName();
+        else
+            return this.getParent().getFullName();
+    }
+    getFullShortName(separator: string = ' '): string {
+        if (this.getShortName() !== '') // 非需跳过层级 todo 待提取为属性
+            return this.getParent().getFullShortName() + separator + this.getShortName();
+        else
+            return this.getParent().getFullShortName();
+    }
+
     listChildren(includeDeprecated: boolean = false) {
         return includeDeprecated ? this.children : this.childrenNotDeprecated;
     }
@@ -227,6 +279,13 @@ export class Province extends Region {
                 [code, code.length === 2 ? new Prefecture(code, data, this) : new Classification(code, data, this)]
         )));
         this.childrenNotDeprecated = this.children.filter((v, _) => !v.isDeprecated());
+    }
+
+    getFullName(separator: string = ' '): string {
+            return this.getName();
+    }
+    getFullShortName(separator: string = ' '): string {
+            return this.getShortName();
     }
 
     listChildren(includeDeprecated: boolean = false) {

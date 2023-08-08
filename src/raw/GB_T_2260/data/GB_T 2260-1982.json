@@ -5,7 +5,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "燕山区",
@@ -51,7 +51,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "昌平县",
@@ -99,7 +99,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "东郊区",
@@ -157,7 +157,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "宁河县",
@@ -3379,7 +3379,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "杨浦区",
@@ -3433,7 +3433,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "上海县",
@@ -12541,7 +12541,7 @@
       },
       "24": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "河南蒙古族自治县",

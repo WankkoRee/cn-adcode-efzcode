@@ -5,7 +5,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "11": {
             "name": "房山区",
@@ -51,7 +51,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "昌平县",
@@ -95,7 +95,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "东丽区",
@@ -153,7 +153,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "21": {
             "name": "宁河县",
@@ -269,7 +269,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "黄骅市",
@@ -1257,7 +1257,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "古交市",
@@ -2117,7 +2117,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "庄河市",
@@ -2517,7 +2517,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "洮南市",
@@ -2943,7 +2943,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "五大连池市",
@@ -3405,7 +3405,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "杨浦区",
@@ -3467,7 +3467,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "children": {
           "25": {
             "name": "南汇县",
@@ -3547,7 +3547,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "淮安市",
@@ -4081,7 +4081,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "奉化市",
@@ -4679,7 +4679,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "天长市",
@@ -5027,7 +5027,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "建阳市",
@@ -5627,7 +5627,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "瑞昌市",
@@ -6067,7 +6067,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "滕州市",
@@ -6781,7 +6781,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "灵宝市",
@@ -7375,7 +7375,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "安陆市",
@@ -7929,7 +7929,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "沅江市",
@@ -8553,7 +8553,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "罗定市",
@@ -9433,7 +9433,7 @@
     "children": {
       "00": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "22": {
             "name": "文昌县",
@@ -10156,7 +10156,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "10": {
             "name": "彭州市",
@@ -12183,7 +12183,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "兴平市",
@@ -13632,7 +13632,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "children": {
           "01": {
             "name": "石河子市",

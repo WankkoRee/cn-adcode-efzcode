@@ -6,7 +6,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "10": {
@@ -108,7 +108,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-2015",
         "children": {
           "21": {
@@ -212,7 +212,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "10": {
@@ -314,7 +314,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-2016",
         "children": {
           "21": {
@@ -1502,7 +1502,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "10": {
@@ -3372,7 +3372,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "01": {
@@ -5381,7 +5381,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "10": {
@@ -6320,7 +6320,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "10": {
@@ -7550,7 +7550,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "10": {
@@ -8342,7 +8342,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "10": {
@@ -8454,7 +8454,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-2016",
         "children": {
           "10": {
@@ -9200,7 +9200,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "10": {
@@ -10662,7 +10662,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "10": {
@@ -12265,7 +12265,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "01": {
@@ -13233,7 +13233,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "10": {
@@ -14586,7 +14586,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "01": {
@@ -16162,7 +16162,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "10": {
@@ -18200,7 +18200,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "10": {
@@ -19688,7 +19688,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "10": {
@@ -21099,7 +21099,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "10": {
@@ -22844,7 +22844,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "10": {
@@ -25027,7 +25027,7 @@
     "children": {
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "21": {
@@ -25114,7 +25114,7 @@
       },
       "00": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-2003",
         "children": {
           "21": {
@@ -25324,7 +25324,7 @@
     "children": {
       "01": {
         "name": "市辖区",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "10": {
@@ -25461,7 +25461,7 @@
       },
       "02": {
         "name": "县",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "21": {
@@ -25583,7 +25583,7 @@
       },
       "03": {
         "name": "县级市",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-2006",
         "children": {
           "81": {
@@ -27574,7 +27574,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "10": {
@@ -31802,7 +31802,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1995",
         "children": {
           "01": {
@@ -33545,7 +33545,7 @@
       },
       "24": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": "GB/T 2260-1984",
         "children": {
           "21": {
@@ -34879,7 +34879,7 @@
       },
       "90": {
         "name": "省辖县",
-        "short": null,
+        "short": "",
         "deprecated": null,
         "children": {
           "10": {
