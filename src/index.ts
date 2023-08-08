@@ -98,18 +98,22 @@ class Prefecture extends Region {
     getParent() {
         return this.parent;
     }
-    getChild(code: string | number, couldBeDeprecated: boolean = true): County | null {
+    getChild(code: string | number, couldBeDeprecated: boolean = true): County | Zone | null {
         if (typeof code === "string") {
             if (code.length === 2) {
                 return this.getCounty(code, couldBeDeprecated);
+            } else if (code.length === 6) {
+                return this.getZone(code, couldBeDeprecated);
             }
-            throw `地级行政区子级代码长度 ${code.length} 不符合预期: ${code.length} != 2`;
+            throw `地级行政区子级代码长度 ${code.length} 不符合预期: ${code.length} != 2 && ${code.length} != 6`;
         } else if (typeof code === "number") {
             if (code % 1 === 0) {
                 if (0 <= code && code <= 99) {
                     return this.getCounty(paddingLeft(String(code), 2, '0'), couldBeDeprecated);
+                } else if (1000 <= code && code <= 999999) {
+                    return this.getChild(paddingLeft(String(code), 6, '0'), couldBeDeprecated);
                 }
-                throw `地级行政区子级代码 ${code} 不符合预期: 0 > ${code} || ${code} > 99`;
+                throw `地级行政区子级代码 ${code} 不符合预期: (0 > ${code} || ${code} > 99) && (1000 > ${code} || ${code} > 999999)`;
             }
             throw `地级行政区子级代码 ${code} 不符合预期: ${code} % 1 !== 0`;
         }
@@ -131,6 +135,23 @@ class Prefecture extends Region {
             throw `县级行政区代码 ${code} 不符合预期: ${code} % 1 !== 0`;
         }
         throw `县级行政区代码类型 ${typeof code} 不符合预期: ${typeof code} != 'string' && ${typeof code} != 'number'`
+    }
+    getZone(code: string | number, couldBeDeprecated: boolean = true): Zone | null {
+        if (typeof code === "string") {
+            if (code.length === 6) {
+                return this.getParent().getClassification(code.substring(0, 3), couldBeDeprecated)?.getZone(code.substring(3, 6), couldBeDeprecated) ?? null;
+            }
+            throw `含分类经济功能区代码长度 ${code.length} 不符合预期: ${code.length} != 6`;
+        } else if (typeof code === "number") {
+            if (code % 1 === 0) {
+                if (1000 <= code && code <= 999999) {
+                    return this.getZone(paddingLeft(String(code), 6, '0'), couldBeDeprecated);
+                }
+                throw `含分类经济功能区代码 ${code} 不符合预期: 1000 > ${code} || ${code} > 999999`;
+            }
+            throw `含分类经济功能区代码 ${code} 不符合预期: ${code} % 1 !== 0`;
+        }
+        throw `含分类经济功能区代码类型 ${typeof code} 不符合预期: ${typeof code} != 'string' && ${typeof code} != 'number'`
     }
 }
 
@@ -167,10 +188,10 @@ class Classification extends Region {
             throw `经济功能区分类子级代码长度 ${code.length} 不符合预期: ${code.length} != 3`;
         } else if (typeof code === "number") {
             if (code % 1 === 0) {
-                if (100 <= code && code <= 999) {
-                    return this.getZone(paddingLeft(String(code), 3, '0'), couldBeDeprecated);
+                if (0 <= code && code <= 999) {
+                    return this.getChild(paddingLeft(String(code), 3, '0'), couldBeDeprecated);
                 }
-                throw `经济功能区分类子级代码 ${code} 不符合预期: 100 > ${code} || ${code} > 999`;
+                throw `经济功能区分类子级代码 ${code} 不符合预期: 0 > ${code} || ${code} > 999`;
             }
             throw `经济功能区分类子级代码 ${code} 不符合预期: ${code} % 1 !== 0`;
         }
@@ -184,10 +205,10 @@ class Classification extends Region {
             throw `经济功能区代码长度 ${code.length} 不符合预期: ${code.length} != 3`;
         } else if (typeof code === "number") {
             if (code % 1 === 0) {
-                if (100 <= code && code <= 999) {
+                if (0 <= code && code <= 999) {
                     return this.getZone(paddingLeft(String(code), 3, '0'), couldBeDeprecated);
                 }
-                throw `经济功能区代码 ${code} 不符合预期: 100 > ${code} || ${code} > 999`;
+                throw `经济功能区代码 ${code} 不符合预期: 0 > ${code} || ${code} > 999`;
             }
             throw `经济功能区代码 ${code} 不符合预期: ${code} % 1 !== 0`;
         }
@@ -222,9 +243,9 @@ class Province extends Region {
         } else if (typeof code === "number") {
             if (code % 1 === 0) {
                 if (0 <= code && code <= 99) {
-                    return this.getPrefecture(paddingLeft(String(code), 2, '0'), couldBeDeprecated);
+                    return this.getChild(paddingLeft(String(code), 2, '0'), couldBeDeprecated);
                 } else if (100 <= code && code <= 999) {
-                    return this.getClassification(paddingLeft(String(code), 3, '0'), couldBeDeprecated);
+                    return this.getChild(paddingLeft(String(code), 3, '0'), couldBeDeprecated);
                 }
                 throw `省级行政区子级代码 ${code} 不符合预期: (0 > ${code} || ${code} > 99) && (100 > ${code} || ${code} > 999)`;
             }
@@ -287,7 +308,7 @@ class China extends Region {
         } else if (typeof code === "number") {
             if (code % 1 === 0) {
                 if (0 <= code && code <= 99) {
-                    return this.getProvince(paddingLeft(String(code), 2, '0'), couldBeDeprecated);
+                    return this.getChild(paddingLeft(String(code), 2, '0'), couldBeDeprecated);
                 }
                 throw `国家子级代码 ${code} 不符合预期: 0 > ${code} || ${code} > 99`;
             }
