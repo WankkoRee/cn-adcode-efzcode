@@ -39,7 +39,7 @@ class Region {
     }
 }
 
-class County extends Region {
+export class County extends Region {
     private readonly parent: Prefecture;
 
     constructor(code: string, data: DataCounty, parent: Prefecture) {
@@ -56,7 +56,7 @@ class County extends Region {
     }
 }
 
-class Zone extends Region {
+export class Zone extends Region {
     private readonly parent: Classification;
 
     constructor(code: string, data: DataZone, parent: Classification) {
@@ -73,7 +73,7 @@ class Zone extends Region {
     }
 }
 
-class Prefecture extends Region {
+export class Prefecture extends Region {
     private readonly children: ImmutableMap<string, County>;
     private readonly childrenNotDeprecated: ImmutableMap<string, County>;
     private readonly parent: Province;
@@ -155,7 +155,7 @@ class Prefecture extends Region {
     }
 }
 
-class Classification extends Region {
+export class Classification extends Region {
     private readonly children: ImmutableMap<string, Zone>;
     private readonly childrenNotDeprecated: ImmutableMap<string, Zone>;
     private readonly parent: Province;
@@ -216,7 +216,7 @@ class Classification extends Region {
     }
 }
 
-class Province extends Region {
+export class Province extends Region {
     private readonly children: ImmutableMap<string, Prefecture | Classification>;
     private readonly childrenNotDeprecated: ImmutableMap<string, Prefecture | Classification>;
 

@@ -9,13 +9,13 @@
 ### 行政区划代码
 
 - 数据完全来自[行政区划代码_中华人民共和国民政部门户网站](https://www.mca.gov.cn/n156/n186/index.html)
-- 每年更新一次
+- 每年更新一次, 当前版本: 2021
 - 基于[GB/T 2260-2007](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=C9C488FD717AFDCD52157F41C3302C6D)
 
 ### 经济功能区代码
 
 - 数据来源未找到, 纯手打, 还没打完
-- 不知道啥时候更新
+- 不知道啥时候更新, 当前版本: 2018
 - 基于[GB/T 37028-2018](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=241A4BB1E525D9491A72E5BF3DF15D5A)
 
 ## 项目特色
@@ -32,9 +32,13 @@
 
 ```shell
 npm i cn-adcode-efzcode
+````
 
+```shell
 yarn add cn-adcode-efzcode
+```
 
+```shell
 pnpm add cn-adcode-efzcode
 ```
 
@@ -61,17 +65,46 @@ China.listChildren(true)?.listChildren(true)?.listChildren(true) // 如果需要
 #### 省-市-县
 
 ```typescript
-China.getChild('11')?.getChild('01')?.getChild('01')?.getName() === '东城区'
+import {Prefecture} from 'cn-adcode-efzcode'
+(China.getChild('11')?.getChild('01') as Prefecture | null)?.getChild('01')?.getName() === '东城区'
+// 也可以👇
+import {Prefecture} from 'cn-adcode-efzcode'
+(China.getChild(11)?.getChild(1) as Prefecture | null)?.getChild(1)?.getName() === '东城区'
 // 也可以👇
 China.getProvince('11')?.getPrefecture('01')?.getCounty('01')?.getName() === '东城区'
+// 也可以👇
+China.getProvince(11)?.getPrefecture(01)?.getCounty(01)?.getName() === '东城区'
 ```
 
 #### 省-类-区
 
 ```typescript
-China.getChild('11')?.getChild('101')?.getChild('001')?.getName() === '北京经济技术开发区'
+import {Classification} from 'cn-adcode-efzcode'
+(China.getChild('11')?.getChild('101') as Classification | null)?.getChild('001')?.getName() === '北京经济技术开发区'
+// 也可以👇
+import {Classification} from 'cn-adcode-efzcode'
+(China.getChild(11)?.getChild(101) as Classification | null)?.getChild(001)?.getName() === '北京经济技术开发区'
 // 也可以👇
 China.getProvince('11')?.getClassification('101')?.getZone('001')?.getName() === '北京经济技术开发区'
+// 也可以👇
+China.getProvince(11)?.getClassification(101)?.getZone(001)?.getName() === '北京经济技术开发区'
+```
+
+#### 省-市-区
+
+> 这个方法是用来获取 省级行政区-地级行政区-经济功能区 的
+> 不过暂时没做 地级行政区-经济功能区 的强关联，所以请自行确保 经济功能区 归属于 地级行政区，因为即使归属错了也不会报错
+
+```typescript
+import {Prefecture} from 'cn-adcode-efzcode'
+(China.getChild('32')?.getChild('05') as Classification | null)?.getChild('101004')?.getName() === '苏州工业园区'
+// 也可以👇
+import {Prefecture} from 'cn-adcode-efzcode'
+(China.getChild(32)?.getChild(5) as Classification | null)?.getChild(101004)?.getName() === '苏州工业园区'
+// 也可以👇
+China.getProvince('32')?.getClassification('05')?.getZone('101004')?.getName() === '苏州工业园区'
+// 也可以👇
+China.getProvince(32)?.getClassification(5)?.getZone(101004)?.getName() === '苏州工业园区'
 ```
 
 ### 获取具体信息
@@ -81,11 +114,11 @@ const province = China.getProvince('11')!
 county.getLevel() === 1
 province.getCode() === '11'
 
-const prefecture = province.getProvince('01')!
+const prefecture = province.getPrefecture('01')!
 county.getLevel() === 2
 prefecture.getCode() === '1101'
 
-const county = prefecture.getProvince('01')!
+const county = prefecture.getCounty('01')!
 county.getLevel() === 3
 county.getCode() === '110101'
 county.getName() === '东城区'
