@@ -281,10 +281,10 @@ export class Province extends Region {
         this.childrenNotDeprecated = this.children.filter((v, _) => !v.isDeprecated());
     }
 
-    getFullName(separator: string = ' '): string {
+    getFullName(_: string = ' '): string {
             return this.getName();
     }
-    getFullShortName(separator: string = ' '): string {
+    getFullShortName(_: string = ' '): string {
             return this.getShortName();
     }
 
