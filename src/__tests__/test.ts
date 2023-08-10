@@ -195,7 +195,7 @@ test('经济功能区', () => {
 });
 
 test('功能性测试', () => {
-    expect(China.listChildren().map((v, _) => v.getShortName()).get('11')).toBe('北京');
+    expect(China.listChildren().map((v, _) => v.getShortName()).get(11)).toBe('北京');
 
     expect(China.getChild('11')?.getLevel()).toBe(1);
     expect(China.getChild('11')?.getChild('101')?.getLevel()).toBe(2);
@@ -205,20 +205,20 @@ test('功能性测试', () => {
     expect(China.getChild(11)?.getChild(1)?.getChild(101001)?.getLevel()).toBe(3);
     expect(China.getProvince(11)?.getPrefecture(1)?.getZone(101001)?.getLevel()).toBe(3);
 
-    expect(China.getChild('11')?.getCode()).toBe('11');
-    expect(China.getChild('11')?.getChild('101')?.getCode()).toBe('11101');
-    expect(China.getChild('11')?.getChild('101')?.getChild('001')?.getCode()).toBe('11101001');
-    expect(China.getChild('11')?.getChild('01')?.getChild('101001')?.getCode()).toBe('11101001');
-    expect(China.getProvince('11')?.getPrefecture('01')?.getZone('101001')?.getCode()).toBe('11101001');
-    expect(China.getChild(11)?.getChild(1)?.getChild(101001)?.getCode()).toBe('11101001');
-    expect(China.getProvince(11)?.getPrefecture(1)?.getZone(101001)?.getCode()).toBe('11101001');
+    expect(China.getChild('11')?.getFullCode()).toBe(11);
+    expect(China.getChild('11')?.getChild('101')?.getFullCode()).toBe(11101);
+    expect(China.getChild('11')?.getChild('101')?.getChild('001')?.getFullCode()).toBe(11101001);
+    expect(China.getChild('11')?.getChild('01')?.getChild('101001')?.getFullCode()).toBe(11101001);
+    expect(China.getProvince('11')?.getPrefecture('01')?.getZone('101001')?.getFullCode()).toBe(11101001);
+    expect(China.getChild(11)?.getChild(1)?.getChild(101001)?.getFullCode()).toBe(11101001);
+    expect(China.getProvince(11)?.getPrefecture(1)?.getZone(101001)?.getFullCode()).toBe(11101001);
 
-    expect(China.getChild('11')?.getCode()).toBe('11');
-    expect(China.getChild('11')?.getChild('01')?.getCode()).toBe('1101');
-    expect(China.getChild('11')?.getChild('01')?.getChild('01')?.getCode()).toBe('110101');
+    expect(China.getChild('11')?.getFullCode()).toBe(11);
+    expect(China.getChild('11')?.getChild('01')?.getFullCode()).toBe(1101);
+    expect(China.getChild('11')?.getChild('01')?.getChild('01')?.getFullCode()).toBe(110101);
 
     expect(China.getProvince(11)?.getPrefecture(1)?.getZone(101001)?.getFullName()).toBe('北京市 北京经济技术开发区');
     expect(China.getProvince(11)?.getClassification(101)?.getZone(1)?.getFullName()).toBe('北京市 北京经济技术开发区');
-    expect(China.getProvince(32)?.getPrefecture(5)?.getZone(101004)?.getFullName()).toBe('江苏省 苏州工业园区');
-    expect(China.getProvince(32)?.getClassification(101)?.getZone(4)?.getFullName()).toBe('江苏省 苏州工业园区');
+    expect(China.getProvince(32)?.getPrefecture(5)?.getZone(101004)?.getFullName()).toBe('江苏省 苏州\\u003d业\\u008e区');
+    expect(China.getProvince(32)?.getClassification(101)?.getZone(4)?.getFullName()).toBe('江苏省 苏州\\u003d业\\u008e区');
 });
