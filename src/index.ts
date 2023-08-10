@@ -47,8 +47,8 @@ export class County extends Region {
         this.parent = parent;
     }
 
-    override getCode(): string {
-        return this.getParent().getCode()+super.getCode();
+    getFullCode(): string {
+        return this.getParent().getFullCode()+this.getCode();
     }
 
     getFullName(separator: string = ' '): string {
@@ -77,8 +77,8 @@ export class Zone extends Region {
         this.parent = parent;
     }
 
-    override getCode(): string {
-        return this.getParent().getCode()+super.getCode();
+    getFullCode(): string {
+        return this.getParent().getFullCode()+this.getCode();
     }
 
     getFullName(separator: string = ' '): string {
@@ -114,8 +114,8 @@ export class Prefecture extends Region {
         this.childrenNotDeprecated = this.children.filter((v, _) => !v.isDeprecated());
     }
 
-    override getCode(): string {
-        return this.getParent().getCode()+super.getCode();
+    getFullCode(): string {
+        return this.getParent().getFullCode()+this.getCode();
     }
 
     getFullName(separator: string = ' '): string {
@@ -209,8 +209,8 @@ export class Classification extends Region {
         this.childrenNotDeprecated = this.children.filter((v, _) => !v.isDeprecated());
     }
 
-    override getCode(): string {
-        return this.getParent().getCode()+super.getCode();
+    getFullCode(): string {
+        return this.getParent().getFullCode()+this.getCode();
     }
 
     getFullName(separator: string = ' '): string {
@@ -279,6 +279,10 @@ export class Province extends Region {
                 [code, code.length === 2 ? new Prefecture(code, data, this) : new Classification(code, data, this)]
         )));
         this.childrenNotDeprecated = this.children.filter((v, _) => !v.isDeprecated());
+    }
+
+    getFullCode(): string {
+        return this.getCode();
     }
 
     getFullName(_: string = ' '): string {
