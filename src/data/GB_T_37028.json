@@ -353,7 +353,7 @@
             "deprecated": null
           },
           "008": {
-            "name": "天津〇口〇业〇区",
+            "name": "天津双口〇业〇区",
             "short": null,
             "deprecated": null
           },
@@ -875,7 +875,7 @@
             "deprecated": null
           },
           "060": {
-            "name": "河北〇唐经济开发区",
+            "name": "河北行唐经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -985,7 +985,7 @@
             "deprecated": null
           },
           "082": {
-            "name": "河北〇〇〇〇经济开发区",
+            "name": "河北〇〇双〇经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -2040,7 +2040,7 @@
         "deprecated": null,
         "children": {
           "001": {
-            "name": "〇东边境经济合作区",
+            "name": "丹东边境经济合作区",
             "short": null,
             "deprecated": null
           }
@@ -2118,12 +2118,12 @@
             "deprecated": null
           },
           "005": {
-            "name": "辽宁〇东东港经济开发区",
+            "name": "辽宁丹东东港经济开发区",
             "short": null,
             "deprecated": null
           },
           "006": {
-            "name": "辽宁〇东前阳经济开发区",
+            "name": "辽宁丹东前阳经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -2315,7 +2315,7 @@
             "deprecated": null
           },
           "002": {
-            "name": "〇中高新技术产业开发区",
+            "name": "绥中高新技术产业开发区",
             "short": null,
             "deprecated": null
           },
@@ -2656,7 +2656,7 @@
             "deprecated": null
           },
           "023": {
-            "name": "长春〇阳经济开发区",
+            "name": "长春双阳经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -2691,7 +2691,7 @@
             "deprecated": null
           },
           "030": {
-            "name": "吉林〇辽经济开发区",
+            "name": "吉林双辽经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -2832,17 +2832,17 @@
             "deprecated": null
           },
           "006": {
-            "name": "〇化经济技术开发区",
+            "name": "绥化经济技术开发区",
             "short": null,
             "deprecated": null
           },
           "007": {
-            "name": "〇〇江经济技术开发区",
+            "name": "牡丹江经济技术开发区",
             "short": null,
             "deprecated": null
           },
           "008": {
-            "name": "〇〇山经济技术开发区",
+            "name": "双鸭山经济技术开发区",
             "short": null,
             "deprecated": null
           }
@@ -2888,7 +2888,7 @@
         "deprecated": null,
         "children": {
           "001": {
-            "name": "黑龙江〇〇河〇合〇〇区",
+            "name": "黑龙江绥〇河〇合〇〇区",
             "short": null,
             "deprecated": null
           },
@@ -2905,7 +2905,7 @@
         "deprecated": null,
         "children": {
           "001": {
-            "name": "〇〇河边境经济合作区",
+            "name": "绥〇河边境经济合作区",
             "short": null,
             "deprecated": null
           },
@@ -2922,7 +2922,7 @@
         "deprecated": null,
         "children": {
           "001": {
-            "name": "〇〇河－",
+            "name": "绥〇河－",
             "short": null,
             "deprecated": null
           }
@@ -2961,7 +2961,7 @@
             "deprecated": null
           },
           "004": {
-            "name": "黑龙江〇城经济开发区",
+            "name": "黑龙江双城经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -3051,7 +3051,7 @@
             "deprecated": null
           },
           "022": {
-            "name": "黑龙江〇滨经济开发区",
+            "name": "黑龙江绥滨经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -3166,7 +3166,7 @@
             "deprecated": null
           },
           "045": {
-            "name": "黑龙江〇〇经济开发区",
+            "name": "黑龙江绥〇经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -3183,7 +3183,7 @@
         "deprecated": null,
         "children": {
           "001": {
-            "name": "〇〇江高新技术产业开发区",
+            "name": "牡丹江高新技术产业开发区",
             "short": null,
             "deprecated": null
           },
@@ -3344,7 +3344,7 @@
         "deprecated": null,
         "children": {
           "001": {
-            "name": "〇〇经济技术开发区",
+            "name": "闵行经济技术开发区",
             "short": null,
             "deprecated": null
           },
@@ -3555,7 +3555,7 @@
             "deprecated": null
           },
           "007": {
-            "name": "张江高新区〇〇〇",
+            "name": "张江高新区闵行〇",
             "short": null,
             "deprecated": null
           },
@@ -4168,7 +4168,7 @@
             "deprecated": null
           },
           "011": {
-            "name": "江苏〇阳经济开发区",
+            "name": "江苏丹阳经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -4218,7 +4218,7 @@
             "deprecated": null
           },
           "021": {
-            "name": "江苏〇〇经济开发区",
+            "name": "江苏丹〇经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -4570,7 +4570,7 @@
             "deprecated": null
           },
           "019": {
-            "name": "江苏省〇阳高新技术产业开发区",
+            "name": "江苏省丹阳高新技术产业开发区",
             "short": null,
             "deprecated": null
           },
@@ -5561,7 +5561,7 @@
             "deprecated": null
           },
           "013": {
-            "name": "安徽长〇〇〇经济开发区",
+            "name": "安徽长〇双〇经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -9310,7 +9310,7 @@
             "deprecated": null
           },
           "048": {
-            "name": "湖北〇江口经济开发区",
+            "name": "湖北丹江口经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -9673,7 +9673,7 @@
             "deprecated": null
           },
           "004": {
-            "name": "湖南〇〇经济开发区",
+            "name": "湖南双〇经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -10137,7 +10137,7 @@
             "deprecated": null
           },
           "033": {
-            "name": "〇〇〇业〇中区",
+            "name": "双〇〇业〇中区",
             "short": null,
             "deprecated": null
           },
@@ -10202,7 +10202,7 @@
             "deprecated": null
           },
           "046": {
-            "name": "〇宁〇业〇中区",
+            "name": "绥宁〇业〇中区",
             "short": null,
             "deprecated": null
           },
@@ -11311,7 +11311,7 @@
             "deprecated": null
           },
           "022": {
-            "name": "河〇南〇〇〇金〇新〇〇〇业〇区",
+            "name": "河〇南丹〇〇金〇新〇〇〇业〇区",
             "short": null,
             "deprecated": null
           },
@@ -11695,7 +11695,7 @@
             "deprecated": null
           },
           "013": {
-            "name": "重庆〇〇〇业〇区",
+            "name": "重庆双〇〇业〇区",
             "short": null,
             "deprecated": null
           },
@@ -11935,7 +11935,7 @@
             "deprecated": null
           },
           "002": {
-            "name": "成都高新〇合〇〇区及〇〇〇区",
+            "name": "成都高新〇合〇〇区及双〇〇区",
             "short": null,
             "deprecated": null
           }
@@ -11971,7 +11971,7 @@
         "deprecated": null,
         "children": {
           "001": {
-            "name": "四川〇〇经济开发区",
+            "name": "四川双〇经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -12326,7 +12326,7 @@
             "deprecated": null
           },
           "072": {
-            "name": "四川〇〇经济开发区",
+            "name": "四川丹〇经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -12754,7 +12754,7 @@
             "deprecated": null
           },
           "020": {
-            "name": "贵州〇〇金〇经济开发区",
+            "name": "贵州丹〇金〇经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -12799,7 +12799,7 @@
             "deprecated": null
           },
           "029": {
-            "name": "贵州〇阳经济开发区",
+            "name": "贵州绥阳经济开发区",
             "short": null,
             "deprecated": null
           },
@@ -13795,7 +13795,7 @@
             "deprecated": null
           },
           "017": {
-            "name": "商〇〇〇〇业经济〇区",
+            "name": "商丹〇〇〇业经济〇区",
             "short": null,
             "deprecated": null
           },
@@ -14061,7 +14061,7 @@
             "deprecated": null
           },
           "006": {
-            "name": "甘肃山〇城北〇业〇区",
+            "name": "甘肃山丹城北〇业〇区",
             "short": null,
             "deprecated": null
           },
