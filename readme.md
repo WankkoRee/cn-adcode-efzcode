@@ -54,10 +54,60 @@ import China from 'cn-adcode-efzcode'
 
 ```typescript
 /*
+ listChildren 获取到的是 immutable 库的 Map 对象, 其 .map() 方法与 js 原生方法并不一样, 如需遍历建议获取后再 .toIndexedSeq().toArray()
  参数 includeDeprecated: 是否包含已废除的区划, 仅筛选当前子级, 可选, 默认为 false, 因为通常不需要列出已废除的区划
  */
-China.listChildren() // === China.listChildren(false)
-China.listChildren(true)?.listChildren(true)?.listChildren(true) // 如果需要三级结果都包含已废除的区划, 则应当每级都传入includeDeprecated = true
+China.listChildren().toIndexedSeq().toArray() // === China.listChildren(false).toIndexedSeq().toArray()
+
+// 如果需要三级结果都包含已废除的区划, 则应当每级都传入includeDeprecated = true
+China.listChildren(true).toIndexedSeq().toArray().map((child) => ({
+    value: child.getCode(), // getCode 获取层级的代码, 通常为2位或3位, 如需和前置层级一起获取可以使用 getFullCode
+    label: child.getName(), // getName 获取层级的标准名称, 如需简称可以使用 getShortName, 如需和前置层级一起获取可以使用 getFullName
+    children: child.listChildren(true).toIndexedSeq().toArray().map((child) => ({
+        value: child.getCode(),
+        label: child.getName(),
+        children: child.listChildren(true).toIndexedSeq().toArray().map((child) => ({
+            value: child.getCode(),
+            label: child.getName(),
+        })),
+    })),
+}))
+
+// 如果希望跳过一些非实体层级, 如直辖市和经济功能区的第二级数据, 可以通过 getShortName 判断
+China.listChildren().toIndexedSeq().toArray().map((child) => {
+    const children: {
+        value: number,
+        label: string,
+        children? : {
+            value: number,
+            label: string,
+        }[],
+    }[] = [];
+    child.listChildren().toIndexedSeq().toArray().forEach((child) => {
+        if (child.getShortName() !== '') { // getShortName 在非实体层级返回空字符串
+            children.push({
+                value: child.getCode(),
+                label: child.getName(),
+                children: child.listChildren().toIndexedSeq().toArray().map((child) => ({
+                    value: child.getCode(),
+                    label: child.getName(),
+                })),
+            });
+        } else {
+            child.listChildren().toIndexedSeq().toArray().forEach((child) => {
+                children.push({
+                    value: child.getCode(),
+                    label: child.getName(),
+                });
+            });
+        }
+    });
+    return {
+        value: child.getCode(),
+        label: child.getName(),
+        children,
+    };
+});
 ```
 
 ### 逐级获取

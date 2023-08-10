@@ -44,7 +44,7 @@ async function main() {
                 children: {},
             }
         } else {
-            assert(data[province].name === gb_t_37028[province].name)
+            assert(data[province].name === gb_t_37028[province].name, `${data[province].name} !== ${gb_t_37028[province].name}`)
         }
         Object.keys(gb_t_37028[province].children).forEach(gb_t_classification => {
             data[province].children[gb_t_classification] = {
