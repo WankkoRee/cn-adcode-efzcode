@@ -6,7 +6,6 @@ export default defineConfig({
     format: ['cjs', 'esm'],
     dts: true,
     clean: true,
-    minify: 'terser',
     esbuildOptions(options, context) {
         options.charset = 'utf8'
     },
