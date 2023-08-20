@@ -251,9 +251,13 @@ async function *parsePDF(data: Uint8Array) {
                         q++;
                         continue;
                     }
+                    const padding = (
+                        typeof text[p].texts.at(-1).font === "number" && typeof text[q].texts[0].font === "string"
+                        || typeof text[p].texts.at(-1).font === "string" && typeof text[q].texts[0].font === "number"
+                    ) ? fontHeight / 2 : 0;
                     const xd = text[q].x1 - text[p].x2;
                     const yd = Math.abs(text[q].y1 - text[p].y1);
-                if ((0 <= xd && xd <= fontHeight / 4) && yd <= fontHeight / 2) {
+                if ((-fontHeight / 4 <= xd && xd <= fontHeight / 4 + padding) && yd <= fontHeight / 2) {
                         text[p].texts.push(...text[q].texts);
                         text[p].x2 = text[q].x2;
                         text[p].width += text[p].x2 - text[p].x1;
