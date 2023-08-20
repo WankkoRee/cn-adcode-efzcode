@@ -11,12 +11,14 @@
 - 数据完全来自[行政区划代码_中华人民共和国民政部门户网站](https://www.mca.gov.cn/n156/n186/index.html)
 - 每年更新一次, 当前版本: 2021
 - 基于[GB/T 2260-2007](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=C9C488FD717AFDCD52157F41C3302C6D)
+- 本项目数据: [GB_T_2260.json](src/data/GB_T_2260.json)
 
 ### 经济功能区代码
 
-- 数据来源未找到, 纯手打, 还没打完
+- 数据来源未找到, 纯手打
 - 不知道啥时候更新, 当前版本: 2018
 - 基于[GB/T 37028-2018](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=241A4BB1E525D9491A72E5BF3DF15D5A)
+- 本项目数据: [GB_T_37028.json](src/data/GB_T_37028.json)
 
 ## 项目特色
 
