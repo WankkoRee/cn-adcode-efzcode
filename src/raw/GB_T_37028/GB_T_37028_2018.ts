@@ -278,7 +278,7 @@ async function *parsePDF(data: Uint8Array) {
                                 text[p].y2 = text[p].y2;
                             }
                         }
-                        text[p].height = text[p].y2 - text[p].y1;
+                        text[p].height = text[p].y1 - text[p].y2;
                         text.splice(q, 1);
                         if (q < p) {
                             p--;
