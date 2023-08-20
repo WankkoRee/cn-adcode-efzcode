@@ -41,6 +41,7 @@ const charMap: {[key: Font]: CharMap } = {
     },
     'H-SS9': {
         0x2014: '—',
+        0x3001: '、',
         0xff08: '（', 0xff09: '）', 0xff0d: '－',
     },
     1: {
@@ -173,7 +174,7 @@ function mapString(s: Str, color: string = "") {
         }
         return char;
     }).join("");
-    return color ? (flag ? chalk.bgHex("#a4b0be")(s.font) : "") + chalk.bgHex(color)(mapResult) : mapResult;
+    return color ? (flag ? chalk.bgHex("#a4b0be")('|'+s.font+'|') : "") + chalk.bgHex(color)(mapResult) : mapResult;
 }
 
 async function *parsePDF(data: Uint8Array) {
