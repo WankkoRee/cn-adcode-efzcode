@@ -16,7 +16,7 @@
   "scripts": {
     "raw": "ts-node src/raw/raw.ts",
     "test": "jest",
-    "build": "tsup src/index.ts --tsconfig tsconfig.build.json --format cjs,esm --dts --clean"
+    "build": "tsup"
   },
   "files": [
     "dist/**/*"
