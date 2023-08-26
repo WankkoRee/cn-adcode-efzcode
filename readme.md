@@ -9,14 +9,14 @@
 ### 行政区划代码
 
 - 数据完全来自[行政区划代码_中华人民共和国民政部门户网站](https://www.mca.gov.cn/n156/n186/index.html)
-- 每年更新一次, 当前版本: 2021
+- 每年更新一次，当前版本: 2021
 - 基于[GB/T 2260-2007](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=C9C488FD717AFDCD52157F41C3302C6D)
 - 本项目数据: [GB_T_2260.json](src/data/GB_T_2260.json)
 
 ### 经济功能区代码
 
-- 数据来源未找到, 纯手打
-- 不知道啥时候更新, 当前版本: 2018
+- 数据来源未找到，纯手打
+- 不知道啥时候更新，当前版本: 2018
 - 基于[GB/T 37028-2018](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=241A4BB1E525D9491A72E5BF3DF15D5A)
 - 本项目数据: [GB_T_37028.json](src/data/GB_T_37028.json)
 
@@ -132,19 +132,21 @@ county.getFullShortName('') === '北京大兴北京经济技术开发区'
 
 ```typescript
 /*
- listChildren 获取到的是 immutable 库的 Map 对象, 其 .map() 方法与 js 原生方法并不一样, 如需遍历建议获取后再 .toIndexedSeq().toArray()
- 参数 includeDeprecated: 是否包含已废除的区划, 仅筛选当前子级, 可选, 默认为 false, 因为通常不需要列出已废除的区划
+ 参数 includeDeprecated: 是否包含已废除的区划，仅筛选当前子级，可选，默认为 false，因为通常不需要列出已废除的区划
  */
-China.listChildren().toIndexedSeq().toArray() // === China.listChildren(false).toIndexedSeq().toArray()
+China.listChildren() // === China.listChildren(false)
 
-// 如果需要三级结果都包含已废除的区划, 则应当每级都传入includeDeprecated = true
-China.listChildren(true).toIndexedSeq().toArray().map((child) => ({
+```
+
+```typescript
+// 如果需要三级结果都包含已废除的区划，则应当每级都传入includeDeprecated = true
+China.listChildren(true).map((child) => ({
     value: child.getCodeInteger(), // 如需获取字符串可以使用 getCodeString 如需和前置层级一起获取可以使用 getFullCodeInteger 或 getFullCodeString
     label: child.getName(), // 如需和前置层级一起获取可以使用 getFullName
-    children: child.listChildren(true).toIndexedSeq().toArray().map((child) => ({
+    children: child.listChildren(true).map((child) => ({
         value: child.getCodeInteger(),
         label: child.getName(),
-        children: child.listChildren(true).toIndexedSeq().toArray().map((child) => ({
+        children: child.listChildren(true).map((child) => ({
             value: child.getCodeInteger(),
             label: child.getName(),
         })),

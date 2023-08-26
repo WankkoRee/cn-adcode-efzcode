@@ -102,6 +102,9 @@ export class Prefecture extends Region {
     }
 
     listChildren(includeDeprecated: boolean = false) {
+        return this.getChildren(includeDeprecated).toIndexedSeq().toArray();
+    }
+    private getChildren(includeDeprecated: boolean = false) {
         return includeDeprecated ? this.children : this.childrenNotDeprecated;
     }
     getParent() {
@@ -111,14 +114,14 @@ export class Prefecture extends Region {
         if (typeof code === "number") {
             if (code % 1 === 0) {
                 if (0 <= code && code <= 99 || 100000 <= code && code <= 299999) {
-                    return this.listChildren(couldBeDeprecated).get(code) ?? null;
+                    return this.getChildren(couldBeDeprecated).get(code) ?? null;
                 }
                 throw `县级行政区代码 ${code} 不符合预期: (0 > ${code} || ${code} > 99) && (100000 > ${code} || ${code} > 299999)`;
             }
             throw `县级行政区代码 ${code} 不符合预期: ${code} % 1 !== 0`;
         } else if (typeof code === "string") {
             if (code.length === 2 || code.length === 6) {
-                return this.listChildren(couldBeDeprecated).get(Number(code)) ?? null;
+                return this.getChildren(couldBeDeprecated).get(Number(code)) ?? null;
             }
             throw `县级行政区代码长度 ${code.length} 不符合预期: ${code.length} != 2 && ${code.length} != 6`;
         }
@@ -154,17 +157,20 @@ export class Province extends Region {
     }
 
     listChildren(includeDeprecated: boolean = false) {
+        return this.getChildren(includeDeprecated).toIndexedSeq().toArray();
+    }
+    private getChildren(includeDeprecated: boolean = false) {
         return includeDeprecated ? this.children : this.childrenNotDeprecated;
     }
     getChild(code: number | string, couldBeDeprecated: boolean = true): Prefecture | null {
         if (typeof code === "number") {
             if (0 <= code && code <= 99 || 100 <= code && code <= 9999) {
-                return this.listChildren(couldBeDeprecated).get(code) ?? null;
+                return this.getChildren(couldBeDeprecated).get(code) ?? null;
             }
             throw `地级行政区代码 ${code} 不符合预期: (0 > ${code} || ${code} > 99) && (100 > ${code} || ${code} > 9999)`;
         } else if (typeof code === "string") {
             if (code.length === 2 || code.length === 4) {
-                return this.listChildren(couldBeDeprecated).get(Number(code)) ?? null;
+                return this.getChildren(couldBeDeprecated).get(Number(code)) ?? null;
             }
             throw `地级行政区代码长度 ${code.length} 不符合预期: ${code.length} != 2 && ${code.length} != 4`;
         }
@@ -186,20 +192,23 @@ class China extends Region {
     }
 
     listChildren(includeDeprecated: boolean = false) {
+        return this.getChildren(includeDeprecated).toIndexedSeq().toArray();
+    }
+    private getChildren(includeDeprecated: boolean = false) {
         return includeDeprecated ? this.children : this.childrenNotDeprecated;
     }
     getChild(code: number | string, couldBeDeprecated: boolean = true): Province | null {
         if (typeof code === "number") {
             if (code % 1 === 0) {
                 if (0 <= code && code <= 99) {
-                    return this.listChildren(couldBeDeprecated).get(code) ?? null;
+                    return this.getChildren(couldBeDeprecated).get(code) ?? null;
                 }
                 throw `省级行政区代码 ${code} 不符合预期: 0 > ${code} || ${code} > 99`;
             }
             throw `省级行政区代码 ${code} 不符合预期: ${code} % 1 !== 0`;
         } else if (typeof code === "string") {
             if (code.length === 2) {
-                return this.listChildren(couldBeDeprecated).get(Number(code)) ?? null;
+                return this.getChildren(couldBeDeprecated).get(Number(code)) ?? null;
             }
             throw `省级行政区代码长度 ${code.length} 不符合预期: ${code.length} != 2`;
         }
