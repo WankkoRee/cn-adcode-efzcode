@@ -16,6 +16,7 @@
 ### 经济功能区代码
 
 - 数据来源未找到，纯手打
+- 经济功能区从属关系和简称全靠上网查找，还没找完，欢迎补充到[GB_T 37028-2018.json](src/raw/GB_T_37028/data/GB_T 37028-2018.json)中并提交pr
 - 不知道啥时候更新，当前版本: 2018
 - 基于[GB/T 37028-2018](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=241A4BB1E525D9491A72E5BF3DF15D5A)
 - 本项目数据: [GB_T_37028.json](src/data/GB_T_37028.json)
