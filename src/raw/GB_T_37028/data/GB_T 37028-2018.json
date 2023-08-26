@@ -9,7 +9,7 @@
         "children": {
           "001": {
             "name": "北京经济技术开发区",
-            "short": null,
+            "short": "亦庄开发区",
             "parent": "110115"
           }
         }
@@ -21,7 +21,7 @@
           "001": {
             "name": "中关村科技园区",
             "short": null,
-            "parent": "110108"
+            "parent": ""
           }
         }
       },
@@ -32,7 +32,7 @@
           "001": {
             "name": "北京天竺综合保税区",
             "short": null,
-            "parent": "110113"
+            "parent": ""
           }
         }
       },
@@ -43,7 +43,7 @@
           "001": {
             "name": "中关村国家自主创新示范区",
             "short": null,
-            "parent": "110108"
+            "parent": ""
           }
         }
       },
@@ -115,27 +115,27 @@
           "001": {
             "name": "北京顺义科技创新产业功能区",
             "short": null,
-            "parent": null
+            "parent": "110113"
           },
           "002": {
             "name": "北京房山工业园区",
             "short": null,
-            "parent": null
+            "parent": "110111"
           },
           "003": {
             "name": "北京昌平小汤山工业园区",
             "short": null,
-            "parent": null
+            "parent": "110114"
           },
           "004": {
             "name": "北京临空经济核心区",
             "short": null,
-            "parent": null
+            "parent": "110113"
           },
           "005": {
             "name": "北京马坊工业园区",
             "short": null,
-            "parent": null
+            "parent": "110117"
           }
         }
       }
@@ -152,32 +152,32 @@
           "001": {
             "name": "天津经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "120116"
           },
           "002": {
             "name": "西青经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "120111"
           },
           "003": {
             "name": "武清经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "120114"
           },
           "004": {
             "name": "天津子牙经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "120118"
           },
           "005": {
             "name": "北辰经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "120113"
           },
           "006": {
             "name": "东丽经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "120110"
           }
         }
       },
@@ -188,7 +188,7 @@
           "001": {
             "name": "天津滨海新区",
             "short": null,
-            "parent": null
+            "parent": ""
           }
         }
       },
@@ -198,8 +198,8 @@
         "children": {
           "001": {
             "name": "天津滨海高新技术产业开发区",
-            "short": null,
-            "parent": null
+            "short": "天津高新区",
+            "parent": "120116"
           }
         }
       },
@@ -210,27 +210,27 @@
           "001": {
             "name": "天津港保税区",
             "short": null,
-            "parent": null
+            "parent": "120116"
           },
           "002": {
             "name": "天津出口加工区",
             "short": null,
-            "parent": null
+            "parent": ""
           },
           "003": {
             "name": "天津保税物流园区",
             "short": null,
-            "parent": null
+            "parent": ""
           },
           "004": {
             "name": "天津东疆保税港区",
             "short": null,
-            "parent": null
+            "parent": "120116"
           },
           "005": {
             "name": "天津滨海新区综合保税区",
             "short": null,
-            "parent": null
+            "parent": ""
           }
         }
       },
@@ -241,7 +241,7 @@
           "001": {
             "name": "天津滨海国家自主创新示范区",
             "short": null,
-            "parent": null
+            "parent": ""
           }
         }
       },
@@ -252,7 +252,7 @@
           "001": {
             "name": "中国（天津）自由贸易试验区",
             "short": null,
-            "parent": null
+            "parent": ""
           }
         }
       },
