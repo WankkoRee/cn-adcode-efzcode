@@ -263,37 +263,37 @@
           "001": {
             "name": "天津蓟州区经济开发区",
             "short": null,
-            "parent": null
+            "parent": "120119"
           },
           "002": {
             "name": "天津津南经济开发区",
             "short": null,
-            "parent": null
+            "parent": "120112"
           },
           "003": {
             "name": "天津大港经济开发区",
             "short": null,
-            "parent": null
+            "parent": "120116"
           },
           "004": {
             "name": "天津武清福源经济开发区",
             "short": null,
-            "parent": null
+            "parent": "120114"
           },
           "005": {
             "name": "天津宝坻经济开发区",
             "short": null,
-            "parent": null
+            "parent": "120115"
           },
           "006": {
             "name": "天津宁河经济开发区",
             "short": null,
-            "parent": null
+            "parent": "120117"
           },
           "007": {
             "name": "天津静海经济开发区",
             "short": null,
-            "parent": null
+            "parent": "120118"
           }
         }
       },
@@ -304,72 +304,72 @@
           "001": {
             "name": "天津开发区现代产业区",
             "short": null,
-            "parent": null
+            "parent": "12117"
           },
           "002": {
             "name": "天津空港经济区",
             "short": null,
-            "parent": null
+            "parent": ""
           },
           "003": {
             "name": "天津大港石化产业园区",
             "short": null,
-            "parent": null
+            "parent": "120116"
           },
           "004": {
             "name": "天津军粮城工业园区",
             "short": null,
-            "parent": null
+            "parent": "120110"
           },
           "005": {
             "name": "天津八里台工业园区",
             "short": null,
-            "parent": null
+            "parent": "120112"
           },
           "006": {
             "name": "天津海河工业区",
             "short": null,
-            "parent": null
+            "parent": "120112"
           },
           "007": {
             "name": "天津中北工业园区",
             "short": null,
-            "parent": null
+            "parent": "120111"
           },
           "008": {
             "name": "天津双口工业园区",
             "short": null,
-            "parent": null
+            "parent": "120113"
           },
           "009": {
             "name": "天津宝坻九园工业园区",
             "short": null,
-            "parent": null
+            "parent": "120115"
           },
           "010": {
             "name": "天津潘庄工业区",
             "short": null,
-            "parent": null
+            "parent": "120117"
           },
           "011": {
             "name": "天津滨海民营经济成长示范基地",
             "short": null,
-            "parent": null
+            "parent": ""
           },
           "012": {
             "name": "天津京滨工业园",
             "short": null,
-            "parent": null
+            "parent": "120114"
           },
           "013": {
             "name": "天津大邱庄工业区",
             "short": null,
-            "parent": null
+            "parent": "120118"
           },
           "014": {
             "name": "天津专用汽车产业园",
             "short": null,
-            "parent": null
+            "parent": "120119"
           }
         }
       }
@@ -396,22 +396,22 @@
           "003": {
             "name": "沧州临港经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "1309"
           },
           "004": {
             "name": "石家庄经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "1301"
           },
           "005": {
             "name": "唐山曹妃甸经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "1302"
           },
           "006": {
             "name": "邯郸经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "1304"
           }
         }
       },
@@ -422,7 +422,7 @@
           "001": {
             "name": "河北雄安新区",
             "short": null,
-            "parent": null
+            "parent": ""
           }
         }
       },
@@ -3308,7 +3308,7 @@
           "001": {
             "name": "上海浦东新区",
             "short": null,
-            "parent": null
+            "parent": ""
           }
         }
       },
@@ -3662,8 +3662,8 @@
           },
           "004": {
             "name": "苏州工业园区",
-            "short": null,
-            "parent": null
+            "short": "园区",
+            "parent": "3205"
           },
           "005": {
             "name": "南京经济技术开发区",
@@ -11673,8 +11673,8 @@
         "children": {
           "001": {
             "name": "成都高新技术产业开发区",
-            "short": null,
-            "parent": null
+            "short": "高新区",
+            "parent": "5101"
           },
           "002": {
             "name": "绵阳高新技术产业开发区",
