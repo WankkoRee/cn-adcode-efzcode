@@ -7,6 +7,7 @@ export type DataZone = {
     name: string,
     short: string | null,
     deprecated: string | null,
+    parent: string | null,
 }
 
 export type DataCounties = {
@@ -36,13 +37,13 @@ export type DataClassifications = {
     [classification: string]: DataClassification,
 }
 
-export type DataProvince = {
+export type DataProvince<T extends DataPrefectures | DataClassifications> = {
     name: string,
     short: string | null,
     deprecated: string | null,
-    children: DataPrefectures | DataClassifications,
+    children: T,
 }
 
-export type Data = {
-    [province: string]: DataProvince,
+export type Data<T extends DataPrefectures | DataClassifications> = {
+    [province: string]: DataProvince<T>,
 }

@@ -415,12 +415,31 @@ export const main = async () => {
                 result[province_code].children[classification_code].children[zone_code] = {
                     name: zone_name,
                     short: null,
+                    parent: null,
                 }
             }
             i++;
         }
     }
-    fs.writeFileSync('./src/raw/GB_T_37028/data/GB_T 37028-2018.json', JSON.stringify(result, null, 2), 'utf-8');
+    const filename = './src/raw/GB_T_37028/data/GB_T 37028-2018.json';
+    if (fs.existsSync(filename)) {
+        Object.entries((JSON.parse(fs.readFileSync(filename, 'utf-8')) as DataRaw)).map(([province_code, province_data], ) => {
+            Object.entries(province_data.children).map(([classification_code, classification_data], ) => {
+                Object.entries(classification_data.children).map(([zone_code, zone_data], ) => {
+                    if (
+                        zone_data.parent
+                        && result[province_code]
+                        && result[province_code].children[classification_code]
+                        && result[province_code].children[classification_code].children[zone_code]
+                    ) {
+                        result[province_code].children[classification_code].children[zone_code].parent = zone_data.parent;
+                    }
+                });
+            });
+        });
+    }
+
+    fs.writeFileSync(filename, JSON.stringify(result, null, 2), 'utf-8');
 
     return result;
 }

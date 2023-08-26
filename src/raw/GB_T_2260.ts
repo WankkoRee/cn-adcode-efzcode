@@ -42,9 +42,10 @@ import { main as GB_T_2260_2020 } from './GB_T_2260/GB_T_2260_2020.js';
 import { main as GB_T_2260_2021 } from './GB_T_2260/GB_T_2260_2021.js';
 import {update} from "./utils.js";
 import type {Data} from "../types";
+import {DataClassifications, DataPrefectures} from "../types";
 
 export function main() {
-    const data: Data = {};
+    const data: Data<DataPrefectures> = {};
 
     update(data, GB_T_2260_1980(), "GB/T 2260-1980");
     update(data, GB_T_2260_1981(), "GB/T 2260-1981");

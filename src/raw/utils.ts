@@ -1,7 +1,8 @@
-import type {Data} from "../types";
+import type {Data, DataZone} from "../types";
 import type {DataRaw} from "./types";
+import {DataClassifications, DataPrefectures} from "../types";
 
-export function deprecated(data: Data, flag: string) {
+export function deprecated(data: Data<DataPrefectures | DataClassifications>, flag: string) {
     Object.entries(data).forEach(([province, {name, short, children}]) => {
         if (!data[province].deprecated) {
             data[province].deprecated = flag;
@@ -19,7 +20,7 @@ export function deprecated(data: Data, flag: string) {
     })
 }
 
-export function update(data: Data, newData: DataRaw, flag: string) {
+export function update(data: Data<DataPrefectures | DataClassifications>, newData: DataRaw, flag: string) {
     deprecated(data, flag);
     Object.entries(newData).forEach(([province, {name, short, children}]) => {
         if (!data[province]) {
@@ -30,9 +31,9 @@ export function update(data: Data, newData: DataRaw, flag: string) {
                 children: {},
             }
         } else {
-            data[province].deprecated = null;
             data[province].name = name;
             data[province].short = short;
+            data[province].deprecated = null;
         }
         Object.entries(children).forEach(([prefecture, {name, short, children}]) => {
             if (!data[province].children[prefecture]) {
@@ -43,21 +44,24 @@ export function update(data: Data, newData: DataRaw, flag: string) {
                     children: {},
                 }
             } else {
-                data[province].children[prefecture].deprecated = null;
                 data[province].children[prefecture].name = name;
                 data[province].children[prefecture].short = short;
+                data[province].children[prefecture].deprecated = null;
             }
-            Object.entries(children).forEach(([county, {name, short}]) => {
+            Object.entries(children).forEach(([county, {name, short, parent}]) => {
                 if (!data[province].children[prefecture].children[county]) {
                     data[province].children[prefecture].children[county] = {
                         name: name,
                         short: short,
                         deprecated: null,
+                        ... parent && {parent: parent},
                     }
                 } else {
-                    data[province].children[prefecture].children[county].deprecated = null;
                     data[province].children[prefecture].children[county].name = name;
                     data[province].children[prefecture].children[county].short = short;
+                    data[province].children[prefecture].children[county].deprecated = null;
+                    if (parent)
+                        (data[province].children[prefecture].children[county] as DataZone).parent = parent;
                 }
             })
         })

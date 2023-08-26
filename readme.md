@@ -52,6 +52,82 @@ pnpm add cn-adcode-efzcode
 import China from 'cn-adcode-efzcode'
 ```
 
+### 逐级获取
+
+#### 省级行政区-地级行政区-县级行政区
+
+```typescript
+China.getChild('13')?.getChild('01')?.getChild('02')?.getName() === '长安区'
+// 也可以👇
+China.getChild(13)?.getChild(1)?.getChild(2)?.getName() === '长安区'
+```
+
+#### 直辖市-地级行政区
+
+```typescript
+China.getChild('11')?.getChild('0101')?.getName() === '东城区'
+// 也可以👇
+China.getChild(11)?.getChild(101)?.getName() === '东城区'
+```
+
+#### 省级行政区-地级行政区-经济功能区
+
+```typescript
+China.getChild('13')?.getChild('03')?.getChild('101001')?.getName() === '秦皇岛经济技术开发区'
+// 也可以👇
+China.getChild(13)?.getChild(3)?.getChild(101001)?.getName() === '秦皇岛经济技术开发区'
+```
+
+#### 直辖市-地级行政区-经济功能区
+
+```typescript
+China.getChild('11')?.getChild('0115')?.getChild('101001')?.getName() === '北京经济技术开发区'
+// 也可以👇
+China.getChild(11)?.getChild(115)?.getChild(101001)?.getName() === '北京经济技术开发区'
+```
+
+### 获取具体信息
+
+```typescript
+const province = China.getChild('11')!
+province.getLevel() === 1
+province.getCodeString() === '11'
+province.getCodeInteger() === 11
+province.getName() === '北京市'
+province.getShortName() === '北京'
+province.isDeprecated() === false
+province.getFullCodeString() === '11'
+province.getFullCodeInteger() === 11
+province.getFullName('-') === '北京市'
+province.getFullShortName('') === '北京'
+
+
+const prefecture = province.getChild('0115')!
+prefecture.getLevel() === 2
+prefecture.getCodeString() === '0115'
+prefecture.getCodeInteger() === 115
+prefecture.getName() === '大兴区'
+prefecture.getShortName() === '大兴'
+prefecture.isDeprecated() === false
+prefecture.getFullCodeString() === '110115'
+prefecture.getFullCodeInteger() === 110115
+prefecture.getFullName('-') === '北京市-大兴区'
+prefecture.getFullShortName('') === '北京大兴'
+
+
+const county = prefecture.getChild('101001')!
+county.getLevel() === 3
+county.getCodeString() === '101001'
+county.getCodeInteger() === 101001
+county.getName() === '北京经济技术开发区'
+county.getShortName() === '北京经济技术开发区'
+county.isDeprecated() === false
+county.getFullCodeString() === '110115101001'
+county.getFullCodeInteger() === 110115101001
+county.getFullName('-') === '北京市-大兴区-北京经济技术开发区'
+county.getFullShortName('') === '北京大兴北京经济技术开发区'
+```
+
 ### 获取所有子级区域
 
 ```typescript
@@ -63,130 +139,15 @@ China.listChildren().toIndexedSeq().toArray() // === China.listChildren(false).t
 
 // 如果需要三级结果都包含已废除的区划, 则应当每级都传入includeDeprecated = true
 China.listChildren(true).toIndexedSeq().toArray().map((child) => ({
-    value: child.getCode(), // getCode 获取层级的代码, 通常为2位或3位, 如需和前置层级一起获取可以使用 getFullCode
-    label: child.getName(), // getName 获取层级的标准名称, 如需简称可以使用 getShortName, 如需和前置层级一起获取可以使用 getFullName
+    value: child.getCodeInteger(), // 如需获取字符串可以使用 getCodeString 如需和前置层级一起获取可以使用 getFullCodeInteger 或 getFullCodeString
+    label: child.getName(), // 如需和前置层级一起获取可以使用 getFullName
     children: child.listChildren(true).toIndexedSeq().toArray().map((child) => ({
-        value: child.getCode(),
+        value: child.getCodeInteger(),
         label: child.getName(),
         children: child.listChildren(true).toIndexedSeq().toArray().map((child) => ({
-            value: child.getCode(),
+            value: child.getCodeInteger(),
             label: child.getName(),
         })),
     })),
 }))
-
-// 如果希望跳过一些非实体层级, 如直辖市和经济功能区的第二级数据, 可以通过 getShortName 判断
-China.listChildren().toIndexedSeq().toArray().map((child) => {
-    const children: {
-        value: number,
-        label: string,
-        children? : {
-            value: number,
-            label: string,
-        }[],
-    }[] = [];
-    child.listChildren().toIndexedSeq().toArray().forEach((child) => {
-        if (child.getShortName() !== '') { // getShortName 在非实体层级返回空字符串
-            children.push({
-                value: child.getCode(),
-                label: child.getName(),
-                children: child.listChildren().toIndexedSeq().toArray().map((child) => ({
-                    value: child.getCode(),
-                    label: child.getName(),
-                })),
-            });
-        } else {
-            child.listChildren().toIndexedSeq().toArray().forEach((child) => {
-                children.push({
-                    value: child.getCode(),
-                    label: child.getName(),
-                });
-            });
-        }
-    });
-    return {
-        value: child.getCode(),
-        label: child.getName(),
-        children,
-    };
-});
-```
-
-### 逐级获取
-
-#### 省-市-县
-
-```typescript
-import {Prefecture} from 'cn-adcode-efzcode'
-(China.getChild('11')?.getChild('01') as Prefecture | null)?.getChild('01')?.getName() === '东城区'
-// 也可以👇
-import {Prefecture} from 'cn-adcode-efzcode'
-(China.getChild(11)?.getChild(1) as Prefecture | null)?.getChild(1)?.getName() === '东城区'
-// 也可以👇
-China.getProvince('11')?.getPrefecture('01')?.getCounty('01')?.getName() === '东城区'
-// 也可以👇
-China.getProvince(11)?.getPrefecture(01)?.getCounty(01)?.getName() === '东城区'
-```
-
-#### 省-类-区
-
-```typescript
-import {Classification} from 'cn-adcode-efzcode'
-(China.getChild('11')?.getChild('101') as Classification | null)?.getChild('001')?.getName() === '北京经济技术开发区'
-// 也可以👇
-import {Classification} from 'cn-adcode-efzcode'
-(China.getChild(11)?.getChild(101) as Classification | null)?.getChild(001)?.getName() === '北京经济技术开发区'
-// 也可以👇
-China.getProvince('11')?.getClassification('101')?.getZone('001')?.getName() === '北京经济技术开发区'
-// 也可以👇
-China.getProvince(11)?.getClassification(101)?.getZone(001)?.getName() === '北京经济技术开发区'
-```
-
-#### 省-市-区
-
-> 这个方法是用来获取 省级行政区-地级行政区-经济功能区 的
-> 不过暂时没做 地级行政区-经济功能区 的强关联，所以请自行确保 经济功能区 归属于 地级行政区，因为即使归属错了也不会报错
-
-```typescript
-import {Prefecture} from 'cn-adcode-efzcode'
-(China.getChild('32')?.getChild('05') as Classification | null)?.getChild('101004')?.getName() === '苏州工业园区'
-// 也可以👇
-import {Prefecture} from 'cn-adcode-efzcode'
-(China.getChild(32)?.getChild(5) as Classification | null)?.getChild(101004)?.getName() === '苏州工业园区'
-// 也可以👇
-China.getProvince('32')?.getClassification('05')?.getZone('101004')?.getName() === '苏州工业园区'
-// 也可以👇
-China.getProvince(32)?.getClassification(5)?.getZone(101004)?.getName() === '苏州工业园区'
-```
-
-### 获取具体信息
-
-```typescript
-const province = China.getProvince('11')!
-county.getLevel() === 1
-province.getCode() === '11'
-county.getName() === '北京市'
-county.getShortName() === '北京'
-county.getFullName('-') === '北京市'
-county.getFullShortName('') === '北京'
-county.isDeprecated() === false
-
-
-const prefecture = province.getPrefecture('01')!
-county.getLevel() === 2
-prefecture.getCode() === '1101'
-county.getName() === '市辖区'
-county.getShortName() === ''
-county.getFullName('-') === '北京市'
-county.getFullShortName('') === '北京'
-county.isDeprecated() === false
-
-const county = prefecture.getCounty('01')!
-county.getLevel() === 3
-county.getCode() === '110101'
-county.getName() === '东城区'
-county.getShortName() === '东城'
-county.getFullName('-') === '北京市-东城区'
-county.getFullShortName('') === '北京东城'
-county.isDeprecated() === false
 ```

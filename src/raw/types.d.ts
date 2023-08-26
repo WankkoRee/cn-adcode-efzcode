@@ -12,6 +12,7 @@ export type DataRaw = {
                         name: string,
                         short: string | null,
                         suffix?: string | null,
+                        parent?: string | null,
                     },
                 },
             },
