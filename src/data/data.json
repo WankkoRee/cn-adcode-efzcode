@@ -337,6 +337,11 @@
             "name": "东丽经济技术开发区",
             "short": null,
             "deprecated": null
+          },
+          "299004": {
+            "name": "天津军粮城工业园区",
+            "short": null,
+            "deprecated": null
           }
         }
       },
@@ -349,6 +354,11 @@
             "name": "西青经济技术开发区",
             "short": null,
             "deprecated": null
+          },
+          "299007": {
+            "name": "天津中北工业园区",
+            "short": null,
+            "deprecated": null
           }
         }
       },
@@ -356,7 +366,23 @@
         "name": "津南区",
         "short": "津南",
         "deprecated": null,
-        "children": {}
+        "children": {
+          "201002": {
+            "name": "天津津南经济开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "299005": {
+            "name": "天津八里台工业园区",
+            "short": null,
+            "deprecated": null
+          },
+          "299006": {
+            "name": "天津海河工业区",
+            "short": null,
+            "deprecated": null
+          }
+        }
       },
       "0113": {
         "name": "北辰区",
@@ -365,6 +391,11 @@
         "children": {
           "101005": {
             "name": "北辰经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "299008": {
+            "name": "天津双口工业园区",
             "short": null,
             "deprecated": null
           }
@@ -379,6 +410,16 @@
             "name": "武清经济技术开发区",
             "short": null,
             "deprecated": null
+          },
+          "201004": {
+            "name": "天津武清福源经济开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "299012": {
+            "name": "天津京滨工业园",
+            "short": null,
+            "deprecated": null
           }
         }
       },
@@ -386,7 +427,18 @@
         "name": "宝坻区",
         "short": "宝坻",
         "deprecated": null,
-        "children": {}
+        "children": {
+          "201005": {
+            "name": "天津宝坻经济开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "299009": {
+            "name": "天津宝坻九园工业园区",
+            "short": null,
+            "deprecated": null
+          }
+        }
       },
       "0116": {
         "name": "滨海新区",
@@ -412,6 +464,16 @@
             "name": "天津东疆保税港区",
             "short": null,
             "deprecated": null
+          },
+          "201003": {
+            "name": "天津大港经济开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "299003": {
+            "name": "天津大港石化产业园区",
+            "short": null,
+            "deprecated": null
           }
         }
       },
@@ -419,7 +481,23 @@
         "name": "宁河区",
         "short": "宁河",
         "deprecated": null,
-        "children": {}
+        "children": {
+          "201006": {
+            "name": "天津宁河经济开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "299001": {
+            "name": "天津开发区现代产业区",
+            "short": null,
+            "deprecated": null
+          },
+          "299010": {
+            "name": "天津潘庄工业区",
+            "short": null,
+            "deprecated": null
+          }
+        }
       },
       "0118": {
         "name": "静海区",
@@ -430,6 +508,16 @@
             "name": "天津子牙经济技术开发区",
             "short": null,
             "deprecated": null
+          },
+          "201007": {
+            "name": "天津静海经济开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "299013": {
+            "name": "天津大邱庄工业区",
+            "short": null,
+            "deprecated": null
           }
         }
       },
@@ -437,7 +525,18 @@
         "name": "蓟州区",
         "short": "蓟州",
         "deprecated": null,
-        "children": {}
+        "children": {
+          "201001": {
+            "name": "天津蓟州区经济开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "299014": {
+            "name": "天津专用汽车产业园",
+            "short": null,
+            "deprecated": null
+          }
+        }
       },
       "0101": {
         "name": "和平区",
@@ -1914,6 +2013,11 @@
             "short": "鹿泉",
             "deprecated": "GB/T 2260-2014"
           },
+          "101004": {
+            "name": "石家庄经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "长安区",
             "short": "长安",
@@ -2029,6 +2133,11 @@
           "84": {
             "name": "滦州市",
             "short": "滦州",
+            "deprecated": null
+          },
+          "101005": {
+            "name": "唐山曹妃甸经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -2213,6 +2322,11 @@
           "81": {
             "name": "武安市",
             "short": "武安",
+            "deprecated": null
+          },
+          "101006": {
+            "name": "邯郸经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -2778,6 +2892,11 @@
           "84": {
             "name": "河间市",
             "short": "河间",
+            "deprecated": null
+          },
+          "101003": {
+            "name": "沧州临港经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -10006,6 +10125,11 @@
             "name": "吴县市",
             "short": "吴县",
             "deprecated": "GB/T 2260-2000"
+          },
+          "101004": {
+            "name": "苏州工业园区",
+            "short": "园区",
+            "deprecated": null
           },
           "02": {
             "name": "沧浪区",
@@ -28184,6 +28308,11 @@
           "85": {
             "name": "简阳市",
             "short": "简阳",
+            "deprecated": null
+          },
+          "103001": {
+            "name": "成都高新技术产业开发区",
+            "short": "高新区",
             "deprecated": null
           },
           "02": {
