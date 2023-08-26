@@ -83,7 +83,9 @@ export class Prefecture extends Region {
         this.children = ImmutableMap(Object.entries(data.children).map(
             ([code, data]) =>
                 [Number(code), new County(code, data, this)]
-        ));
+        )).sort((a, b) =>
+            a.getCodeInteger() > b.getCodeInteger() ? 1 : a.getCodeInteger() < b.getCodeInteger() ? -1 : 0
+        );
         this.childrenNotDeprecated = this.children.filter((v, _) => !v.isDeprecated());
     }
 
@@ -138,7 +140,9 @@ export class Province extends Region {
         this.children = ImmutableMap(Object.entries(data.children).map(
             ([code, data]) =>
                 [Number(code), new Prefecture(code, data, this)]
-        ));
+        )).sort((a, b) =>
+            a.getCodeInteger() > b.getCodeInteger() ? 1 : a.getCodeInteger() < b.getCodeInteger() ? -1 : 0
+        );
         this.childrenNotDeprecated = this.children.filter((v, _) => !v.isDeprecated());
     }
 
@@ -187,7 +191,9 @@ class China extends Region {
         this.children = ImmutableMap(Object.entries(data).map(
             ([code, data]) =>
                 [Number(code), new Province(code, data)]
-        ));
+        )).sort((a, b) =>
+            a.getCodeInteger() > b.getCodeInteger() ? 1 : a.getCodeInteger() < b.getCodeInteger() ? -1 : 0
+        );
         this.childrenNotDeprecated = this.children.filter((v, _) => !v.isDeprecated());
     }
 
