@@ -427,12 +427,14 @@ export const main = async () => {
             Object.entries(province_data.children).map(([classification_code, classification_data], ) => {
                 Object.entries(classification_data.children).map(([zone_code, zone_data], ) => {
                     if (
-                        zone_data.parent
+                        zone_data.parent !== undefined && zone_data.parent !== null
                         && result[province_code]
                         && result[province_code].children[classification_code]
                         && result[province_code].children[classification_code].children[zone_code]
                     ) {
                         result[province_code].children[classification_code].children[zone_code].parent = zone_data.parent;
+                        if (zone_data.short)
+                            result[province_code].children[classification_code].children[zone_code].short = zone_data.short;
                     }
                 });
             });
