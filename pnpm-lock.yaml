@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   immutable:
     specifier: ^4.3.2
@@ -873,16 +877,16 @@ packages:
     resolution: {integrity: sha512-VmsCG04YR58ciHBeJKBDNMWWfYbyP8FekWVuTlpstaUPlat1D0x/tXzkWP7yCMU0eSz9V4OZU0LBWTFJ3xZf6w==}
     dev: true
 
-  /@tsconfig/node16@16.1.0:
-    resolution: {integrity: sha512-cfwhqrdZEKS+Iqu1OPDwmKsOV/eo7q4sPhWzOXc1rU77nnPFV3+77yPg8uKQ2e8eir6mERCvrKnd+EGa4qo4bQ==}
+  /@tsconfig/node16@16.1.1:
+    resolution: {integrity: sha512-+pio93ejHN4nINX4pXqfnR/fPLRtJBaT4ORaa5RH0Oc1zoYmo2B2koG+M328CQhHKn1Wj6FcOxCDFXAot9NhvA==}
     dev: true
 
-  /@tsconfig/node18@18.2.0:
-    resolution: {integrity: sha512-yhxwIlFVSVcMym3O31HoMnRXpoenmpIxcj4Yoes2DUpe+xCJnA7ECQP1Vw889V0jTt/2nzvpLQ/UuMYCd3JPIg==}
+  /@tsconfig/node18@18.2.1:
+    resolution: {integrity: sha512-RDDZFuofwkcKpl8Vpj5wFbY+H53xOtqK7ckEL1sXsbPwvKwDdjQf3LkHbtt9sxIHn9nWIEwkmCwBRZ6z5TKU2A==}
     dev: true
 
-  /@tsconfig/node20@20.1.1:
-    resolution: {integrity: sha512-7AuWv3hETpJGJegd0bTdnHIrdT/WuR3UUScGRemxhmH0vhbTTGKFZvY8DHZOqIECNdiIy6iFLh52E6Op9YrFiA==}
+  /@tsconfig/node20@20.1.2:
+    resolution: {integrity: sha512-madaWq2k+LYMEhmcp0fs+OGaLFk0OenpHa4gmI4VEmCKX4PJntQ6fnnGADVFrVkBj0wIdAlQnK/MrlYTHsa1gQ==}
     dev: true
 
   /@tsconfig/strictest@2.0.1:
@@ -2489,9 +2493,9 @@ packages:
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node14': 14.1.0
-      '@tsconfig/node16': 16.1.0
-      '@tsconfig/node18': 18.2.0
-      '@tsconfig/node20': 20.1.1
+      '@tsconfig/node16': 16.1.1
+      '@tsconfig/node18': 18.2.1
+      '@tsconfig/node20': 20.1.2
       '@types/node': 20.4.5
       acorn: 8.10.0
       acorn-walk: 8.2.0
@@ -3562,7 +3566,3 @@ packages:
     version: 2.3.1
     engines: {node: '>= 14'}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false

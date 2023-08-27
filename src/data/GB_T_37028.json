@@ -11,9 +11,8 @@
         "children": {
           "001": {
             "name": "北京经济技术开发区",
-            "short": "亦庄开发区",
-            "deprecated": null,
-            "parent": "110115"
+            "short": null,
+            "deprecated": null
           }
         }
       },
@@ -61,68 +60,57 @@
           "001": {
             "name": "北京石龙经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "110109"
+            "deprecated": null
           },
           "002": {
             "name": "北京延庆经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "110119"
+            "deprecated": null
           },
           "003": {
             "name": "北京永乐经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "110112"
+            "deprecated": null
           },
           "004": {
             "name": "北京良乡经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "110111"
+            "deprecated": null
           },
           "005": {
             "name": "北京大兴经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "110115"
+            "deprecated": null
           },
           "006": {
             "name": "北京密云经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "110118"
+            "deprecated": null
           },
           "007": {
             "name": "北京八达岭经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "110119"
+            "deprecated": null
           },
           "008": {
             "name": "北京采育经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "110115"
+            "deprecated": null
           },
           "009": {
             "name": "北京通州经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "110112"
+            "deprecated": null
           },
           "010": {
             "name": "北京兴谷经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "110117"
+            "deprecated": null
           },
           "011": {
             "name": "北京雁栖经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "110116"
+            "deprecated": null
           }
         }
       },
@@ -134,32 +122,27 @@
           "001": {
             "name": "北京顺义科技创新产业功能区",
             "short": null,
-            "deprecated": null,
-            "parent": "110113"
+            "deprecated": null
           },
           "002": {
             "name": "北京房山工业园区",
             "short": null,
-            "deprecated": null,
-            "parent": "110111"
+            "deprecated": null
           },
           "003": {
             "name": "北京昌平小汤山工业园区",
             "short": null,
-            "deprecated": null,
-            "parent": "110114"
+            "deprecated": null
           },
           "004": {
             "name": "北京临空经济核心区",
             "short": null,
-            "deprecated": null,
-            "parent": "110113"
+            "deprecated": null
           },
           "005": {
             "name": "北京马坊工业园区",
             "short": null,
-            "deprecated": null,
-            "parent": "110117"
+            "deprecated": null
           }
         }
       }
@@ -178,38 +161,32 @@
           "001": {
             "name": "天津经济技术开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120116"
+            "deprecated": null
           },
           "002": {
             "name": "西青经济技术开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120111"
+            "deprecated": null
           },
           "003": {
             "name": "武清经济技术开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120114"
+            "deprecated": null
           },
           "004": {
             "name": "天津子牙经济技术开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120118"
+            "deprecated": null
           },
           "005": {
             "name": "北辰经济技术开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120113"
+            "deprecated": null
           },
           "006": {
             "name": "东丽经济技术开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120110"
+            "deprecated": null
           }
         }
       },
@@ -232,9 +209,8 @@
         "children": {
           "001": {
             "name": "天津滨海高新技术产业开发区",
-            "short": "天津高新区",
-            "deprecated": null,
-            "parent": "120116"
+            "short": null,
+            "deprecated": null
           }
         }
       },
@@ -246,8 +222,7 @@
           "001": {
             "name": "天津港保税区",
             "short": null,
-            "deprecated": null,
-            "parent": "120116"
+            "deprecated": null
           },
           "002": {
             "name": "天津出口加工区",
@@ -262,8 +237,7 @@
           "004": {
             "name": "天津东疆保税港区",
             "short": null,
-            "deprecated": null,
-            "parent": "120116"
+            "deprecated": null
           },
           "005": {
             "name": "天津滨海新区综合保税区",
@@ -304,44 +278,37 @@
           "001": {
             "name": "天津蓟州区经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120119"
+            "deprecated": null
           },
           "002": {
             "name": "天津津南经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120112"
+            "deprecated": null
           },
           "003": {
             "name": "天津大港经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120116"
+            "deprecated": null
           },
           "004": {
             "name": "天津武清福源经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120114"
+            "deprecated": null
           },
           "005": {
             "name": "天津宝坻经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120115"
+            "deprecated": null
           },
           "006": {
             "name": "天津宁河经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120117"
+            "deprecated": null
           },
           "007": {
             "name": "天津静海经济开发区",
             "short": null,
-            "deprecated": null,
-            "parent": "120118"
+            "deprecated": null
           }
         }
       },
@@ -353,8 +320,7 @@
           "001": {
             "name": "天津开发区现代产业区",
             "short": null,
-            "deprecated": null,
-            "parent": "120117"
+            "deprecated": null
           },
           "002": {
             "name": "天津空港经济区",
@@ -364,50 +330,42 @@
           "003": {
             "name": "天津大港石化产业园区",
             "short": null,
-            "deprecated": null,
-            "parent": "120116"
+            "deprecated": null
           },
           "004": {
             "name": "天津军粮城工业园区",
             "short": null,
-            "deprecated": null,
-            "parent": "120110"
+            "deprecated": null
           },
           "005": {
             "name": "天津八里台工业园区",
             "short": null,
-            "deprecated": null,
-            "parent": "120112"
+            "deprecated": null
           },
           "006": {
             "name": "天津海河工业区",
             "short": null,
-            "deprecated": null,
-            "parent": "120112"
+            "deprecated": null
           },
           "007": {
             "name": "天津中北工业园区",
             "short": null,
-            "deprecated": null,
-            "parent": "120111"
+            "deprecated": null
           },
           "008": {
             "name": "天津双口工业园区",
             "short": null,
-            "deprecated": null,
-            "parent": "120113"
+            "deprecated": null
           },
           "009": {
             "name": "天津宝坻九园工业园区",
             "short": null,
-            "deprecated": null,
-            "parent": "120115"
+            "deprecated": null
           },
           "010": {
             "name": "天津潘庄工业区",
             "short": null,
-            "deprecated": null,
-            "parent": "120117"
+            "deprecated": null
           },
           "011": {
             "name": "天津滨海民营经济成长示范基地",
@@ -417,20 +375,17 @@
           "012": {
             "name": "天津京滨工业园",
             "short": null,
-            "deprecated": null,
-            "parent": "120114"
+            "deprecated": null
           },
           "013": {
             "name": "天津大邱庄工业区",
             "short": null,
-            "deprecated": null,
-            "parent": "120118"
+            "deprecated": null
           },
           "014": {
             "name": "天津专用汽车产业园",
             "short": null,
-            "deprecated": null,
-            "parent": "120119"
+            "deprecated": null
           }
         }
       }
@@ -504,27 +459,32 @@
           "001": {
             "name": "石家庄高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1301"
           },
           "002": {
             "name": "保定高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1306"
           },
           "003": {
             "name": "唐山高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1302"
           },
           "004": {
             "name": "燕郊高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1310"
           },
           "005": {
             "name": "承德高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1308"
           }
         }
       },
@@ -1281,22 +1241,26 @@
           "001": {
             "name": "太原经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1401"
           },
           "002": {
             "name": "大同经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1402"
           },
           "003": {
             "name": "晋中经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1407"
           },
           "004": {
             "name": "晋城经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1405"
           }
         }
       },
@@ -1308,12 +1272,14 @@
           "001": {
             "name": "太原高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1401"
           },
           "002": {
             "name": "长治高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1404"
           }
         }
       },
@@ -1470,17 +1436,20 @@
           "001": {
             "name": "呼和浩特经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1501"
           },
           "002": {
-            "name": "巴彦卓尔经济技术开发区",
+            "name": "巴彦淖尔经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1508"
           },
           "003": {
             "name": "呼伦贝尔经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1507"
           }
         }
       },
@@ -1492,17 +1461,20 @@
           "001": {
             "name": "包头稀土高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1502"
           },
           "002": {
             "name": "呼和浩特金山高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1501"
           },
           "003": {
             "name": "鄂尔多斯高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "1506"
           }
         }
       },
@@ -1844,7 +1816,7 @@
             "deprecated": null
           },
           "026": {
-            "name": "巴彦卓尔市甘其毛都口岸加工园区",
+            "name": "巴彦淖尔市甘其毛都口岸加工园区",
             "short": null,
             "deprecated": null
           },
@@ -1955,47 +1927,56 @@
           "001": {
             "name": "大连经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2102"
           },
           "002": {
             "name": "营口经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2108"
           },
           "003": {
             "name": "沈阳经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2101"
           },
           "004": {
             "name": "大连长兴岛经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2102"
           },
           "005": {
             "name": "锦州经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2107"
           },
           "006": {
             "name": "沈阳辉山经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2101"
           },
           "007": {
             "name": "盘锦辽滨沿海经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2111"
           },
           "008": {
             "name": "旅顺经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2102"
           },
           "009": {
             "name": "铁岭经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2112"
           }
         }
       },
@@ -2007,7 +1988,8 @@
           "001": {
             "name": "大连金普新区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2102"
           }
         }
       },
@@ -2019,42 +2001,50 @@
           "001": {
             "name": "沈阳高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2101"
           },
           "002": {
             "name": "大连高新技术产业园区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2102"
           },
           "003": {
             "name": "鞍山高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2103"
           },
           "004": {
             "name": "营口高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2108"
           },
           "005": {
             "name": "辽阳高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2110"
           },
           "006": {
             "name": "本溪高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2105"
           },
           "007": {
             "name": "阜新高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2109"
           },
           "008": {
             "name": "锦州高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2107"
           }
         }
       },
@@ -2489,27 +2479,32 @@
           "001": {
             "name": "长春经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2201"
           },
           "002": {
             "name": "吉林经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2202"
           },
           "003": {
             "name": "四平红嘴经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2203"
           },
           "004": {
             "name": "长春汽车经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2201"
           },
           "005": {
             "name": "松原经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2207"
           }
         }
       },
@@ -2521,7 +2516,8 @@
           "001": {
             "name": "长春新区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2201"
           }
         }
       },
@@ -2533,27 +2529,32 @@
           "001": {
             "name": "长春高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2201"
           },
           "002": {
             "name": "吉林高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2202"
           },
           "003": {
             "name": "延吉高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2224"
           },
           "004": {
             "name": "长春净月高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2201"
           },
           "005": {
             "name": "通化医药高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2205"
           }
         }
       },
@@ -2860,42 +2861,50 @@
           "001": {
             "name": "哈尔滨经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2301"
           },
           "002": {
             "name": "宾西经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2301"
           },
           "003": {
             "name": "海林经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2310"
           },
           "004": {
             "name": "哈尔滨利民经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2301"
           },
           "005": {
             "name": "大庆经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2306"
           },
           "006": {
             "name": "绥化经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2312"
           },
           "007": {
             "name": "牡丹江经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2310"
           },
           "008": {
             "name": "双鸭山经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2305"
           }
         }
       },
@@ -2907,7 +2916,8 @@
           "001": {
             "name": "哈尔滨新区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2301"
           }
         }
       },
@@ -2919,17 +2929,20 @@
           "001": {
             "name": "哈尔滨高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2301"
           },
           "002": {
             "name": "大庆高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2306"
           },
           "003": {
             "name": "齐齐哈尔高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "2302"
           }
         }
       },
@@ -3784,17 +3797,20 @@
           "001": {
             "name": "南通经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3206"
           },
           "002": {
             "name": "连云港经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3207"
           },
           "003": {
             "name": "昆山经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3205"
           },
           "004": {
             "name": "苏州工业园区",
@@ -3805,112 +3821,134 @@
           "005": {
             "name": "南京经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3201"
           },
           "006": {
             "name": "扬州经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3210"
           },
           "007": {
             "name": "徐州经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3203"
           },
           "008": {
             "name": "镇江经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3211"
           },
           "009": {
             "name": "江宁经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3201"
           },
           "010": {
             "name": "吴江经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3205"
           },
           "011": {
             "name": "常熟经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3205"
           },
           "012": {
             "name": "淮安经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3208"
           },
           "013": {
             "name": "盐城经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3209"
           },
           "014": {
             "name": "锡山经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3202"
           },
           "015": {
             "name": "太仓港经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3205"
           },
           "016": {
             "name": "张家港经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3205"
           },
           "017": {
             "name": "海安经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3206"
           },
           "018": {
             "name": "吴中经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3205"
           },
           "019": {
             "name": "靖江经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3212"
           },
           "020": {
             "name": "如皋经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3206"
           },
           "021": {
             "name": "海门经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3206"
           },
           "022": {
             "name": "宿迁经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3213"
           },
           "023": {
             "name": "宜兴经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3202"
           },
           "024": {
             "name": "苏州浒墅关经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3205"
           },
           "025": {
             "name": "沭阳经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3213"
           },
           "026": {
             "name": "相城经济技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3205"
           }
         }
       },
@@ -3922,7 +3960,8 @@
           "001": {
             "name": "南京江北新区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3201"
           }
         }
       },
@@ -3934,87 +3973,104 @@
           "001": {
             "name": "南京高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3201"
           },
           "002": {
             "name": "无锡高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3202"
           },
           "003": {
             "name": "常州高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3204"
           },
           "004": {
             "name": "苏州高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3205"
           },
           "005": {
             "name": "泰州医药高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3212"
           },
           "006": {
             "name": "昆山高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3205"
           },
           "007": {
             "name": "江阴高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3202"
           },
           "008": {
             "name": "徐州高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3203"
           },
           "009": {
             "name": "武进高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3204"
           },
           "010": {
             "name": "南通高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3206"
           },
           "011": {
             "name": "镇江高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3211"
           },
           "012": {
             "name": "连云港高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3207"
           },
           "013": {
             "name": "盐城高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3209"
           },
           "014": {
             "name": "常熟高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3205"
           },
           "015": {
             "name": "扬州高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3210"
           },
           "016": {
             "name": "淮安高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3208"
           },
           "017": {
             "name": "宿迁高新技术产业开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "3213"
           }
         }
       },
@@ -9016,7 +9072,8 @@
           "001": {
             "name": "武汉东湖新技术开发区",
             "short": null,
-            "deprecated": null
+            "deprecated": null,
+            "parent": "4201"
           },
           "002": {
             "name": "襄阳高新技术产业开发区",
