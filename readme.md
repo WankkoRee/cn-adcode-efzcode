@@ -129,6 +129,7 @@ province.getCodeInteger() === 11 // 获取当前区划 整数代码
 province.getName() === '北京市' // 获取当前区划 名称
 province.getShortName() === '北京' // 获取当前区划 简称
 province.isDeprecated() === false // 检查当前区划 是否已废除
+province.isEnded() === false // 检查当前区划 是否可作为区划结尾，通常用来判断是否可作为叶子节点选中
 province.getFullCodeString() === '11' // 获取完整区划 字符串代码
 province.getFullCodeInteger() === 11 // 获取完整区划 整数代码
 province.getFullName('-') === '北京市' // 获取完整区划 名称，用`-`连接，默认用` `连接
@@ -142,6 +143,7 @@ prefecture.getCodeInteger() === 115
 prefecture.getName() === '大兴区'
 prefecture.getShortName() === '大兴'
 prefecture.isDeprecated() === false
+prefecture.isEnded() === true // 大兴区属于市辖区，已经可以作为区划结尾
 prefecture.getFullCodeString() === '110115'
 prefecture.getFullCodeInteger() === 110115
 prefecture.getFullName('-') === '北京市-大兴区'
@@ -155,6 +157,7 @@ county.getCodeInteger() === 101001
 county.getName() === '北京经济技术开发区'
 county.getShortName() === '北京经济技术开发区'
 county.isDeprecated() === false
+county.isEnded() === true // 北京经济技术开发区无子级区划，必须作为区划结尾
 county.getFullCodeString() === '110115101001'
 county.getFullCodeInteger() === 110115101001
 county.getFullName('-') === '北京市-大兴区-北京经济技术开发区'
