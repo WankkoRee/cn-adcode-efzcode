@@ -188,7 +188,7 @@
           "001": {
             "name": "天津滨海新区",
             "short": null,
-            "parent": null
+            "parent": ""
           }
         }
       },
@@ -422,7 +422,7 @@
           "001": {
             "name": "河北雄安新区",
             "short": null,
-            "parent": ""
+            "parent": null
           }
         }
       },
@@ -1912,7 +1912,7 @@
           "001": {
             "name": "大连金普新区",
             "short": null,
-            "parent": "2102"
+            "parent": null
           }
         }
       },
@@ -2414,7 +2414,7 @@
           "001": {
             "name": "长春新区",
             "short": null,
-            "parent": "2201"
+            "parent": null
           }
         }
       },
@@ -2792,7 +2792,7 @@
           "001": {
             "name": "哈尔滨新区",
             "short": null,
-            "parent": "2301"
+            "parent": null
           }
         }
       },
@@ -3784,7 +3784,7 @@
           "001": {
             "name": "南京江北新区",
             "short": null,
-            "parent": "3201"
+            "parent": null
           }
         }
       },
@@ -4568,107 +4568,107 @@
           "001": {
             "name": "宁波经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3302"
           },
           "002": {
             "name": "温州经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3303"
           },
           "003": {
             "name": "宁波大榭开发区",
             "short": null,
-            "parent": null
+            "parent": "3302"
           },
           "004": {
             "name": "杭州经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3301"
           },
           "005": {
             "name": "萧山经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3301"
           },
           "006": {
             "name": "嘉兴经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3304"
           },
           "007": {
             "name": "湖州经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3305"
           },
           "008": {
             "name": "绍兴袍江经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3306"
           },
           "009": {
             "name": "长兴经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3305"
           },
           "010": {
             "name": "金华经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3307"
           },
           "011": {
             "name": "宁波石化经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3302"
           },
           "012": {
             "name": "嘉善经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3304"
           },
           "013": {
             "name": "衢州经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3308"
           },
           "014": {
             "name": "义乌经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3307"
           },
           "015": {
             "name": "杭州余杭经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3301"
           },
           "016": {
             "name": "富阳经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3301"
           },
           "017": {
             "name": "绍兴柯桥经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3306"
           },
           "018": {
             "name": "平湖经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3304"
           },
           "019": {
             "name": "杭州湾上虞经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3301"
           },
           "020": {
             "name": "宁波杭州湾经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3302"
           },
           "021": {
             "name": "丽水经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3311"
           }
         }
       },

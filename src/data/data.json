@@ -5834,11 +5834,6 @@
             "short": null,
             "deprecated": null
           },
-          "102001": {
-            "name": "大连金普新区",
-            "short": null,
-            "deprecated": null
-          },
           "103002": {
             "name": "大连高新技术产业园区",
             "short": null,
@@ -6728,11 +6723,6 @@
           },
           "101004": {
             "name": "长春汽车经济技术开发区",
-            "short": null,
-            "deprecated": null
-          },
-          "102001": {
-            "name": "长春新区",
             "short": null,
             "deprecated": null
           },
@@ -8052,11 +8042,6 @@
           },
           "101004": {
             "name": "哈尔滨利民经济技术开发区",
-            "short": null,
-            "deprecated": null
-          },
-          "102001": {
-            "name": "哈尔滨新区",
             "short": null,
             "deprecated": null
           },
@@ -9903,11 +9888,6 @@
             "short": null,
             "deprecated": null
           },
-          "102001": {
-            "name": "南京江北新区",
-            "short": null,
-            "deprecated": null
-          },
           "103001": {
             "name": "南京高新技术产业开发区",
             "short": null,
@@ -10875,6 +10855,11 @@
             "short": "龙泉",
             "deprecated": null
           },
+          "101021": {
+            "name": "丽水经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "莲都区",
             "short": "莲都",
@@ -11529,6 +11514,31 @@
             "short": "临安",
             "deprecated": "GB/T 2260-2017"
           },
+          "101004": {
+            "name": "杭州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101005": {
+            "name": "萧山经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101015": {
+            "name": "杭州余杭经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101016": {
+            "name": "富阳经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101019": {
+            "name": "杭州湾上虞经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "上城区",
             "short": "上城",
@@ -11646,6 +11656,26 @@
             "short": "奉化",
             "deprecated": "GB/T 2260-2016"
           },
+          "101001": {
+            "name": "宁波经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101003": {
+            "name": "宁波大榭开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101011": {
+            "name": "宁波石化经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101020": {
+            "name": "宁波杭州湾经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "镇明区",
             "short": "镇明",
@@ -11738,6 +11768,11 @@
             "short": "龙港",
             "deprecated": null
           },
+          "101002": {
+            "name": "温州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "01": {
             "name": "东城区",
             "short": "东城",
@@ -11815,6 +11850,21 @@
             "short": "桐乡",
             "deprecated": null
           },
+          "101006": {
+            "name": "嘉兴经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101012": {
+            "name": "嘉善经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101018": {
+            "name": "平湖经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "南湖区",
             "short": "南湖",
@@ -11845,6 +11895,16 @@
           "23": {
             "name": "安吉县",
             "short": "安吉",
+            "deprecated": null
+          },
+          "101007": {
+            "name": "湖州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101009": {
+            "name": "长兴经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -11902,6 +11962,16 @@
           "83": {
             "name": "嵊州市",
             "short": "嵊州",
+            "deprecated": null
+          },
+          "101008": {
+            "name": "绍兴袍江经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101017": {
+            "name": "绍兴柯桥经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -11981,6 +12051,16 @@
             "short": "永康",
             "deprecated": null
           },
+          "101010": {
+            "name": "金华经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101014": {
+            "name": "义乌经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "01": {
             "name": "兰溪市",
             "short": "兰溪",
@@ -12031,6 +12111,11 @@
           "81": {
             "name": "江山市",
             "short": "江山",
+            "deprecated": null
+          },
+          "101013": {
+            "name": "衢州经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
