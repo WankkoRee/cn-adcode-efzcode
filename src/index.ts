@@ -15,14 +15,16 @@ class Region {
     private readonly name: string;
     private readonly short: string | null;
     private readonly deprecated: string | null;
+    private readonly ended: boolean;
 
-    constructor(level: 0 | 1 | 2 | 3, code: string, name: string, short: string | null, deprecated: string | null) {
+    constructor(level: 0 | 1 | 2 | 3, code: string, name: string, short: string | null, deprecated: string | null, ended: boolean) {
         this.level = level;
         this.codeS = code;
         this.codeI = Number(code);
         this.name = name;
         this.short = short;
         this.deprecated = deprecated;
+        this.ended = ended;
     }
 
     getLevel() {
@@ -43,13 +45,16 @@ class Region {
     isDeprecated() {
         return !!this.deprecated;
     }
+    isEnded() {
+        return this.ended;
+    }
 }
 
 export class County extends Region {
     private readonly parent: Prefecture;
 
     constructor(code: string, data: DataCounty | DataZone, parent: Prefecture) {
-        super(3, code, data.name, data.short, data.deprecated);
+        super(3, code, data.name, data.short, data.deprecated, data.ended);
         this.parent = parent;
     }
 
@@ -78,7 +83,7 @@ export class Prefecture extends Region {
     private readonly parent: Province;
 
     constructor(code: string, data: DataPrefecture | DataClassification, parent: Province) {
-        super(2, code, data.name, data.short, data.deprecated);
+        super(2, code, data.name, data.short, data.deprecated, data.ended);
         this.parent = parent;
         this.children = ImmutableMap(Object.entries(data.children).map(
             ([code, data]) =>
@@ -136,7 +141,7 @@ export class Province extends Region {
     private readonly childrenNotDeprecated: ImmutableMap<number, Prefecture>;
 
     constructor(code: string, data: DataProvince<DataPrefectures | DataClassifications>) {
-        super(1, code, data.name, data.short, data.deprecated);
+        super(1, code, data.name, data.short, data.deprecated, data.ended);
         this.children = ImmutableMap(Object.entries(data.children).map(
             ([code, data]) =>
                 [Number(code), new Prefecture(code, data, this)]
@@ -187,7 +192,7 @@ class China extends Region {
     private readonly childrenNotDeprecated: ImmutableMap<number, Province>;
 
     constructor(data: Data<DataPrefectures | DataClassifications>) {
-        super(0, "", "中华人民共和国", "中国", null);
+        super(0, "", "中华人民共和国", "中国", null, false);
         this.children = ImmutableMap(Object.entries(data).map(
             ([code, data]) =>
                 [Number(code), new Province(code, data)]
