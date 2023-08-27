@@ -4679,7 +4679,7 @@
           "001": {
             "name": "浙江舟山群岛新区",
             "short": null,
-            "parent": null
+            "parent": ""
           }
         }
       },
@@ -7087,7 +7087,7 @@
           "001": {
             "name": "青岛西海岸新区",
             "short": null,
-            "parent": null
+            "parent": ""
           }
         }
       },
@@ -10094,7 +10094,7 @@
           "001": {
             "name": "广州南沙新区",
             "short": null,
-            "parent": null
+            "parent": ""
           }
         }
       },
