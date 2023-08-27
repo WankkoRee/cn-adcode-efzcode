@@ -2,11 +2,13 @@ export type DataCounty = {
     name: string,
     short: string | null,
     deprecated: string | null,
+    ended: true,
 }
 export type DataZone = {
     name: string,
     short: string | null,
     deprecated: string | null,
+    ended: true,
     parent: string | null,
 }
 
@@ -21,12 +23,14 @@ export type DataPrefecture = {
     name: string,
     short: string | null,
     deprecated: string | null,
+    ended: boolean,
     children: DataCounties,
 }
 export type DataClassification = {
     name: string,
     short: string | null,
     deprecated: string | null,
+    ended: boolean,
     children: DataZones,
 }
 
@@ -41,6 +45,7 @@ export type DataProvince<T extends DataPrefectures | DataClassifications> = {
     name: string,
     short: string | null,
     deprecated: string | null,
+    ended: boolean,
     children: T,
 }
 

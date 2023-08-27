@@ -16,18 +16,21 @@ async function main() {
         name: province_name,
         short: province_short,
         deprecated: province_deprecated,
+        ended: ended,
         children: province_children,
     }]) => {
         data[province_code] = {
             name: province_name,
             short: province_short,
             deprecated: province_deprecated,
+            ended: ended,
             children: {},
         }
         Object.entries(province_children as DataPrefectures).forEach(([prefecture_code, {
             name: prefecture_name,
             short: prefecture_short,
             deprecated: prefecture_deprecated,
+            ended: ended,
             children: prefecture_children,
         }]) => {
             if (prefecture_short !== "") {
@@ -35,6 +38,7 @@ async function main() {
                     name: prefecture_name,
                     short: prefecture_short,
                     deprecated: prefecture_deprecated,
+                    ended: ended,
                     children: {},
                 }
             }
@@ -42,12 +46,14 @@ async function main() {
                 name: county_name,
                 short: county_short,
                 deprecated: county_deprecated,
+                ended: ended,
             }]) => {
                 if (prefecture_short !== "") {
                     data[province_code].children[prefecture_code].children[county_code] = {
                         name: county_name,
                         short: county_short,
                         deprecated: county_deprecated,
+                        ended: ended,
                     }
                 } else {
                     data[province_code].children[prefecture_code+county_code] = {
@@ -55,6 +61,7 @@ async function main() {
                         short: county_short,
                         deprecated: county_deprecated,
                         children: {},
+                        ended: ended,
                     }
                 }
             })
@@ -64,6 +71,7 @@ async function main() {
         name: province_name,
         short: province_short,
         deprecated: province_deprecated,
+        ended: ended,
         children: province_children,
     }]) => {
         if (!data[province_code]) {
@@ -71,6 +79,7 @@ async function main() {
                 name: province_name,
                 short: province_short,
                 deprecated: province_deprecated,
+                ended: ended,
                 children: {},
             }
         } else {
@@ -80,6 +89,7 @@ async function main() {
             name: classification_name,
             short: classification_short,
             deprecated: classification_deprecated,
+            ended: ended,
             children: classification_children,
         }]) => {
             // data[province_code].children[classification_code] = {
@@ -92,6 +102,7 @@ async function main() {
                 name: zone_name,
                 short: zone_short,
                 deprecated: zone_deprecated,
+                ended: ended,
                 parent: zone_parent,
             }]) => {
                 if (zone_parent) {
@@ -102,6 +113,7 @@ async function main() {
                         name: zone_name,
                         short: zone_short,
                         deprecated: zone_deprecated,
+                        ended: ended,
                     }
                 }
             })

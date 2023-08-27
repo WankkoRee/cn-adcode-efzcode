@@ -28,12 +28,14 @@ export function update(data: Data<DataPrefectures | DataClassifications>, newDat
                 name: name,
                 short: short,
                 deprecated: null,
+                ended: Object.keys(children).length === 0,
                 children: {},
             }
         } else {
             data[province].name = name;
             data[province].short = short;
             data[province].deprecated = null;
+            data[province].ended = Object.keys(children).length === 0;
         }
         Object.entries(children).forEach(([prefecture, {name, short, children}]) => {
             if (!data[province].children[prefecture]) {
@@ -41,12 +43,14 @@ export function update(data: Data<DataPrefectures | DataClassifications>, newDat
                     name: name,
                     short: short,
                     deprecated: null,
+                    ended: Object.keys(children).length === 0,
                     children: {},
                 }
             } else {
                 data[province].children[prefecture].name = name;
                 data[province].children[prefecture].short = short;
                 data[province].children[prefecture].deprecated = null;
+                data[province].children[prefecture].ended = Object.keys(children).length === 0;
             }
             Object.entries(children).forEach(([county, {name, short, parent}]) => {
                 if (!data[province].children[prefecture].children[county]) {
@@ -54,12 +58,14 @@ export function update(data: Data<DataPrefectures | DataClassifications>, newDat
                         name: name,
                         short: short,
                         deprecated: null,
+                        ended: true,
                         ... parent && {parent: parent},
                     }
                 } else {
                     data[province].children[prefecture].children[county].name = name;
                     data[province].children[prefecture].children[county].short = short;
                     data[province].children[prefecture].children[county].deprecated = null;
+                    data[province].children[prefecture].children[county].ended = true;
                     if (parent)
                         (data[province].children[prefecture].children[county] as DataZone).parent = parent;
                 }
