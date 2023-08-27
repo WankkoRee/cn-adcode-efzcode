@@ -429,27 +429,27 @@ export const main = async () => {
         Object.keys(result[province_code].children).filter(v => v === "101" || v === "103").forEach((classification_code) => {
             Object.keys(result[province_code].children[classification_code].children).forEach((zone_code) => {
                 let [short, suffix] = short_zone(result[province_code].children[classification_code].children[zone_code].name);
-                const parents: string[] = [];
+                const parents = new Set<string>();
                 Object.keys(GB_T_2260_2018[province_code].children).forEach((prefecture_code) => {
                     if (
                         GB_T_2260_2018[province_code].children[prefecture_code].short !== ""
                         && short.includes(GB_T_2260_2018[province_code].children[prefecture_code].short)
                     ) {
-                        parents.push(province_code+prefecture_code);
-                        return;
+                        parents.add(province_code+prefecture_code);
+                        // return;
                     }
                     Object.keys(GB_T_2260_2018[province_code].children[prefecture_code].children).forEach((county_code) => {
                         if (short.includes(GB_T_2260_2018[province_code].children[prefecture_code].children[county_code].short)) {
                             if (GB_T_2260_2018[province_code].children[prefecture_code].short !== "") {
-                                parents.push(province_code + prefecture_code);
+                                parents.add(province_code + prefecture_code);
                                 return;
                             }
-                            parents.push(province_code + prefecture_code + county_code);
+                            parents.add(province_code + prefecture_code + county_code);
                         }
                     })
                 });
-                if (parents.length === 1){
-                    result[province_code].children[classification_code].children[zone_code].parent = parents[0];
+                if (parents.size === 1){
+                    result[province_code].children[classification_code].children[zone_code].parent = Array.from(parents.values())[0];
                 } else {
                     console.log(result[province_code].children[classification_code].children[zone_code].name, short, parents);
                 }
