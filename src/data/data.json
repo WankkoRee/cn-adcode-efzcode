@@ -11534,8 +11534,13 @@
             "short": null,
             "deprecated": null
           },
-          "101019": {
-            "name": "杭州湾上虞经济技术开发区",
+          "103001": {
+            "name": "杭州高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103006": {
+            "name": "萧山临江高新技术产业开发区",
             "short": null,
             "deprecated": null
           },
@@ -11676,6 +11681,11 @@
             "short": null,
             "deprecated": null
           },
+          "103002": {
+            "name": "宁波高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "镇明区",
             "short": "镇明",
@@ -11773,6 +11783,11 @@
             "short": null,
             "deprecated": null
           },
+          "103004": {
+            "name": "温州高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "01": {
             "name": "东城区",
             "short": "东城",
@@ -11865,6 +11880,11 @@
             "short": null,
             "deprecated": null
           },
+          "103007": {
+            "name": "嘉兴秀洲高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "南湖区",
             "short": "南湖",
@@ -11904,6 +11924,11 @@
           },
           "101009": {
             "name": "长兴经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103008": {
+            "name": "湖州莫干山高新技术产业开发区",
             "short": null,
             "deprecated": null
           },
@@ -11971,6 +11996,16 @@
           },
           "101017": {
             "name": "绍兴柯桥经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101019": {
+            "name": "杭州湾上虞经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103003": {
+            "name": "绍兴高新技术产业开发区",
             "short": null,
             "deprecated": null
           },
@@ -12118,6 +12153,11 @@
             "short": null,
             "deprecated": null
           },
+          "103005": {
+            "name": "衢州高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "柯城区",
             "short": "柯城",
@@ -12249,6 +12289,11 @@
           "82": {
             "name": "明光市",
             "short": "明光",
+            "deprecated": null
+          },
+          "101006": {
+            "name": "滁州经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -12424,6 +12469,11 @@
             "short": "霍山",
             "deprecated": null
           },
+          "101009": {
+            "name": "六安经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "金安区",
             "short": "金安",
@@ -12488,6 +12538,11 @@
             "short": "青阳",
             "deprecated": null
           },
+          "101007": {
+            "name": "池州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "贵池区",
             "short": "贵池",
@@ -12533,6 +12588,16 @@
           "82": {
             "name": "广德市",
             "short": "广德",
+            "deprecated": null
+          },
+          "101010": {
+            "name": "宁国经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101012": {
+            "name": "宣城经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -13062,6 +13127,16 @@
             "short": "巢湖",
             "deprecated": null
           },
+          "101002": {
+            "name": "合肥经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "合肥高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "瑶海区",
             "short": "瑶海",
@@ -13127,6 +13202,16 @@
           "81": {
             "name": "无为市",
             "short": "无为",
+            "deprecated": null
+          },
+          "101001": {
+            "name": "芜湖经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103002": {
+            "name": "芜湖高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -13196,6 +13281,11 @@
             "short": "固镇",
             "deprecated": null
           },
+          "103003": {
+            "name": "蚌埠高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "龙子湖区",
             "short": "龙子湖",
@@ -13226,6 +13316,16 @@
           "22": {
             "name": "寿县",
             "short": "寿县",
+            "deprecated": null
+          },
+          "101008": {
+            "name": "淮南经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103006": {
+            "name": "淮南高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -13278,6 +13378,16 @@
           "23": {
             "name": "和县",
             "short": "和县",
+            "deprecated": null
+          },
+          "101003": {
+            "name": "马鞍山经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103004": {
+            "name": "马鞍山慈湖高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -13357,6 +13467,16 @@
           "22": {
             "name": "枞阳县",
             "short": "枞阳",
+            "deprecated": null
+          },
+          "101005": {
+            "name": "铜陵经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103005": {
+            "name": "铜陵狮子山高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -13444,6 +13564,16 @@
           "82": {
             "name": "潜山市",
             "short": "潜山",
+            "deprecated": null
+          },
+          "101004": {
+            "name": "安庆经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101011": {
+            "name": "桐城经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -14109,6 +14239,21 @@
             "short": "长乐",
             "deprecated": "GB/T 2260-2017"
           },
+          "101001": {
+            "name": "福州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101003": {
+            "name": "福清融侨经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "福州高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "鼓楼区",
             "short": "鼓楼",
@@ -14156,6 +14301,16 @@
             "short": "同安",
             "deprecated": "GB/T 2260-1996"
           },
+          "101002": {
+            "name": "厦门海沧台商投资区",
+            "short": null,
+            "deprecated": null
+          },
+          "103002": {
+            "name": "厦门火炬高技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "鼓浪屿区",
             "short": "鼓浪屿",
@@ -14196,6 +14351,11 @@
           "22": {
             "name": "仙游县",
             "short": "仙游",
+            "deprecated": null
+          },
+          "103004": {
+            "name": "莆田高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -14285,6 +14445,11 @@
             "short": "永安",
             "deprecated": null
           },
+          "103006": {
+            "name": "三明高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "梅列区",
             "short": "梅列",
@@ -14360,6 +14525,21 @@
           "83": {
             "name": "南安市",
             "short": "南安",
+            "deprecated": null
+          },
+          "101006": {
+            "name": "泉州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101007": {
+            "name": "泉州台商投资区",
+            "short": null,
+            "deprecated": null
+          },
+          "103003": {
+            "name": "泉州高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "01": {
@@ -14443,6 +14623,26 @@
             "name": "龙海市",
             "short": "龙海",
             "deprecated": "GB/T 2260-2021"
+          },
+          "101004": {
+            "name": "东山经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101005": {
+            "name": "漳州招商局经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101008": {
+            "name": "漳州台商投资区",
+            "short": null,
+            "deprecated": null
+          },
+          "103005": {
+            "name": "漳州高新技术产业开发区",
+            "short": null,
+            "deprecated": null
           },
           "02": {
             "name": "芗城区",
@@ -14563,6 +14763,16 @@
             "short": "漳平",
             "deprecated": null
           },
+          "101009": {
+            "name": "龙岩经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103007": {
+            "name": "龙岩高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "新罗区",
             "short": "新罗",
@@ -14618,6 +14828,11 @@
           "82": {
             "name": "福鼎市",
             "short": "福鼎",
+            "deprecated": null
+          },
+          "101010": {
+            "name": "东侨经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -14687,6 +14902,11 @@
           "30": {
             "name": "广昌县",
             "short": "广昌",
+            "deprecated": null
+          },
+          "103005": {
+            "name": "抚州高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -14759,6 +14979,11 @@
           "81": {
             "name": "德兴市",
             "short": "德兴",
+            "deprecated": null
+          },
+          "101005": {
+            "name": "上饶经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -15387,6 +15612,21 @@
             "short": "进贤",
             "deprecated": null
           },
+          "101001": {
+            "name": "南昌经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101007": {
+            "name": "南昌小蓝经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "南昌高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "东湖区",
             "short": "东湖",
@@ -15439,6 +15679,11 @@
             "short": "乐平",
             "deprecated": null
           },
+          "103002": {
+            "name": "景德镇高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "昌江区",
             "short": "昌江",
@@ -15484,6 +15729,11 @@
           "23": {
             "name": "芦溪县",
             "short": "芦溪",
+            "deprecated": null
+          },
+          "101006": {
+            "name": "萍乡经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -15568,6 +15818,16 @@
             "short": "庐山",
             "deprecated": null
           },
+          "101002": {
+            "name": "九江经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103009": {
+            "name": "九江共青城高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "濂溪区",
             "short": "濂溪",
@@ -15595,6 +15855,11 @@
             "short": "分宜",
             "deprecated": null
           },
+          "103003": {
+            "name": "新余高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "渝水区",
             "short": "渝水",
@@ -15620,6 +15885,11 @@
           "81": {
             "name": "贵溪市",
             "short": "贵溪",
+            "deprecated": null
+          },
+          "103004": {
+            "name": "鹰潭高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -15729,6 +15999,26 @@
             "short": "龙南",
             "deprecated": null
           },
+          "101003": {
+            "name": "赣州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101009": {
+            "name": "龙南经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101010": {
+            "name": "瑞金经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103006": {
+            "name": "赣州高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "章贡区",
             "short": "章贡",
@@ -15806,6 +16096,16 @@
             "short": "井冈山",
             "deprecated": null
           },
+          "101004": {
+            "name": "井冈山经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103007": {
+            "name": "吉安高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "吉州区",
             "short": "吉州",
@@ -15868,6 +16168,16 @@
             "short": "高安",
             "deprecated": null
           },
+          "101008": {
+            "name": "宜春经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103008": {
+            "name": "宜春丰城高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "袁州区",
             "short": "袁州",
@@ -15917,6 +16227,21 @@
             "short": "乳山",
             "deprecated": null
           },
+          "101003": {
+            "name": "威海经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101014": {
+            "name": "威海临港经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103002": {
+            "name": "威海火炬高技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "环翠区",
             "short": "环翠",
@@ -15942,6 +16267,11 @@
           "22": {
             "name": "莒县",
             "short": "莒县",
+            "deprecated": null
+          },
+          "101006": {
+            "name": "日照经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -16033,6 +16363,16 @@
             "short": "临沭",
             "deprecated": null
           },
+          "101008": {
+            "name": "临沂经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103008": {
+            "name": "临沂高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "兰山区",
             "short": "兰山",
@@ -16095,6 +16435,16 @@
             "short": "禹城",
             "deprecated": null
           },
+          "101010": {
+            "name": "德州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103012": {
+            "name": "德州高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "德城区",
             "short": "德城",
@@ -16147,6 +16497,11 @@
             "short": "临清",
             "deprecated": null
           },
+          "101013": {
+            "name": "聊城经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "东昌府区",
             "short": "东昌府",
@@ -16197,6 +16552,16 @@
           "81": {
             "name": "邹平市",
             "short": "邹平",
+            "deprecated": null
+          },
+          "101007": {
+            "name": "邹平经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101015": {
+            "name": "滨州经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -17155,6 +17520,21 @@
             "short": "章丘",
             "deprecated": "GB/T 2260-2016"
           },
+          "101011": {
+            "name": "明水经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "济南高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103011": {
+            "name": "莱芜高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "历下区",
             "short": "历下",
@@ -17262,6 +17642,21 @@
             "short": "莱西",
             "deprecated": null
           },
+          "101001": {
+            "name": "青岛经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101012": {
+            "name": "胶州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103003": {
+            "name": "青岛高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "市南区",
             "short": "市南",
@@ -17309,6 +17704,11 @@
             "short": "沂源",
             "deprecated": null
           },
+          "103004": {
+            "name": "淄博高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "淄川区",
             "short": "淄川",
@@ -17349,6 +17749,11 @@
           "81": {
             "name": "滕州市",
             "short": "滕州",
+            "deprecated": null
+          },
+          "103010": {
+            "name": "枣庄高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -17396,6 +17801,16 @@
           "23": {
             "name": "广饶县",
             "short": "广饶",
+            "deprecated": null
+          },
+          "101004": {
+            "name": "东营经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103013": {
+            "name": "黄河三角洲农业高新技术产业示范区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -17545,6 +17960,21 @@
             "short": "海阳",
             "deprecated": null
           },
+          "101002": {
+            "name": "烟台经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101009": {
+            "name": "招远经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103006": {
+            "name": "烟台高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "芝罘区",
             "short": "芝罘",
@@ -17630,6 +18060,16 @@
           "86": {
             "name": "昌邑市",
             "short": "昌邑",
+            "deprecated": null
+          },
+          "101005": {
+            "name": "潍坊滨海经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103005": {
+            "name": "潍坊高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -17734,6 +18174,11 @@
             "short": "邹城",
             "deprecated": null
           },
+          "103007": {
+            "name": "济宁高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "市中区",
             "short": "市中",
@@ -17779,6 +18224,11 @@
           "83": {
             "name": "肥城市",
             "short": "肥城",
+            "deprecated": null
+          },
+          "103009": {
+            "name": "泰安高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "01": {
@@ -17840,6 +18290,11 @@
             "short": "长葛",
             "deprecated": null
           },
+          "101005": {
+            "name": "许昌经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "魏都区",
             "short": "魏都",
@@ -17871,6 +18326,11 @@
             "name": "郾城县",
             "short": "郾城",
             "deprecated": "GB/T 2260-2004"
+          },
+          "101004": {
+            "name": "漯河经济技术开发区",
+            "short": null,
+            "deprecated": null
           },
           "02": {
             "name": "源汇区",
@@ -17994,6 +18454,11 @@
           "81": {
             "name": "邓州市",
             "short": "邓州",
+            "deprecated": null
+          },
+          "103004": {
+            "name": "南阳高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -19144,6 +19609,16 @@
             "short": "登封",
             "deprecated": null
           },
+          "101001": {
+            "name": "郑州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "郑州高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "中原区",
             "short": "中原",
@@ -19219,6 +19694,11 @@
           "25": {
             "name": "兰考县",
             "short": "兰考",
+            "deprecated": null
+          },
+          "101002": {
+            "name": "开封经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -19302,6 +19782,16 @@
             "name": "偃师市",
             "short": "偃师",
             "deprecated": "GB/T 2260-2021"
+          },
+          "101006": {
+            "name": "洛阳经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103002": {
+            "name": "洛阳高新技术产业开发区",
+            "short": null,
+            "deprecated": null
           },
           "02": {
             "name": "老城区",
@@ -19395,6 +19885,11 @@
             "short": "汝州",
             "deprecated": null
           },
+          "103006": {
+            "name": "平顶山高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "新华区",
             "short": "新华",
@@ -19462,6 +19957,11 @@
             "short": "林州",
             "deprecated": null
           },
+          "103003": {
+            "name": "安阳高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "文峰区",
             "short": "文峰",
@@ -19507,6 +20007,11 @@
           "22": {
             "name": "淇县",
             "short": "淇县",
+            "deprecated": null
+          },
+          "101003": {
+            "name": "鹤壁经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -19584,6 +20089,11 @@
           "83": {
             "name": "孟州市",
             "short": "孟州",
+            "deprecated": null
+          },
+          "103007": {
+            "name": "焦作高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -19668,6 +20178,21 @@
             "short": "长垣",
             "deprecated": null
           },
+          "101007": {
+            "name": "新乡经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101008": {
+            "name": "红旗渠经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103005": {
+            "name": "新乡高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "红旗区",
             "short": "红旗",
@@ -19735,6 +20260,11 @@
             "short": "濮阳县",
             "deprecated": null
           },
+          "101009": {
+            "name": "濮阳经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "华龙区",
             "short": "华龙",
@@ -19797,6 +20327,16 @@
           "88": {
             "name": "监利市",
             "short": "监利",
+            "deprecated": null
+          },
+          "101005": {
+            "name": "荆州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103012": {
+            "name": "荆州高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "01": {
@@ -19871,6 +20411,11 @@
             "short": "武穴",
             "deprecated": null
           },
+          "103008": {
+            "name": "黄冈高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "黄州区",
             "short": "黄州",
@@ -19908,6 +20453,11 @@
             "short": "赤壁",
             "deprecated": null
           },
+          "103009": {
+            "name": "咸宁高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "咸安区",
             "short": "咸安",
@@ -19928,6 +20478,11 @@
           "81": {
             "name": "广水市",
             "short": "广水",
+            "deprecated": null
+          },
+          "103006": {
+            "name": "随州高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "03": {
@@ -20487,13 +21042,25 @@
         "name": "仙桃市",
         "short": "仙桃",
         "deprecated": null,
-        "children": {}
+        "children": {
+          "103007": {
+            "name": "仙桃高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          }
+        }
       },
       "9005": {
         "name": "潜江市",
         "short": "潜江",
         "deprecated": null,
-        "children": {}
+        "children": {
+          "103010": {
+            "name": "潜江高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          }
+        }
       },
       "9006": {
         "name": "天门市",
@@ -20633,6 +21200,16 @@
             "short": "新洲",
             "deprecated": "GB/T 2260-1998"
           },
+          "101001": {
+            "name": "武汉经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101004": {
+            "name": "武汉临空港经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "103001": {
             "name": "武汉东湖新技术开发区",
             "short": null,
@@ -20695,6 +21272,16 @@
             "short": "大冶",
             "deprecated": null
           },
+          "101002": {
+            "name": "黄石经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103011": {
+            "name": "黄石大冶湖高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "黄石港区",
             "short": "黄石港",
@@ -20750,6 +21337,11 @@
           "81": {
             "name": "丹江口市",
             "short": "丹江口",
+            "deprecated": null
+          },
+          "101007": {
+            "name": "十堰经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -20828,6 +21420,11 @@
           "83": {
             "name": "枝江市",
             "short": "枝江",
+            "deprecated": null
+          },
+          "103003": {
+            "name": "宜昌高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -20912,6 +21509,16 @@
             "short": "宜城",
             "deprecated": null
           },
+          "101003": {
+            "name": "襄阳经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103002": {
+            "name": "襄阳高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "襄城区",
             "short": "襄城",
@@ -20944,6 +21551,11 @@
         "short": "鄂州",
         "deprecated": null,
         "children": {
+          "101006": {
+            "name": "鄂州葛店经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "03": {
             "name": "华容区",
             "short": "华容",
@@ -20984,6 +21596,11 @@
           "82": {
             "name": "京山市",
             "short": "京山",
+            "deprecated": null
+          },
+          "103005": {
+            "name": "荆门高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -21046,6 +21663,11 @@
           "84": {
             "name": "汉川市",
             "short": "汉川",
+            "deprecated": null
+          },
+          "103004": {
+            "name": "孝感高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "01": {
@@ -21115,6 +21737,11 @@
           "81": {
             "name": "资兴市",
             "short": "资兴",
+            "deprecated": null
+          },
+          "103006": {
+            "name": "郴州高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -21256,6 +21883,11 @@
             "short": "洪江",
             "deprecated": null
           },
+          "103008": {
+            "name": "怀化高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "鹤城区",
             "short": "鹤城",
@@ -21286,6 +21918,11 @@
           "82": {
             "name": "涟源市",
             "short": "涟源",
+            "deprecated": null
+          },
+          "101007": {
+            "name": "娄底经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -22003,6 +22640,31 @@
             "short": "宁乡",
             "deprecated": null
           },
+          "101001": {
+            "name": "长沙经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101004": {
+            "name": "宁乡经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101006": {
+            "name": "浏阳经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101008": {
+            "name": "望城经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "长沙高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "芙蓉区",
             "short": "芙蓉",
@@ -22075,6 +22737,11 @@
             "short": "醴陵",
             "deprecated": null
           },
+          "103002": {
+            "name": "株洲高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "荷塘区",
             "short": "荷塘",
@@ -22120,6 +22787,16 @@
           "82": {
             "name": "韶山市",
             "short": "韶山",
+            "deprecated": null
+          },
+          "101005": {
+            "name": "湘潭经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103003": {
+            "name": "湘潭高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -22207,6 +22884,11 @@
           "82": {
             "name": "常宁市",
             "short": "常宁",
+            "deprecated": null
+          },
+          "103005": {
+            "name": "衡阳高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -22378,6 +23060,11 @@
             "short": "临湘",
             "deprecated": null
           },
+          "101002": {
+            "name": "岳阳经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "岳阳楼区",
             "short": "岳阳楼",
@@ -22428,6 +23115,16 @@
           "81": {
             "name": "津市市",
             "short": "津市",
+            "deprecated": null
+          },
+          "101003": {
+            "name": "常德经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103007": {
+            "name": "常德高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -22492,6 +23189,11 @@
           "81": {
             "name": "沅江市",
             "short": "沅江",
+            "deprecated": null
+          },
+          "103004": {
+            "name": "益阳高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -22616,6 +23318,11 @@
             "short": "四会",
             "deprecated": null
           },
+          "103007": {
+            "name": "肇庆高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "端州区",
             "short": "端州",
@@ -22662,6 +23369,16 @@
             "name": "惠阳市",
             "short": "惠阳",
             "deprecated": "GB/T 2260-2003"
+          },
+          "101004": {
+            "name": "惠州大亚湾经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103006": {
+            "name": "惠州仲恺高新技术产业开发区",
+            "short": null,
+            "deprecated": null
           },
           "02": {
             "name": "惠城区",
@@ -22799,6 +23516,11 @@
             "short": "东源",
             "deprecated": null
           },
+          "103010": {
+            "name": "源城高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "源城区",
             "short": "源城",
@@ -22903,6 +23625,11 @@
             "short": "连州",
             "deprecated": null
           },
+          "103011": {
+            "name": "清远高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "清城区",
             "short": "清城",
@@ -22919,13 +23646,25 @@
         "name": "东莞市",
         "short": "东莞",
         "deprecated": null,
-        "children": {}
+        "children": {
+          "103008": {
+            "name": "东莞松山湖高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          }
+        }
       },
       "20": {
         "name": "中山市",
         "short": "中山",
         "deprecated": null,
-        "children": {}
+        "children": {
+          "103003": {
+            "name": "中山火炬高技术产业开发区",
+            "short": null,
+            "deprecated": null
+          }
+        }
       },
       "21": {
         "name": "海南行政区",
@@ -23932,6 +24671,26 @@
             "short": "从化",
             "deprecated": "GB/T 2260-2014"
           },
+          "101002": {
+            "name": "广州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101003": {
+            "name": "广州南沙经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101005": {
+            "name": "增城经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "广州高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "东山区",
             "short": "东山",
@@ -24086,6 +24845,11 @@
             "short": "宝安",
             "deprecated": "GB/T 2260-1992"
           },
+          "103002": {
+            "name": "深圳市高新技术产业园区",
+            "short": null,
+            "deprecated": null
+          },
           "03": {
             "name": "罗湖区",
             "short": "罗湖",
@@ -24132,6 +24896,16 @@
             "name": "斗门县",
             "short": "斗门",
             "deprecated": "GB/T 2260-2001"
+          },
+          "101006": {
+            "name": "珠海经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103004": {
+            "name": "珠海高新技术产业开发区",
+            "short": null,
+            "deprecated": null
           },
           "02": {
             "name": "香洲区",
@@ -24235,6 +25009,11 @@
             "short": "澄海",
             "deprecated": "GB/T 2260-2003"
           },
+          "103012": {
+            "name": "汕头高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "龙湖区",
             "short": "龙湖",
@@ -24326,6 +25105,11 @@
             "name": "高明市",
             "short": "高明",
             "deprecated": "GB/T 2260-2002"
+          },
+          "103005": {
+            "name": "佛山高新技术产业开发区",
+            "short": null,
+            "deprecated": null
           },
           "02": {
             "name": "城区",
@@ -24434,6 +25218,11 @@
             "short": "恩平",
             "deprecated": null
           },
+          "103009": {
+            "name": "江门高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "城区",
             "short": "城区",
@@ -24506,6 +25295,16 @@
             "short": "吴川",
             "deprecated": null
           },
+          "101001": {
+            "name": "湛江经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103013": {
+            "name": "湛江高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "赤坎区",
             "short": "赤坎",
@@ -24561,6 +25360,11 @@
           "83": {
             "name": "信宜市",
             "short": "信宜",
+            "deprecated": null
+          },
+          "103014": {
+            "name": "茂名高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -25423,6 +26227,21 @@
             "short": "横州",
             "deprecated": null
           },
+          "101001": {
+            "name": "南宁经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101004": {
+            "name": "广西—东盟经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103002": {
+            "name": "南宁高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "兴宁区",
             "short": "兴宁",
@@ -25498,6 +26317,11 @@
           "26": {
             "name": "三江侗族自治县",
             "short": "三江",
+            "deprecated": null
+          },
+          "103003": {
+            "name": "柳州高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -25607,6 +26431,11 @@
             "short": "荔浦",
             "deprecated": null
           },
+          "103001": {
+            "name": "桂林高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "秀峰区",
             "short": "秀峰",
@@ -25701,6 +26530,11 @@
             "short": "合浦",
             "deprecated": null
           },
+          "103004": {
+            "name": "北海高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "海城区",
             "short": "海城",
@@ -25753,6 +26587,16 @@
           "22": {
             "name": "浦北县",
             "short": "浦北",
+            "deprecated": null
+          },
+          "101002": {
+            "name": "钦州港经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101003": {
+            "name": "中国—马来西亚钦州产业园区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -26087,6 +26931,11 @@
         "short": "海口",
         "deprecated": null,
         "children": {
+          "103001": {
+            "name": "海口高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "振东区",
             "short": "振东",
@@ -26161,7 +27010,13 @@
         "name": "儋州市",
         "short": "儋州",
         "deprecated": null,
-        "children": {}
+        "children": {
+          "101001": {
+            "name": "海南洋浦经济开发区",
+            "short": null,
+            "deprecated": null
+          }
+        }
       }
     }
   },
@@ -26560,6 +27415,16 @@
             "short": "隆昌",
             "deprecated": null
           },
+          "101008": {
+            "name": "内江经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103008": {
+            "name": "内江高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "市中区",
             "short": "市中",
@@ -26655,6 +27520,11 @@
           "81": {
             "name": "峨眉山市",
             "short": "峨眉山",
+            "deprecated": null
+          },
+          "103004": {
+            "name": "乐山高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -26870,6 +27740,11 @@
             "short": "屏山",
             "deprecated": null
           },
+          "101007": {
+            "name": "宜宾临港经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "翠屏区",
             "short": "翠屏",
@@ -26910,6 +27785,11 @@
           "81": {
             "name": "华蓥市",
             "short": "华蓥",
+            "deprecated": null
+          },
+          "101003": {
+            "name": "广安经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -28660,6 +29540,11 @@
             "short": "简阳",
             "deprecated": null
           },
+          "101001": {
+            "name": "成都经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "103001": {
             "name": "成都高新技术产业开发区",
             "short": "高新区",
@@ -28859,6 +29744,11 @@
             "short": "富顺",
             "deprecated": null
           },
+          "103003": {
+            "name": "自贡高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "自流井区",
             "short": "自流井",
@@ -28894,6 +29784,11 @@
           "22": {
             "name": "盐边县",
             "short": "盐边",
+            "deprecated": null
+          },
+          "103006": {
+            "name": "攀枝花钒钛高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -28936,6 +29831,11 @@
           "25": {
             "name": "古蔺县",
             "short": "古蔺",
+            "deprecated": null
+          },
+          "103005": {
+            "name": "泸州高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -29005,6 +29905,16 @@
             "short": "绵竹",
             "deprecated": null
           },
+          "101002": {
+            "name": "德阳经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103007": {
+            "name": "德阳高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "市中区",
             "short": "市中",
@@ -29067,6 +29977,16 @@
             "short": "江油",
             "deprecated": null
           },
+          "101005": {
+            "name": "绵阳经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103002": {
+            "name": "绵阳高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "市中区",
             "short": "市中",
@@ -29124,6 +30044,11 @@
             "short": "苍溪",
             "deprecated": null
           },
+          "101006": {
+            "name": "广元经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "利州区",
             "short": "利州",
@@ -29154,6 +30079,11 @@
           "81": {
             "name": "射洪市",
             "short": "射洪",
+            "deprecated": null
+          },
+          "101004": {
+            "name": "遂宁经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -29719,6 +30649,16 @@
             "short": "清镇",
             "deprecated": null
           },
+          "101001": {
+            "name": "贵阳经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "贵阳高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "南明区",
             "short": "南明",
@@ -29838,6 +30778,11 @@
             "short": "仁怀",
             "deprecated": null
           },
+          "101002": {
+            "name": "遵义经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "红花岗区",
             "short": "红花岗",
@@ -29883,6 +30828,11 @@
           "25": {
             "name": "紫云苗族布依族自治县",
             "short": "紫云",
+            "deprecated": null
+          },
+          "103002": {
+            "name": "安顺高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -30222,6 +31172,11 @@
             "short": "禄丰",
             "deprecated": "GB/T 2260-2021"
           },
+          "103003": {
+            "name": "楚雄高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "01": {
             "name": "楚雄市",
             "short": "楚雄市",
@@ -30354,6 +31309,11 @@
           "32": {
             "name": "河口瑶族自治县",
             "short": "河口",
+            "deprecated": null
+          },
+          "101004": {
+            "name": "蒙自经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "01": {
@@ -30582,6 +31542,11 @@
           "32": {
             "name": "鹤庆县",
             "short": "鹤庆",
+            "deprecated": null
+          },
+          "101005": {
+            "name": "大理经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "01": {
@@ -30898,6 +31863,21 @@
             "short": "安宁",
             "deprecated": null
           },
+          "101001": {
+            "name": "昆明经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101003": {
+            "name": "嵩明杨林经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "昆明高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "五华区",
             "short": "五华",
@@ -30966,6 +31946,11 @@
             "short": "宣威",
             "deprecated": null
           },
+          "101002": {
+            "name": "曲靖经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "麒麟区",
             "short": "麒麟",
@@ -31031,6 +32016,11 @@
           "81": {
             "name": "澄江市",
             "short": "澄江",
+            "deprecated": null
+          },
+          "103002": {
+            "name": "玉溪高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -31810,6 +32800,11 @@
             "name": "墨脱县",
             "short": "墨脱",
             "deprecated": "GB/T 2260-1983"
+          },
+          "101001": {
+            "name": "拉萨经济技术开发区",
+            "short": null,
+            "deprecated": null
           },
           "02": {
             "name": "城关区",
@@ -32784,6 +33779,26 @@
             "short": "高陵",
             "deprecated": "GB/T 2260-2014"
           },
+          "101001": {
+            "name": "西安经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101002": {
+            "name": "陕西航空经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101003": {
+            "name": "陕西航天经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "西安高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "新城区",
             "short": "新城",
@@ -32893,6 +33908,11 @@
             "short": "太白",
             "deprecated": null
           },
+          "103002": {
+            "name": "宝鸡高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "渭滨区",
             "short": "渭滨",
@@ -32985,6 +34005,16 @@
             "short": "彬州",
             "deprecated": null
           },
+          "103003": {
+            "name": "杨凌农业高新技术产业示范区",
+            "short": null,
+            "deprecated": null
+          },
+          "103005": {
+            "name": "咸阳高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "01": {
             "name": "咸阳市",
             "short": "咸阳市",
@@ -33060,6 +34090,11 @@
           "82": {
             "name": "华阴市",
             "short": "华阴",
+            "deprecated": null
+          },
+          "103004": {
+            "name": "渭南高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -33211,6 +34246,11 @@
             "short": "佛坪",
             "deprecated": null
           },
+          "101004": {
+            "name": "汉中经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "汉台区",
             "short": "汉台",
@@ -33288,6 +34328,16 @@
             "short": "神木",
             "deprecated": null
           },
+          "101005": {
+            "name": "榆林经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103006": {
+            "name": "榆林高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "榆阳区",
             "short": "榆阳",
@@ -33353,6 +34403,11 @@
           "81": {
             "name": "旬阳市",
             "short": "旬阳",
+            "deprecated": null
+          },
+          "103007": {
+            "name": "安康高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -34040,6 +35095,16 @@
             "short": "榆中",
             "deprecated": null
           },
+          "101001": {
+            "name": "兰州经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "兰州高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "城关区",
             "short": "城关",
@@ -34078,6 +35143,11 @@
             "short": "永昌",
             "deprecated": null
           },
+          "101002": {
+            "name": "金昌经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "金川区",
             "short": "金川",
@@ -34103,6 +35173,11 @@
           "23": {
             "name": "景泰县",
             "short": "景泰",
+            "deprecated": null
+          },
+          "103002": {
+            "name": "白银高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -34145,6 +35220,11 @@
           "25": {
             "name": "张家川回族自治县",
             "short": "张家川",
+            "deprecated": null
+          },
+          "101003": {
+            "name": "天水经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -34214,6 +35294,11 @@
           "25": {
             "name": "山丹县",
             "short": "山丹",
+            "deprecated": null
+          },
+          "101005": {
+            "name": "张掖经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -34308,6 +35393,11 @@
           "82": {
             "name": "敦煌市",
             "short": "敦煌",
+            "deprecated": null
+          },
+          "101004": {
+            "name": "酒泉经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -34561,6 +35651,11 @@
             "short": "天峻",
             "deprecated": null
           },
+          "101002": {
+            "name": "格尔木昆仑经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "01": {
             "name": "格尔木市",
             "short": "格尔木",
@@ -34607,6 +35702,16 @@
           "23": {
             "name": "湟源县",
             "short": "湟源",
+            "deprecated": null
+          },
+          "101001": {
+            "name": "西宁经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "青海高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {
@@ -34799,6 +35904,16 @@
             "short": "灵武",
             "deprecated": null
           },
+          "101001": {
+            "name": "银川经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "银川高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          },
           "02": {
             "name": "城区",
             "short": "城区",
@@ -34850,6 +35965,16 @@
             "name": "惠农县",
             "short": "惠农",
             "deprecated": "GB/T 2260-2003"
+          },
+          "101002": {
+            "name": "石嘴山经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103002": {
+            "name": "石嘴山高新技术产业开发区",
+            "short": null,
+            "deprecated": null
           },
           "02": {
             "name": "大武口区",
@@ -35078,6 +36203,16 @@
           "28": {
             "name": "木垒哈萨克自治县",
             "short": "木垒",
+            "deprecated": null
+          },
+          "101008": {
+            "name": "新疆准东经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103002": {
+            "name": "昌吉高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "01": {
@@ -35330,6 +36465,11 @@
             "short": "博湖",
             "deprecated": null
           },
+          "101003": {
+            "name": "库尔勒经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "01": {
             "name": "库尔勒市",
             "short": "库尔勒",
@@ -35385,6 +36525,11 @@
           "29": {
             "name": "柯坪县",
             "short": "柯坪",
+            "deprecated": null
+          },
+          "101009": {
+            "name": "库车经济技术开发区",
+            "short": null,
             "deprecated": null
           },
           "01": {
@@ -35590,6 +36735,11 @@
             "short": "尼勒克",
             "deprecated": null
           },
+          "101004": {
+            "name": "新疆奎屯—独山子经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
           "01": {
             "name": "奎屯市",
             "short": "奎屯",
@@ -35762,13 +36912,30 @@
         "name": "石河子市",
         "short": "石河子",
         "deprecated": null,
-        "children": {}
+        "children": {
+          "101002": {
+            "name": "石河子经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103003": {
+            "name": "新疆生产建设兵团石河子高新技术产业开发区",
+            "short": null,
+            "deprecated": null
+          }
+        }
       },
       "9002": {
         "name": "阿拉尔市",
         "short": "阿拉尔",
         "deprecated": null,
-        "children": {}
+        "children": {
+          "101005": {
+            "name": "阿拉尔经济技术开发区",
+            "short": null,
+            "deprecated": null
+          }
+        }
       },
       "9003": {
         "name": "图木舒克市",
@@ -35780,7 +36947,13 @@
         "name": "五家渠市",
         "short": "五家渠",
         "deprecated": null,
-        "children": {}
+        "children": {
+          "101006": {
+            "name": "新疆五家渠经济技术开发区",
+            "short": null,
+            "deprecated": null
+          }
+        }
       },
       "9005": {
         "name": "北屯市",
@@ -35832,6 +37005,21 @@
           "21": {
             "name": "乌鲁木齐县",
             "short": "乌鲁木齐县",
+            "deprecated": null
+          },
+          "101001": {
+            "name": "乌鲁木齐经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "101007": {
+            "name": "乌鲁木齐甘泉堡经济技术开发区",
+            "short": null,
+            "deprecated": null
+          },
+          "103001": {
+            "name": "乌鲁木齐高新技术产业开发区",
+            "short": null,
             "deprecated": null
           },
           "02": {

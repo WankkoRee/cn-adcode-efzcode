@@ -125,3 +125,13 @@ export function short_county(value: string, province: string, prefecture: string
         return ["TODO", "TODO"];
     }
 }
+
+export function short_zone(value: string) {
+    const rule = /^(.{0,13}?)(?:航空|航天|农业)?(?:经济|新|高新|高)?(?:技术)?(?:产业|工业)?(开发|园|示范|台商投资)区$/;
+    const short_name = rule.exec(value);
+    if (short_name) {
+        return [short_name[1], short_name[2]];
+    } else {
+        return ["TODO", "TODO"];
+    }
+}

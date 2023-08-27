@@ -4,7 +4,8 @@ const { getDocument } = pdfjs;
 import type {TextItem} from "pdfjs-dist/types/src/display/api";
 import chalk from "chalk";
 import type {DataRaw} from "../types";
-import {short_province} from "../utils.js";
+import {short_province, short_zone} from "../utils.js";
+import assert from "assert";
 
 type CharMap = { [key: number]: string }
 
@@ -377,7 +378,7 @@ export const main = async () => {
     const result: DataRaw = {};
 
     for await (const {pageNumber: page, text: text} of parsePDF(new Uint8Array(fs.readFileSync("./src/raw/GB_T 37028-2018《全国主要经济功能区分类与代码》.pdf")))) {
-        console.log(`====${page}====`)
+        // console.log(`====${page}====`)
         let i = 0;
         while (i < text.length) {
             if (text[i].texts.length === 1 && /^[０１２３４５６７８９]{8}$/.test(text[i].texts[0].str)) {
@@ -387,12 +388,12 @@ export const main = async () => {
                 const classification_name = text[++i].texts.map((c) =>  mapString(c)).join("");
                 const zone_name = text[++i].texts.map((c) =>  mapString(c)).join("");
 
-                console.log(
-                    code,
-                    province_name,
-                    classification_name,
-                    zone_name,
-                );
+                // console.log(
+                //     code,
+                //     province_name,
+                //     classification_name,
+                //     zone_name,
+                // );
 
                 const province_code = code.substring(0, 2);
                 const classification_code = code.substring(2, 5);
@@ -421,20 +422,61 @@ export const main = async () => {
             i++;
         }
     }
+    const GB_T_2260_2018 = JSON.parse(fs.readFileSync('./src/raw/GB_T_2260/data/GB_T 2260-2018.json', 'utf-8')) as DataRaw;
+    Object.keys(result).forEach((province_code) => {
+        if (GB_T_2260_2018[province_code].name.endsWith("市"))
+            return;
+        Object.keys(result[province_code].children).filter(v => v === "101" || v === "103").forEach((classification_code) => {
+            Object.keys(result[province_code].children[classification_code].children).forEach((zone_code) => {
+                let [short, suffix] = short_zone(result[province_code].children[classification_code].children[zone_code].name);
+                const parents: string[] = [];
+                Object.keys(GB_T_2260_2018[province_code].children).forEach((prefecture_code) => {
+                    if (
+                        GB_T_2260_2018[province_code].children[prefecture_code].short !== ""
+                        && short.includes(GB_T_2260_2018[province_code].children[prefecture_code].short)
+                    ) {
+                        parents.push(province_code+prefecture_code);
+                        return;
+                    }
+                    Object.keys(GB_T_2260_2018[province_code].children[prefecture_code].children).forEach((county_code) => {
+                        if (short.includes(GB_T_2260_2018[province_code].children[prefecture_code].children[county_code].short)) {
+                            if (GB_T_2260_2018[province_code].children[prefecture_code].short !== "") {
+                                parents.push(province_code + prefecture_code);
+                                return;
+                            }
+                            parents.push(province_code + prefecture_code + county_code);
+                        }
+                    })
+                });
+                if (parents.length === 1){
+                    result[province_code].children[classification_code].children[zone_code].parent = parents[0];
+                } else {
+                    console.log(result[province_code].children[classification_code].children[zone_code].name, short, parents);
+                }
+            });
+        });
+    });
+
     const filename = './src/raw/GB_T_37028/data/GB_T 37028-2018.json';
     if (fs.existsSync(filename)) {
-        Object.entries((JSON.parse(fs.readFileSync(filename, 'utf-8')) as DataRaw)).map(([province_code, province_data], ) => {
-            Object.entries(province_data.children).map(([classification_code, classification_data], ) => {
-                Object.entries(classification_data.children).map(([zone_code, zone_data], ) => {
+        Object.entries(JSON.parse(fs.readFileSync(filename, 'utf-8')) as DataRaw).forEach(([province_code, province_data]) => {
+            Object.entries(province_data.children).forEach(([classification_code, classification_data]) => {
+                Object.entries(classification_data.children).forEach(([zone_code, zone_data]) => {
                     if (
-                        zone_data.parent !== undefined && zone_data.parent !== null
-                        && result[province_code]
-                        && result[province_code].children[classification_code]
-                        && result[province_code].children[classification_code].children[zone_code]
+                    result[province_code]
+                    && result[province_code].children[classification_code]
+                    && result[province_code].children[classification_code].children[zone_code]
                     ) {
-                        result[province_code].children[classification_code].children[zone_code].parent = zone_data.parent;
-                        if (zone_data.short)
+                        if (zone_data.parent !== undefined && zone_data.parent !== null) {
+                            if (result[province_code].children[classification_code].children[zone_code].parent === undefined || result[province_code].children[classification_code].children[zone_code].parent === null) {
+                                result[province_code].children[classification_code].children[zone_code].parent = zone_data.parent;
+                            } else {
+                                assert(result[province_code].children[classification_code].children[zone_code].parent === zone_data.parent, `${ result[province_code].children[classification_code].children[zone_code].parent} !== ${zone_data.parent}`)
+                            }
+                        }
+                        if (zone_data.short !== undefined && zone_data.short !== null) {
                             result[province_code].children[classification_code].children[zone_code].short = zone_data.short;
+                        }
                     }
                 });
             });

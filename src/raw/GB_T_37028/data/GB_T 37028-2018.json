@@ -4658,7 +4658,7 @@
           "019": {
             "name": "杭州湾上虞经济技术开发区",
             "short": null,
-            "parent": "3301"
+            "parent": "3306"
           },
           "020": {
             "name": "宁波杭州湾经济技术开发区",
@@ -6525,47 +6525,47 @@
           "001": {
             "name": "南昌高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3601"
           },
           "002": {
             "name": "景德镇高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3602"
           },
           "003": {
             "name": "新余高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3605"
           },
           "004": {
             "name": "鹰潭高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3606"
           },
           "005": {
             "name": "抚州高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3610"
           },
           "006": {
             "name": "赣州高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3607"
           },
           "007": {
             "name": "吉安高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3608"
           },
           "008": {
             "name": "宜春丰城高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3609"
           },
           "009": {
             "name": "九江共青城高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3604"
           }
         }
       },
@@ -7006,77 +7006,77 @@
           "001": {
             "name": "青岛经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3702"
           },
           "002": {
             "name": "烟台经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3706"
           },
           "003": {
             "name": "威海经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3710"
           },
           "004": {
             "name": "东营经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3705"
           },
           "005": {
             "name": "潍坊滨海经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3707"
           },
           "006": {
             "name": "日照经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3711"
           },
           "007": {
             "name": "邹平经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3716"
           },
           "008": {
             "name": "临沂经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3713"
           },
           "009": {
             "name": "招远经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3706"
           },
           "010": {
             "name": "德州经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3714"
           },
           "011": {
             "name": "明水经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3701"
           },
           "012": {
             "name": "胶州经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3702"
           },
           "013": {
             "name": "聊城经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3715"
           },
           "014": {
             "name": "威海临港经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3710"
           },
           "015": {
             "name": "滨州经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "3716"
           }
         }
       },
@@ -7098,67 +7098,67 @@
           "001": {
             "name": "济南高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3701"
           },
           "002": {
             "name": "威海火炬高技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3710"
           },
           "003": {
             "name": "青岛高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3702"
           },
           "004": {
             "name": "淄博高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3703"
           },
           "005": {
             "name": "潍坊高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3707"
           },
           "006": {
             "name": "烟台高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3706"
           },
           "007": {
             "name": "济宁高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3708"
           },
           "008": {
             "name": "临沂高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3713"
           },
           "009": {
             "name": "泰安高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3709"
           },
           "010": {
             "name": "枣庄高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3704"
           },
           "011": {
             "name": "莱芜高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3701"
           },
           "012": {
             "name": "德州高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "3714"
           },
           "013": {
             "name": "黄河三角洲农业高新技术产业示范区",
             "short": null,
-            "parent": null
+            "parent": "3705"
           }
         }
       },
@@ -7956,47 +7956,47 @@
           "001": {
             "name": "郑州经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4101"
           },
           "002": {
             "name": "开封经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4102"
           },
           "003": {
             "name": "鹤壁经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4106"
           },
           "004": {
             "name": "漯河经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4111"
           },
           "005": {
             "name": "许昌经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4110"
           },
           "006": {
             "name": "洛阳经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4103"
           },
           "007": {
             "name": "新乡经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4107"
           },
           "008": {
             "name": "红旗渠经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4107"
           },
           "009": {
             "name": "濮阳经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4109"
           }
         }
       },
@@ -8007,37 +8007,37 @@
           "001": {
             "name": "郑州高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4101"
           },
           "002": {
             "name": "洛阳高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4103"
           },
           "003": {
             "name": "安阳高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4105"
           },
           "004": {
             "name": "南阳高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4113"
           },
           "005": {
             "name": "新乡高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4107"
           },
           "006": {
             "name": "平顶山高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4104"
           },
           "007": {
             "name": "焦作高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4108"
           }
         }
       },
@@ -8770,37 +8770,37 @@
           "001": {
             "name": "武汉经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4201"
           },
           "002": {
             "name": "黄石经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4202"
           },
           "003": {
             "name": "襄阳经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4206"
           },
           "004": {
             "name": "武汉临空港经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4201"
           },
           "005": {
             "name": "荆州经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4210"
           },
           "006": {
             "name": "鄂州葛店经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4207"
           },
           "007": {
             "name": "十堰经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4203"
           }
         }
       },
@@ -8816,57 +8816,57 @@
           "002": {
             "name": "襄阳高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4206"
           },
           "003": {
             "name": "宜昌高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4205"
           },
           "004": {
             "name": "孝感高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4209"
           },
           "005": {
             "name": "荆门高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4208"
           },
           "006": {
             "name": "随州高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4213"
           },
           "007": {
             "name": "仙桃高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "429004"
           },
           "008": {
             "name": "黄冈高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4211"
           },
           "009": {
             "name": "咸宁高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4212"
           },
           "010": {
             "name": "潜江高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "429005"
           },
           "011": {
             "name": "黄石大冶湖高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4202"
           },
           "012": {
             "name": "荆州高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4210"
           }
         }
       },
@@ -9349,42 +9349,42 @@
           "001": {
             "name": "长沙经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4301"
           },
           "002": {
             "name": "岳阳经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4306"
           },
           "003": {
             "name": "常德经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4307"
           },
           "004": {
             "name": "宁乡经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4301"
           },
           "005": {
             "name": "湘潭经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4303"
           },
           "006": {
             "name": "浏阳经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4301"
           },
           "007": {
             "name": "娄底经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4313"
           },
           "008": {
             "name": "望城经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4301"
           }
         }
       },
@@ -9406,42 +9406,42 @@
           "001": {
             "name": "长沙高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4301"
           },
           "002": {
             "name": "株洲高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4302"
           },
           "003": {
             "name": "湘潭高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4303"
           },
           "004": {
             "name": "益阳高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4309"
           },
           "005": {
             "name": "衡阳高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4304"
           },
           "006": {
             "name": "郴州高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4310"
           },
           "007": {
             "name": "常德高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4307"
           },
           "008": {
             "name": "怀化高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4312"
           }
         }
       },
@@ -10058,32 +10058,32 @@
           "001": {
             "name": "湛江经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4408"
           },
           "002": {
             "name": "广州经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4401"
           },
           "003": {
             "name": "广州南沙经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4401"
           },
           "004": {
             "name": "惠州大亚湾经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4413"
           },
           "005": {
             "name": "增城经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4401"
           },
           "006": {
             "name": "珠海经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4404"
           }
         }
       },
@@ -10105,72 +10105,72 @@
           "001": {
             "name": "广州高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4401"
           },
           "002": {
             "name": "深圳市高新技术产业园区",
             "short": null,
-            "parent": null
+            "parent": "4403"
           },
           "003": {
             "name": "中山火炬高技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4420"
           },
           "004": {
             "name": "珠海高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4404"
           },
           "005": {
             "name": "佛山高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4406"
           },
           "006": {
             "name": "惠州仲恺高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4413"
           },
           "007": {
             "name": "肇庆高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4412"
           },
           "008": {
             "name": "东莞松山湖高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4419"
           },
           "009": {
             "name": "江门高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4407"
           },
           "010": {
             "name": "源城高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4416"
           },
           "011": {
             "name": "清远高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4418"
           },
           "012": {
             "name": "汕头高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4405"
           },
           "013": {
             "name": "湛江高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4408"
           },
           "014": {
             "name": "茂名高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4409"
           }
         }
       },
@@ -10814,22 +10814,22 @@
           "001": {
             "name": "南宁经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4501"
           },
           "002": {
             "name": "钦州港经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4507"
           },
           "003": {
             "name": "中国—马来西亚钦州产业园区",
             "short": null,
-            "parent": null
+            "parent": "4507"
           },
           "004": {
             "name": "广西—东盟经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "4501"
           }
         }
       },
@@ -10840,22 +10840,22 @@
           "001": {
             "name": "桂林高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4503"
           },
           "002": {
             "name": "南宁高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4501"
           },
           "003": {
             "name": "柳州高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4502"
           },
           "004": {
             "name": "北海高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4505"
           }
         }
       },
@@ -11220,7 +11220,7 @@
           "001": {
             "name": "海南洋浦经济开发区",
             "short": null,
-            "parent": null
+            "parent": "4604"
           }
         }
       },
@@ -11231,7 +11231,7 @@
           "001": {
             "name": "海口高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "4601"
           }
         }
       },
@@ -11617,42 +11617,42 @@
           "001": {
             "name": "成都经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5101"
           },
           "002": {
             "name": "德阳经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5106"
           },
           "003": {
             "name": "广安经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5116"
           },
           "004": {
             "name": "遂宁经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5109"
           },
           "005": {
             "name": "绵阳经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5107"
           },
           "006": {
             "name": "广元经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5108"
           },
           "007": {
             "name": "宜宾临港经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5115"
           },
           "008": {
             "name": "内江经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5110"
           }
         }
       },
@@ -11679,37 +11679,37 @@
           "002": {
             "name": "绵阳高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "5107"
           },
           "003": {
             "name": "自贡高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "5103"
           },
           "004": {
             "name": "乐山高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "5111"
           },
           "005": {
             "name": "泸州高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "5105"
           },
           "006": {
             "name": "攀枝花钒钛高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "5104"
           },
           "007": {
             "name": "德阳高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "5106"
           },
           "008": {
             "name": "内江高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "5110"
           }
         }
       },
@@ -12362,12 +12362,12 @@
           "001": {
             "name": "贵阳经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5201"
           },
           "002": {
             "name": "遵义经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5203"
           }
         }
       },
@@ -12389,12 +12389,12 @@
           "001": {
             "name": "贵阳高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "5201"
           },
           "002": {
             "name": "安顺高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "5204"
           }
         }
       },
@@ -12746,27 +12746,27 @@
           "001": {
             "name": "昆明经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5301"
           },
           "002": {
             "name": "曲靖经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5303"
           },
           "003": {
             "name": "嵩明杨林经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5301"
           },
           "004": {
             "name": "蒙自经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5325"
           },
           "005": {
             "name": "大理经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5329"
           }
         }
       },
@@ -12788,17 +12788,17 @@
           "001": {
             "name": "昆明高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "5301"
           },
           "002": {
             "name": "玉溪高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "5304"
           },
           "003": {
             "name": "楚雄高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "5323"
           }
         }
       },
@@ -13223,7 +13223,7 @@
           "001": {
             "name": "拉萨经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "5401"
           }
         }
       },
@@ -13272,27 +13272,27 @@
           "001": {
             "name": "西安经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6101"
           },
           "002": {
             "name": "陕西航空经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6101"
           },
           "003": {
             "name": "陕西航天经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6101"
           },
           "004": {
             "name": "汉中经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6107"
           },
           "005": {
             "name": "榆林经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6108"
           }
         }
       },
@@ -13314,37 +13314,37 @@
           "001": {
             "name": "西安高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6101"
           },
           "002": {
             "name": "宝鸡高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6103"
           },
           "003": {
             "name": "杨凌农业高新技术产业示范区",
             "short": null,
-            "parent": null
+            "parent": "6104"
           },
           "004": {
             "name": "渭南高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6105"
           },
           "005": {
             "name": "咸阳高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6104"
           },
           "006": {
             "name": "榆林高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6108"
           },
           "007": {
             "name": "安康高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6109"
           }
         }
       },
@@ -13627,27 +13627,27 @@
           "001": {
             "name": "兰州经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6201"
           },
           "002": {
             "name": "金昌经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6203"
           },
           "003": {
             "name": "天水经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6205"
           },
           "004": {
             "name": "酒泉经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6209"
           },
           "005": {
             "name": "张掖经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6207"
           }
         }
       },
@@ -13669,12 +13669,12 @@
           "001": {
             "name": "兰州高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6201"
           },
           "002": {
             "name": "白银高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6204"
           }
         }
       },
@@ -14015,12 +14015,12 @@
           "001": {
             "name": "西宁经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6301"
           },
           "002": {
             "name": "格尔木昆仑经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6328"
           }
         }
       },
@@ -14031,7 +14031,7 @@
           "001": {
             "name": "青海高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6301"
           }
         }
       },
@@ -14114,12 +14114,12 @@
           "001": {
             "name": "银川经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6401"
           },
           "002": {
             "name": "石嘴山经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6402"
           }
         }
       },
@@ -14130,12 +14130,12 @@
           "001": {
             "name": "银川高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6401"
           },
           "002": {
             "name": "石嘴山高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6402"
           }
         }
       },
@@ -14246,47 +14246,47 @@
           "001": {
             "name": "乌鲁木齐经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6501"
           },
           "002": {
             "name": "石河子经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "659001"
           },
           "003": {
             "name": "库尔勒经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6528"
           },
           "004": {
             "name": "新疆奎屯—独山子经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6540"
           },
           "005": {
             "name": "阿拉尔经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "659002"
           },
           "006": {
             "name": "新疆五家渠经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "659004"
           },
           "007": {
             "name": "乌鲁木齐甘泉堡经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6501"
           },
           "008": {
             "name": "新疆准东经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6523"
           },
           "009": {
             "name": "库车经济技术开发区",
             "short": null,
-            "parent": null
+            "parent": "6529"
           }
         }
       },
@@ -14297,17 +14297,17 @@
           "001": {
             "name": "乌鲁木齐高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6501"
           },
           "002": {
             "name": "昌吉高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "6523"
           },
           "003": {
             "name": "新疆生产建设兵团石河子高新技术产业开发区",
             "short": null,
-            "parent": null
+            "parent": "659001"
           }
         }
       },
