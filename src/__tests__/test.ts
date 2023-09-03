@@ -331,6 +331,12 @@ test('功能性测试(直辖市)', () => {
     expect(China.getChild('11')?.getChild('0115')?.getChild('101001')?.getFullShortName()).toBe('北京 大兴 北京经济技术开发区');
 });
 
+test('功能性测试(特殊情况)', () => {
+    expect(China.getChild('46')?.getChild('01')?.getName()).toBe('海口市');
+    expect(China.getChild(46)?.getChild(1)?.getName()).toBe('海口市');
+    expect(China.getChild('46')?.getChild('0001')?.getName()).toBe('五指山市');
+});
+
 test('readme-逐级获取', () => {
     expect(China.getChild('13')?.getChild('01')?.getChild('02')?.getName() === '长安区').toBeTruthy()
     expect(China.getChild(13)?.getChild(1)?.getChild(2)?.getName() === '长安区').toBeTruthy()
